@@ -21,18 +21,27 @@
             display: block;
         }
 
-
-        svg {
-            overflow: visible;
+        .floating {
+            animation-name: floating;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            margin-left: 30px;
+            margin-top: 5px;
         }
 
-        .hover {
-            transform-origin: center;
+        @keyframes floating {
+            0% {
+                transform: translate(0, 0px);
+            }
+            50% {
+                transform: translate(0, 50px);
+            }
+            100% {
+                transform: translate(0, -0px);
+            }
         }
 
-        #hover_bottom, #hover_middle {
-            opacity: 0;
-        }
 
     </style>
 </head>
@@ -60,52 +69,6 @@
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 <script src="js/app.js"></script>
 
-<script>
-    var timeline = anime.timeline();
-    var ring = $('.hover');
-    var clone = ring.clone();
 
-    anime({
-        targets: '#butter_bot',
-        translateY: 30,
-        direction: 'alternate',
-        loop: true,
-        easing: 'easeInOutSine',
-        autoplay: true,
-
-    });
-
-    anime({
-        targets: ring[0],
-        translateY: '40px',
-        scale: '2',
-        opacity: 0,
-        easing: 'linear',
-        complete: function () {
-            ring.remove();
-        }
-    });
-
-    setInterval(function () {
-
-        var new_clone = clone.clone();
-        new_clone.appendTo('#butter_bot_group');
-        anime({
-            targets: new_clone[0],
-            translateY: '40px',
-            scale: '2',
-            opacity: 0,
-            duration: 1200,
-            easing: 'linear',
-            complete: function () {
-                new_clone.remove();
-            }
-        });
-    }, 500);
-
-    $('#butter_bot').on('click', function () {
-        timeline.restart();
-    });
-</script>
 </body>
 </html>
