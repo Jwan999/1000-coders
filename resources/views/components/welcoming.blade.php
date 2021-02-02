@@ -1,10 +1,18 @@
-<div class="flex flex-wrap-reverse justify-center lg:justify-between items-center w-full lg:mt-32 mt-10">
-    <div class="lg:w-6/12 w-full lg:mt-0 mt-14">
+<div class="flex flex-wrap justify-center lg:justify-between items-center w-full lg:mt-28 mt-4">
+    <div class="lg:w-6/12 w-full lg:mt-0 mt-20">
         <h1 class="lg:text-6xl text-5xl text-gray-900">
             كأس العرب
             للبرمجة والذكاء الإصطناعي
         </h1>
-        <p class="text-lg tracking-wide text-gray-700 mt-8 lg:w-10/12 w-auto">الماراثون البرمجي بنسخته الجديدة</p>
+        <p class="text-xl tracking-wide text-gray-700 mt-8 lg:w-10/12 w-auto"> يسعى الماراثون البرمجي بنسخته الجديدة "
+            كأس
+            العرب للبرمجة و الذكاء الإصطناعي "إلى رفع مستوى
+            المهارات البرمجية لجيل الأطفال من عمر 8 إلى 15
+            لمواكبة التطور التكنلوجي في جميع العلوم ويركز
+            الماراثون البرمجي على استغلال الوقت واستثماره
+            بالشكل الصحيح لدي الاطفال في ظل التغيرات الحاصلة
+            في مسار التعليم المستحدتة والتي تعر على العالم في
+            زمن جائحة كورونا. </p>
         <button href="/form"
                 class="outline-none bg-yellow-200 hover:bg-yellow-300 rounded-2xl items-center py-4 px-6 shadow mt-8 transition duration-200 ease-in transform hover:-translate-y-1 hover:scale-110">
             ابدأ التسجيل
@@ -12,7 +20,7 @@
     </div>
     <div class="lg:w-4/12 w-10/12">
 
-        <svg class="fill-current text-center floating" viewBox="0 0 350 410" version="1.1"
+        <svg class="floating" viewBox="0 0 350 410" version="1.1"
              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">

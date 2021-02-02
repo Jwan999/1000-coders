@@ -1,7 +1,10 @@
-<div class="flex flex-wrap-reverse justify-center items-center w-full lg:mt-52 lg:mt-10 mt-20 ">
+<div id="goals" class="flex flex-wrap-reverse justify-center items-center w-full lg:mt-52 lg:mt-10 mt-20 ">
     <div class="w-full lg:mt-0 mt-14">
-        <h1 class="lg:text-6xl text-4xl text-gray-900">
+        <h1 class="lg:text-6xl text-5xl text-gray-900">
             الاهداف </h1>
+        <div class="lg:w-full w-10/12">
+            <img src="titlebg.png" alt="">
+        </div>
         <div class="grid lg:grid-cols-2 grid-cols-1 gap-6 mt-10">
             <div class="bg-white p-4 hover:shadow-xl hover:border-yellow-200 border border-gray-200 rounded-xl">
                 تسليط الضوء على الأطفال
