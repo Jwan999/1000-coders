@@ -3,10 +3,10 @@
       <div class="grid grid-cols-1 justify-items-center">
           <h1 class="w-full text-center lg:text-6xl text-5xl text-gray-900">
               الشركاء</h1>
-              <img src="titlebg.png" alt="">
+              <img class="mt-3" src="titlebg.png" alt="">
       </div>
     </div>
-    <div class="flex lg:flex-row flex-col w-full bg-gray-300 p-8 justify-center items-center shadow mt-10">
-        test testh
+    <div class="flex lg:flex-row flex-col w-full bg-gray-200 p-8 justify-center items-center mt-10">
+        test test
     </div>
 </div>

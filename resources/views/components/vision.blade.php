@@ -2,7 +2,7 @@
     <div class="w-full lg:mt-0 mt-14">
         <h1 class="lg:text-6xl text-5xl text-gray-900">
             الرؤية </h1>
-        <div class="lg:w-full w-10/12">
+        <div class="mt-3 lg:w-full w-10/12">
             <img src="titlebg.png" alt="">
         </div>
         <p class="lg:text-xl text-lg tracking-wide leading-relaxed text-gray-700 mt-8 lg:w-10/12 w-auto">

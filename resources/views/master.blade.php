@@ -52,6 +52,9 @@
         <a class="w-16" href="#">
             <img src="robotnarecolor.png" alt="">
         </a>
+        <h1 class="lg:mr-6 mr-0 ml-12 lg:ml-0 lg:text-2xl text-xl">
+            مسابقة كأس العرب
+        </h1>
     </div>
 
     <label for="menu-toggle" class="pointer-cursor lg:hidden block">
@@ -60,11 +63,12 @@
              viewBox="0 0 20 20">
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
         </svg>
+
     </label>
     <input class="hidden" type="checkbox" id="menu-toggle"/>
     <div class="hidden lg:flex lg:items-center lg:justify-around lg:w-auto w-full" id="menu">
         <scrollactive active-class="active"
-                      class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0"
+                      class="lg:flex items-center justify-between text-lg text-gray-700 pt-4 lg:pt-0"
                       :offset="400" :duration="800"
                       bezier-easing-value=".5,0,.35,1">
 
@@ -74,29 +78,29 @@
             {{--            </a>--}}
 
             <a href="#goals"
-               class="scrollactive-item lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-yellow-300">
+               class="scrollactive-item lg:p-4 py-3 px-0 block border-b-4 transition duration-300 ease-in-out transform hover:scale-110 border-transparent hover:border-yellow-300">
                 الاهداف</a>
 
             <a href="#stages"
-               class="scrollactive-item lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-yellow-300">
+               class="scrollactive-item lg:p-4 py-3 px-0 block border-b-4 transition duration-300 ease-in-out transform hover:scale-110 border-transparent hover:border-yellow-300">
                 المراحل</a>
 
             <a href="#participation"
-               class="scrollactive-item lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-yellow-300">
+               class="scrollactive-item lg:p-4 py-3 px-0 block border-b-4 transition duration-300 ease-in-out transform hover:scale-110 border-transparent hover:border-yellow-300">
                 شروط الاشتراك</a>
 
             <a href="#organizers"
-               class="collective-item lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-yellow-300">
+               class="collective-item lg:p-4 py-3 px-0 block border-b-4 transition duration-300 ease-in-out transform hover:scale-110 border-transparent hover:border-yellow-300">
                 المنظمين
             </a>
 
 
             <a href="#partners"
-               class="scrollactive-item lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-yellow-300">
+               class="scrollactive-item lg:p-4 py-3 px-0 block border-b-4 transition duration-300 ease-in-out transform hover:scale-110 border-transparent hover:border-yellow-300">
                 الشركاء</a>
 
             <a href="#contact"
-               class="scrollactive-item lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-yellow-300">تواصل
+               class="scrollactive-item lg:p-4 py-3 px-0 block border-b-4 transition duration-300 ease-in-out transform hover:scale-110 border-transparent hover:border-yellow-300">تواصل
                 معنا</a>
 
         </scrollactive>
@@ -113,9 +117,9 @@
 <div class="lg:mx-24 mx-6 z-10">
 
     @include('components/welcoming')
-{{--    <div id="vision">--}}
-{{--        @include('components/vision')--}}
-{{--    </div>--}}
+    {{--    <div id="vision">--}}
+    {{--        @include('components/vision')--}}
+    {{--    </div>--}}
     <div id="goals">
         @include('components/goals')
 
@@ -134,14 +138,16 @@
 
 </div>
 @include('components/partners')
+<div class="lg:mx-24 mx-6 z-10">
+@include('components/contact')
+</div>
 
 {{--footer--}}
-<div id="partners" class="bg-yellow-300 w-full items-center p-8 mt-20">
-    هلاوو
+<div id="partners" class="bg-yellow-300 w-full items-center p-10 mt-20">
+    كأس العرب 2020
 </div>
 
 <script src="js/app.js"></script>
-
 
 </body>
 </html>

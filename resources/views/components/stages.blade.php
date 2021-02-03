@@ -2,16 +2,16 @@
     <div class="w-full lg:mt-0 mt-14">
         <h1 class="lg:text-6xl text-5xl text-gray-900">
             المراحل </h1>
-        <div class="lg:w-full w-10/12">
+        <div class="mt-3 lg:w-full w-10/12">
             <img src="titlebg.png" alt="">
         </div>
-        <div class="grid lg:grid-cols-4 grid cols-1 gap-8 mt-10 border-r-2 border-yellow-300 p-8">
+        <div class="grid lg:grid-cols-4 grid cols-1 gap-12 mt-10">
             <div class="w-full items-center">
-                <div class="w-8/12 mb-8">
+                <div class="w-60 mb-8">
                     <img src="numberone.png" alt="">
                 </div>
 
-                <div class="lg:mr-14 mr-0">
+                <div class=" mr-0">
                     <h1 class="text-3xl">
                         المرحلة الاولى
                     </h1>
@@ -23,12 +23,12 @@
                 </div>
             </div>
             <div class="w-full items-center">
-                <div class="w-8/12 mb-8">
+                <div class="w-60 mb-9">
                     <img src="numbertwo.png" alt="">
                 </div>
-                <div class="lg:mr-14 mr-0">
+                <div class=" mr-0">
                     <h1 class="text-3xl">
-                        المرحلة الاولى
+                        المرحلة الثانية
                     </h1>
                     <p class="mt-6 text-base tracking-wide text-justify">
                         لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج ألgيايت,سيت دو أيوسمود تيمبور
@@ -38,13 +38,13 @@
                 </div>
             </div>
             <div class="w-full items-center">
-                <div class="w-8/12 mb-8">
-                    <img class="-mt-7" src="numberthree.png" alt="">
+                <div class="w-60 mb-5 -mt-7">
+                    <img src="numberthree.png" alt="">
                 </div>
 
-                <div class="lg:mr-14 mr-0">
+                <div class=" mr-0">
                     <h1 class="text-3xl">
-                        المرحلة الاولى
+                        المرحلة الثالثة
                     </h1>
                     <p class="mt-6 text-base tracking-wide text-justify">
                         لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج ألgيايت,سيت دو أيوسمود تيمبور
@@ -54,13 +54,13 @@
                 </div>
             </div>
             <div class="w-full items-center">
-                <div class="w-9/12 mb-8">
+                <div class="w-60 mb-10">
                     <img src="numberfour.png" alt="">
                 </div>
 
-                <div class="lg:mr-14 mr-0">
+                <div class="lmr-0">
                     <h1 class="text-3xl">
-                        المرحلة الاولى
+                        المرحلة الرابعة
                     </h1>
                     <p class="mt-6 text-base tracking-wide text-justify">
                         لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج ألgيايت,سيت دو أيوسمود تيمبور
