@@ -1,34 +1,40 @@
 <div id="contact"
-     class="flex flex-wrap-reverse justify-between items-center w-full lg:mt-52 lg:mt-10 mt-20">
-    <div class="w-5/12 lg:mt-0 mt-14">
-        <h1 class="lg:text-6xl text-5xl text-gray-900">
+     class="flex lg:flex-row flex-col justify-between items-center w-full lg:mt-52 mt-20">
+
+    <div class="lg:w-5/12 w-full lg:mt-0 mt-14">
+        <img class="lg:hidden block lg:-mr-8 -mr-2" src="email.png" alt="">
+
+        <h1 class="lg:text-6xl text-5xl text-gray-900 mt-12 lg:mt-0">
             تواصل معنا </h1>
         <div class="lg:w-full mt-3 w-10/12">
             <img src="titlebg.png" alt="">
         </div>
         <p class="text-gray-700 text-lg mt-6">
-            لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
-            أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد
-            أكسير سيتاشن يللأمكو لابورأس vنيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات
+            لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكيج أليايت,سيت دو أيوسمود تيمبور
+            أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا
         </p>
         <div class="flex flex-col mt-10">
-            <label for="" class="text-xl">ادخل اسمك</label>
             <input name="name" type="text"
-                   class="mt-2 bg-gray-200 border border-gray-300 focus:border-blue-400 focus:bg-gray-100 text-lg py-3 px-4 rounded-xl outline-none"
+                   class="bg-gray-200 border border-gray-300 focus:border-blue-400 focus:bg-gray-100 text-lg py-3 px-4 rounded-xl outline-none"
                    placeholder="الاسم">
-            <label for="" class="text-xl mt-6">ادخل عنوانك البريدي</label>
             <input name="email" type="email"
-                   class="mt-2 bg-gray-200 border border-gray-300 focus:border-blue-400 focus:bg-gray-100 text-lg py-3 px-4 rounded-xl outline-none"
+                   class="mt-6 bg-gray-200 border border-gray-300 focus:border-blue-400 focus:bg-gray-100 text-lg py-3 px-4 rounded-xl outline-none"
                    placeholder="العنوان البريدي">
-            <label for="" class="text-xl mt-6">ادخل عنوانك البريدي</label>
             <input name="message" textarea
-                   class="mt-2 bg-gray-200 border border-gray-300 focus:border-blue-400 focus:bg-gray-100 text-lg py-3 px-4 rounded-xl outline-none"
+                   class="mt-6 bg-gray-200 border border-gray-300 focus:border-blue-400 focus:bg-gray-100 text-lg py-3 px-4 rounded-xl outline-none"
                    placeholder="رسالة">
+            <div class="4/12">
+                <button
+                        class="my-10 outline-none bg-yellow-200 hover:bg-yellow-300 rounded-2xl items-center py-4 px-6 shadow mt-10 transition duration-200 ease-in transform hover:-translate-y-1 hover:scale-110">
+                    ارسال
+                </button>
+            </div>
+
         </div>
     </div>
-    <div class="w-5/12">
-        <img class="-mr-8" src="email.png" alt="">
-        <div class="flex flex-col mt-10">
+    <div class="lg:w-5/12 w-full">
+        <img class="hidden lg:block lg:-mr-8 -mr-2" src="email.png" alt="">
+        <div class="flex lg:flex-col flex-row justify-center lg:justify-start mt-10">
             <div class="flex items-center">
                 <svg class="w-14" viewBox="0 0 82 82" version="1.1" xmlns="http://www.w3.org/2000/svg"
                      xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -71,7 +77,7 @@
                         </g>
                     </g>
                 </svg>
-                <h1 class="text-gray-800 text-lg">
+                <h1 class="hidden lg:block text-gray-800 text-lg">
                     instagram
                 </h1>
             </div>
@@ -111,7 +117,7 @@
                         </g>
                     </g>
                 </svg>
-                <h1 class="text-gray-800 text-lg">
+                <h1 class="hidden lg:block text-gray-800 text-lg">
                     facebook
                 </h1>
             </div>
@@ -154,7 +160,7 @@
                         </g>
                     </g>
                 </svg>
-                <h1 class="text-gray-800 text-lg">
+                <h1 class="hidden lg:block text-gray-800 text-lg">
                     whatsapp
                 </h1>
             </div>

@@ -2,12 +2,20 @@
     <div class="w-full lg:mt-0 mt-14">
         <h1 class="lg:text-6xl text-5xl text-gray-900">
             الاهداف </h1>
-        <div class="lg:w-full mt-3 w-10/12">
-            <img src="titlebg.png" alt="">
+        <div class="lg:w-3/12 mt-4 w-10/12">
+            <svg viewBox="0 0 351 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+                    <g id="Group" transform="translate(175.448488, 6.000000) scale(-1, 1) translate(-175.448488, -6.000000) translate(4.948488, 4.000000)" stroke-width="9.48488242">
+                        <line x1="0.474244121" y1="1.92889138" x2="116.18981" y2="1.92889138" id="Line" stroke="#49C6F3"></line>
+                        <line x1="138.953527" y1="1.92889138" x2="185.903695" y2="2.4031355" id="Line" stroke="#F071A8"></line>
+                        <line x1="210.090146" y1="1.92889138" x2="340.448488" y2="1.5" id="Line" stroke="#FDDE40"></line>
+                    </g>
+                </g>
+            </svg>
         </div>
         <div class="grid lg:grid-cols-2 grid-cols-1 gap-6 mt-10">
-            <div class="flex bg-white p-4 border border-yellow-300 rounded-xl items-center">
-                <svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            <div class="flex lg:flex-wrap flex-col bg-white p-4 border border-yellow-300 rounded-xl items-center">
+                <svg class="fill-current w-24" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg"
                      xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="Artboard" transform="translate(-1317.000000, -94.000000)">
@@ -25,7 +33,7 @@
                         </g>
                     </g>
                 </svg>
-                <p class="p-6">
+                <p class="lg:p-6 p-3 lg:text-xl text-lg">
                     تسليط الضوء على الأطفال
                     المميزين في مجال
                     البرمجة والذكاء
@@ -35,34 +43,34 @@
                 </p>
 
             </div>
-            <div class="flex bg-white p-4 border border-yellow-300 rounded-xl items-center">
-                <svg width="78px" height="98px" viewBox="0 0 78 98" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            <div class="flex lg:flex-wrap flex-col bg-white p-4 border border-yellow-300 rounded-xl items-center">
+                <svg class="fill-current w-20" viewBox="0 0 76 96" version="1.1" xmlns="http://www.w3.org/2000/svg"
                      xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round"
                        stroke-linejoin="round">
-                        <g id="Artboard" transform="translate(-1339.000000, -288.000000)" stroke="#FDDE40"
-                           stroke-width="7.5">
+                        <g id="Artboard" transform="translate(-1340.000000, -289.000000)" stroke="#FDDE40">
                             <g id="Group-10" transform="translate(1343.000000, 292.000000)">
                                 <path d="M20,10 L10,10 C4.4771525,10 -1.82254212e-12,14.4771525 -1.82254212e-12,20 L-1.82254212e-12,80 C-1.82254212e-12,85.5228475 4.4771525,90 10,90 L60,90 C65.5228475,90 70,85.5228475 70,80 L70,20 C70,14.4771525 65.5228475,10 60,10 L50,10"
-                                      id="Path"></path>
-                                <rect id="Rectangle" x="20" y="-9.09938791e-13" width="30" height="20" rx="10"></rect>
-                                <line x1="20" y1="45" x2="20.05" y2="45" id="Path"></line>
-                                <line x1="40" y1="45" x2="50" y2="45" id="Path"></line>
-                                <line x1="20" y1="65" x2="20.05" y2="65" id="Path"></line>
-                                <line x1="40" y1="65" x2="50" y2="65" id="Path"></line>
+                                      id="Path" stroke-width="6"></path>
+                                <rect id="Rectangle" stroke-width="6" x="20" y="-9.09938791e-13" width="30" height="20"
+                                      rx="10"></rect>
+                                <line x1="20" y1="45" x2="20.05" y2="45" id="Path" stroke-width="7.5"></line>
+                                <line x1="40" y1="45" x2="50" y2="45" id="Path" stroke-width="6"></line>
+                                <line x1="20" y1="65" x2="20.05" y2="65" id="Path" stroke-width="7.5"></line>
+                                <line x1="40" y1="65" x2="50" y2="65" id="Path" stroke-width="6"></line>
                             </g>
                         </g>
                     </g>
                 </svg>
-                <p class="p-6">
+                <p class="lg:p-6 p-3 lg:text-xl text-lg">
                     توفير تدريب برمجي للأطفال علي نحو ينعكس
                     بشكل ايجابي في تطوير
                     مخيلتهم من خلال طرح
                     المشاكل وايجاد الحلول.
                 </p>
             </div>
-            <div class="flex bg-white p-4 border border-yellow-300 rounded-xl items-center">
-                <svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            <div class="flex lg:flex-wrap flex-col bg-white p-4 border border-yellow-300 rounded-xl items-center">
+                <svg class="fill-current w-24" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg"
                      xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="Artboard" transform="translate(-1317.000000, -436.000000)">
@@ -78,13 +86,13 @@
                         </g>
                     </g>
                 </svg>
-                <p class="p-6">
+                <p class="lg:p-6 p-3 lg:text-xl text-lg">
                     توفير محتوى علمي مفيد في مجال البرمجة والمعلوماتية يؤمن وسيلة داعمة لتعليم علوم الحاسوب في المرحلة
                     المدرسية.
                 </p>
             </div>
-            <div class="flex bg-white p-4 border border-yellow-300 rounded-xl items-center">
-                <svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            <div class="flex lg:flex-wrap flex-col bg-white p-4 border border-yellow-300 rounded-xl items-center">
+                <svg class="fill-current w-24" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg"
                      xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="Artboard" transform="translate(-1317.000000, -618.000000)">
@@ -104,7 +112,7 @@
                         </g>
                     </g>
                 </svg>
-                <p class="p-6">
+                <p class="lg:p-6 p-3 lg:text-xl text-lg">
                     رفع مستوى معارف
                     ومهارات الطلاب من خلال اقامة مسابقة علمية على
                     مستوى عربي، ورعاية
