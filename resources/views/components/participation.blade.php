@@ -4,7 +4,7 @@
             شروط الاشتراك </h1>
         <div class="lg:w-4/12 w-full mt-4">
 
-            <svg viewBox="0 0 430 11" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            <svg class="lg:w-10/12 w-8/12" viewBox="0 0 430 11" version="1.1" xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
                     <g id="Group-12" transform="translate(5.332587, 4.454647)" stroke-width="9.48488242">
