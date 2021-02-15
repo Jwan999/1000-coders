@@ -1,21 +1,27 @@
 <div id="goals" class="flex flex-wrap-reverse justify-center items-center w-full lg:mt-52 lg:mt-10 mt-20 ">
     <div class="w-full lg:mt-0 mt-14">
         <div class="flex justify-start w-full lg:mt-0 mt-14">
-            <div class="grid grid-cols-1 justify-items-center">
-                <h1 class="w-full lg:text-6xl text-5xl text-gray-900">
-                    الاهداف
-                </h1>
-                <div class="lg:w-full mt-4 w-full">
-                    <svg class="w-11/12" viewBox="0 0 351 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
-                            <g id="Group" transform="translate(175.448488, 6.000000) scale(-1, 1) translate(-175.448488, -6.000000) translate(4.948488, 4.000000)" stroke-width="9.48488242">
-                                <line x1="0.474244121" y1="1.92889138" x2="116.18981" y2="1.92889138" id="Line" stroke="#49C6F3"></line>
-                                <line x1="138.953527" y1="1.92889138" x2="185.903695" y2="2.4031355" id="Line" stroke="#F071A8"></line>
-                                <line x1="210.090146" y1="1.92889138" x2="340.448488" y2="1.5" id="Line" stroke="#FDDE40"></line>
+            <div class="flex">
+                <h1 class="lg:text-6xl text-5xl text-gray-900 ">
+                    @lang('language.contact_us')
+                    <svg viewBox="0 0 430 11" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                           stroke-linecap="round">
+                            <g id="Group-12" transform="translate(5.332587, 4.454647)" stroke-width="9.48488242">
+                                <line x1="261.06439" y1="1.04535274" x2="418.805711" y2="1.47424412" id="Line"
+                                      stroke="#49C6F3"
+                                      transform="translate(340.115901, 1.000000) scale(-1, 1) translate(-340.115901, -1.000000) "></line>
+                                <line x1="161.610862" y1="1.47424412" x2="238.105823" y2="1.04535274" id="Line"
+                                      stroke="#F071A8"
+                                      transform="translate(199.636618, 1.000000) scale(-1, 1) translate(-199.636618, -1.000000) "></line>
+                                <line x1="0.474244121" y1="1.47424412" x2="137.832587" y2="1.04535274" id="Line"
+                                      stroke="#FDDE40"
+                                      transform="translate(69.000000, 1.000000) scale(-1, 1) translate(-69.000000, -1.000000) "></line>
                             </g>
                         </g>
                     </svg>
-                </div>
+                </h1>
             </div>
         </div>
         <div class="grid lg:grid-cols-2 grid-cols-1 gap-6 mt-10">
@@ -39,12 +45,8 @@
                     </g>
                 </svg>
                 <p class="lg:p-6 p-3 lg:text-xl text-lg">
-                    تسليط الضوء على الأطفال
-                    المميزين في مجال
-                    البرمجة والذكاء
-                    الإصطناعي من خلال
-                    ابرازهم عل الإعلام و وسائل
-                    التواصل الإجتماعي.
+                    @lang("language.light_goal")
+
                 </p>
 
             </div>
@@ -68,10 +70,8 @@
                     </g>
                 </svg>
                 <p class="lg:p-6 p-3 lg:text-xl text-lg">
-                    توفير تدريب برمجي للأطفال علي نحو ينعكس
-                    بشكل ايجابي في تطوير
-                    مخيلتهم من خلال طرح
-                    المشاكل وايجاد الحلول.
+                    @lang("language.file_goal")
+
                 </p>
             </div>
             <div class="flex lg:flex-wrap flex-col bg-white p-4 border border-yellow-300 rounded-xl items-center">
@@ -92,8 +92,8 @@
                     </g>
                 </svg>
                 <p class="lg:p-6 p-3 lg:text-xl text-lg">
-                    توفير محتوى علمي مفيد في مجال البرمجة والمعلوماتية يؤمن وسيلة داعمة لتعليم علوم الحاسوب في المرحلة
-                    المدرسية.
+                    @lang("language.code_goal")
+
                 </p>
             </div>
             <div class="flex lg:flex-wrap flex-col bg-white p-4 border border-yellow-300 rounded-xl items-center">
@@ -118,10 +118,8 @@
                     </g>
                 </svg>
                 <p class="lg:p-6 p-3 lg:text-xl text-lg">
-                    رفع مستوى معارف
-                    ومهارات الطلاب من خلال اقامة مسابقة علمية على
-                    مستوى عربي، ورعاية
-                    المتميزين في هذا المجال.
+                    @lang("language.award_goal")
+
                 </p>
             </div>
         </div>

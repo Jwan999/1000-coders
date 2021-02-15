@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/app.css">
-    <meta name="yandex-verification" content="6e72ede6ef2d9146" />
+    <meta name="yandex-verification" content="6e72ede6ef2d9146"/>
 
     <link rel="icon" href="robotnarecolor.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -47,15 +47,16 @@
 
     </style>
 </head>
-<body dir="rtl" class="bg-gray-100 relative">
-<div id="app">
+<body class="bg-gray-100 relative">
+<div dir="@lang("language.dir")" id="app">
+
     <header class="lg:px-16 px-6 bg-white flex flex-wrap items-center lg:justify-between lg:py-3 py-2">
-        <div class="flex-1 lg:flex-none flex justify-between items-center">
-            <a class="w-16" href="#">
+        <div class="flex-1 lg:flex-none flex justify-between items1-center">
+            <a class="w-1/12" href="#">
                 <img src="robotnarecolor.png" alt="">
             </a>
-            <h1 class="lg:mr-6 mr-0 ml-12 lg:ml-0 lg:text-2xl text-xl">
-                مسابقة كأس العرب
+            <h1 class="w-10/12 ml-12 lg:ml-0 lg:text-2xl text-xl self-center">
+                @lang("language.contest_name")
             </h1>
         </div>
 
@@ -69,8 +70,9 @@
         </label>
         <input class="hidden" type="checkbox" id="menu-toggle"/>
         <div class="hidden lg:flex lg:items-center lg:justify-around lg:w-auto w-full" id="menu">
+
             <scrollactive active-class="active"
-                          class="lg:flex items-center justify-between text-lg text-gray-700 pt-4 lg:pt-0"
+                          class="lg:flex items-center justify-between text-lg text-gray-700 pt-4"
                           :offset="200" :duration="800"
                           bezier-easing-value=".5,0,.35,1">
 
@@ -81,36 +83,49 @@
 
                 <a href="#goals"
                    class="scrollactive-item lg:p-4 py-3 px-0 block border-b-4 transition duration-300 ease-in-out transform hover:scale-110 border-transparent hover:border-yellow-300">
-                    الاهداف</a>
+                    @lang("language.goals")
+
+                </a>
 
                 <a href="#stages"
                    class="scrollactive-item lg:p-4 py-3 px-0 block border-b-4 transition duration-300 ease-in-out transform hover:scale-110 border-transparent hover:border-yellow-300">
-                    المراحل</a>
+                    @lang("language.stages")
+                </a>
 
                 <a href="#participation"
                    class="scrollactive-item lg:p-4 py-3 px-0 block border-b-4 transition duration-300 ease-in-out transform hover:scale-110 border-transparent hover:border-yellow-300">
-                    شروط الاشتراك</a>
+                    @lang("language.conditions")
+                </a>
 
                 <a href="#organizers"
                    class="collective-item lg:p-4 py-3 px-0 block border-b-4 transition duration-300 ease-in-out transform hover:scale-110 border-transparent hover:border-yellow-300">
-                    المنظمون
+                    @lang("language.organizers")
+
                 </a>
 
 
                 <a href="#partners"
                    class="scrollactive-item lg:p-4 py-3 px-0 block border-b-4 transition duration-300 ease-in-out transform hover:scale-110 border-transparent hover:border-yellow-300">
-                    الشركاء</a>
+                    @lang("language.partners")
+                </a>
 
                 <a href="#contact"
-                   class="scrollactive-item lg:p-4 py-3 px-0 block border-b-4 transition duration-300 ease-in-out transform hover:scale-110 border-transparent hover:border-yellow-300">تواصل
-                    معنا</a>
+                   class="scrollactive-item lg:p-4 py-3 px-0 block border-b-4 transition duration-300 ease-in-out transform hover:scale-110 border-transparent hover:border-yellow-300">
+                    @lang("language.contact_us")
+                </a>
 
             </scrollactive>
-            {{--        <a href="#"--}}
-            {{--           class="lg:ml-4 flex items-center justify-start lg:mb-0 mb-4 pointer-cursor text-yellow-400 text-2xl">--}}
-            {{--            ٢٠١٩ </a>--}}
+
+            <div @click="test"
+                 class="flex justify-start lg:flex-row-reverse flex-row items-center cursor-pointer transform hover:scale-110 transition duration-300 ease-in-out pt-3">
+                <img class="w-3/12" src="atoe.png" alt="">
+                <h1 class="w-9/12 text-xl text-gray-900 items-center">
+                    @lang("language.language")
+                </h1>
+            </div>
 
         </div>
+
 
     </header>
 
@@ -146,7 +161,7 @@
 
     {{--footer--}}
     <div id="partners" class="bg-yellow-300 w-full items-center p-10 mt-20">
-        كأس العرب 2021
+        @lang("language.footer")
     </div>
 
 </div>
@@ -154,7 +169,13 @@
 <script src="js/app.js"></script>
 <script>
     let vue = new Vue({
-        el: "#app"
+        el: "#app",
+        data: {},
+        methods: {
+            test() {
+                location.href = '/?language=@lang("language.lang_code")'
+            }
+        }
     })
 </script>
 </body>

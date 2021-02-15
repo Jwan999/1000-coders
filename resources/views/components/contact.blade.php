@@ -4,29 +4,44 @@
     <div class="lg:w-5/12 w-full lg:mt-0 mt-14">
         <img class="lg:hidden block lg:-mr-8 -mr-2" src="email.png" alt="">
 
-        <h1 class="lg:text-6xl text-5xl text-gray-900 mt-12 lg:mt-0">
-            تواصل معنا </h1>
-        <div class="lg:w-full mt-3 w-10/12">
-            <img src="titlebg.png" alt="">
+        <div class="flex">
+            <h1 class="lg:text-6xl text-5xl text-gray-900 ">
+                @lang('language.contact_us')
+                <svg viewBox="0 0 430 11" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                       stroke-linecap="round">
+                        <g id="Group-12" transform="translate(5.332587, 4.454647)" stroke-width="9.48488242">
+                            <line x1="261.06439" y1="1.04535274" x2="418.805711" y2="1.47424412" id="Line"
+                                  stroke="#49C6F3"
+                                  transform="translate(340.115901, 1.000000) scale(-1, 1) translate(-340.115901, -1.000000) "></line>
+                            <line x1="161.610862" y1="1.47424412" x2="238.105823" y2="1.04535274" id="Line"
+                                  stroke="#F071A8"
+                                  transform="translate(199.636618, 1.000000) scale(-1, 1) translate(-199.636618, -1.000000) "></line>
+                            <line x1="0.474244121" y1="1.47424412" x2="137.832587" y2="1.04535274" id="Line"
+                                  stroke="#FDDE40"
+                                  transform="translate(69.000000, 1.000000) scale(-1, 1) translate(-69.000000, -1.000000) "></line>
+                        </g>
+                    </g>
+                </svg>
+            </h1>
         </div>
-        <p class="text-gray-700 text-lg mt-6">
-            لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكيج أليايت,سيت دو أيوسمود تيمبور
-            أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا
-        </p>
+
         <div class="flex flex-col mt-10">
             <input name="name" type="text"
                    class="bg-gray-200 border border-gray-300 focus:border-blue-400 focus:bg-gray-100 text-lg py-3 px-4 rounded-xl outline-none"
-                   placeholder="الاسم">
+                   placeholder="@lang("language.form_name")">
             <input name="email" type="email"
                    class="mt-6 bg-gray-200 border border-gray-300 focus:border-blue-400 focus:bg-gray-100 text-lg py-3 px-4 rounded-xl outline-none"
-                   placeholder="العنوان البريدي">
+                   placeholder="@lang("language.form_email")">
             <input name="message" textarea
                    class="mt-6 bg-gray-200 border border-gray-300 focus:border-blue-400 focus:bg-gray-100 text-lg py-3 px-4 rounded-xl outline-none"
-                   placeholder="رسالة">
+                   placeholder="@lang("language.form_message")">
             <div class="4/12">
                 <button
                         class="my-10 outline-none bg-yellow-200 hover:bg-yellow-300 rounded-2xl items-center py-4 px-6 shadow mt-10 transition duration-200 ease-in transform hover:-translate-y-1 hover:scale-110">
-                    ارسال
+                    @lang("language.form_button")
+
                 </button>
             </div>
 

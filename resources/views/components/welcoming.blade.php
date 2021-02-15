@@ -1,21 +1,15 @@
 <div class="flex flex-wrap justify-center lg:justify-between items-center w-full lg:mt-28 mt-4">
     <div class="lg:w-6/12 w-full lg:mt-0 mt-20">
         <h1 class="lg:text-6xl text-5xl text-gray-900">
-            كأس العرب
-            للبرمجة والذكاء الإصطناعي
+            @lang("language.welcoming_title")
+
         </h1>
-        <p class="text-xl tracking-wide text-gray-700 mt-10 w-auto text-justify"> يسعى الماراثون البرمجي بنسخته الجديدة "
-            كأس
-            العرب للبرمجة و الذكاء الإصطناعي "إلى رفع مستوى
-            المهارات البرمجية لجيل الأطفال من عمر 8 إلى 15
-            لمواكبة التطور التكنلوجي في جميع العلوم ويركز
-            الماراثون البرمجي على استغلال الوقت واستثماره
-            بالشكل الصحيح لدي الاطفال في ظل التغيرات الحاصلة
-            في مسار التعليم المستحدتة والتي تعر على العالم في
-            زمن جائحة كورونا. </p>
+        <p class="text-xl tracking-wide text-gray-700 mt-10 w-auto text-justify">
+            @lang("language.welcoming_body")
+        </p>
         <button
                 class="outline-none bg-yellow-200 hover:bg-yellow-300 rounded-2xl items-center py-4 px-6 shadow mt-10 transition duration-200 ease-in transform hover:-translate-y-1 hover:scale-110">
-            ابدأ التسجيل
+           @lang('language.welcoming_start')
         </button>
     </div>
     <div class="lg:ml-8 ml-0 -mt-0 lg:-mt-10 lg:w-4/12 w-10/12">

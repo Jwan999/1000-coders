@@ -13,10 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//Route::get('/', function () {
+//    return view('master');
+//});
+
 Route::get('/', function () {
+    if (request()->has('language')) {
+        session()->put('language', request()->language);
+    }
+    $locale = session()->get("language", "ar");
+    app()->setLocale($locale);
     return view('master');
 });
 
-Route::get('/form', function () {
-    return view('form');
-});
