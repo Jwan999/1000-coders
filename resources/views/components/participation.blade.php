@@ -32,7 +32,7 @@
             <div class="w-12">
                 <img src="age.png" alt="">
             </div>
-            <h1 class="text-green-500 mr-4 mt-3 lg:text-4xl text-3xl">
+            <h1 class="text-green-500 ms-4 mt-3 lg:text-4xl text-3xl">
                 @lang('language.condition_age_title')
             </h1>
         </div>
@@ -47,7 +47,7 @@
             <div class="w-12">
                 <img src="laptop.png" alt="">
             </div>
-            <h1 class="text-green-500 mr-4 mt-2 lg:text-4xl text-3xl">
+            <h1 class="text-green-500 ms-4 mt-2 lg:text-4xl text-3xl">
                 @lang('language.condition_pc_title')
 
             </h1>
@@ -61,7 +61,7 @@
             <div class="w-12">
                 <img src="nation.png" alt="">
             </div>
-            <h1 class="text-green-500 mr-4 mt-2 lg:text-4xl text-3xl">
+            <h1 class="text-green-500 ms-4 mt-2 lg:text-4xl text-3xl">
                 @lang('language.condition_nation_title')
 
             </h1>
@@ -75,7 +75,7 @@
             <div class="w-12">
                 <img src="intrest.png" alt="">
             </div>
-            <h1 class="text-green-500 mr-4 mt-2 lg:text-4xl text-3xl">
+            <h1 class="text-green-500 ms-4 mt-2 lg:text-4xl text-3xl">
                 @lang('language.condition_interest_title')
 
             </h1>
@@ -89,7 +89,7 @@
             <div class="w-12">
                 <img src="lang.png" alt="">
             </div>
-            <h1 class="text-green-500 mr-4 mt-2 lg:text-4xl text-3xl">
+            <h1 class="text-green-500 ms-4 mt-2 lg:text-4xl text-3xl">
                 @lang('language.condition_lang_title')
 
             </h1>

@@ -55,7 +55,7 @@
             <a class="w-1/12" href="#">
                 <img src="robotnarecolor.png" alt="">
             </a>
-            <h1 class="w-10/12 ml-12 lg:ml-0 lg:text-2xl text-xl self-center">
+            <h1 class="w-10/12 ms-10 lg:text-2xl text-xl self-center">
                 @lang("language.contest_name")
             </h1>
         </div>
@@ -117,9 +117,9 @@
             </scrollactive>
 
             <div @click="test"
-                 class="flex justify-start lg:flex-row-reverse flex-row items-center cursor-pointer transform hover:scale-110 transition duration-300 ease-in-out pt-3">
-                <img class="w-3/12" src="atoe.png" alt="">
-                <h1 class="w-9/12 text-xl text-gray-900 items-center">
+                 class="flex lg:ms-28 ms-0 justify-start lg:flex-row-reverse flex-row items-center cursor-pointer transform hover:scale-110 transition duration-300 ease-in-out pt-3">
+                <img class="lg:w-10 w-8" src="atoe.png" alt="">
+                <h1 class="lg:me-6 me-0 ms-6 lg:ms-0 text-xl text-gray-900 items-center">
                     @lang("language.language")
                 </h1>
             </div>
@@ -154,8 +154,10 @@
         </div>
 
     </div>
+
     @include('components/partners')
-    <div class="lg:mx-24 mx-6 z-10">
+
+    <div dir="@lang("language.dir")" class="lg:mx-24 mx-6 z-10">
         @include('components.contact')
     </div>
 

@@ -24,22 +24,22 @@
         </div>
     </div>
 
-    <div class="flex flex-wrap lg:justify-around justify-center mt-10 w-full">
-        <div class="flex flex-wrap lg:w-5/12 w-full bg-white lg:p-6 p-2 shadow rounded-lg items-center">
-            <div class="w-24 content-center lg:w-4/12">
+    <div class="grid lg:grid-cols-2 grid-cols-1 justify-items-center gap-6 mt-10 lg:w-8/12 w-full p-6">
+        <div class="flex flex-wrap justify-center w-full bg-white lg:p-6 p-2 shadow rounded-lg items-center">
+            <div class="w-28 lg:w-4/12">
                 <img src="robotna.png" alt="">
             </div>
-            <p class="text-lg w-full lg:w-8/12 px-8">
+            <p class="text-lg lg:text-start lg:mt-0 mt-2 text-center w-full lg:w-8/12 p-2">
                 لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت
-                لابوري ات دولار ماجنا أليكيوا
+                لابوري ات دولار ماجنا أليكيواgg
             </p>
         </div>
 
-        <div class="flex flex-wrap lg:w-5/12 w-full bg-white p-6 shadow rounded-lg items-center">
+        <div class="flex flex-wrap justify-center w-full bg-white p-6 shadow rounded-lg items-center">
             <div class="w-24 lg:w-3/12">
                 <img src="iotkids.png" alt="">
             </div>
-            <p class="text-lg w-full lg:w-9/12 px-8">
+            <p class="text-lg lg:text-start lg:mt-0 mt-2 text-center w-full lg:w-9/12 p-2">
                 لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينgج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت
                 لابوري ات دولار ماجنا أليكيوا
             </p>
