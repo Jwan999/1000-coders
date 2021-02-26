@@ -30,8 +30,7 @@
                 <img src="robotna.png" alt="">
             </div>
             <p class="text-lg lg:text-start lg:mt-0 mt-2 text-center w-full lg:w-8/12 p-2">
-                لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت
-                لابوري ات دولار ماجنا أليكيواgg
+               @lang("language.robotna")
             </p>
         </div>
 
@@ -40,8 +39,7 @@
                 <img src="iotkids.png" alt="">
             </div>
             <p class="text-lg lg:text-start lg:mt-0 mt-2 text-center w-full lg:w-9/12 p-2">
-                لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينgج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت
-                لابوري ات دولار ماجنا أليكيوا
+                @lang("language.kids")
             </p>
         </div>
 
