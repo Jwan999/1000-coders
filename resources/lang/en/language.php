@@ -3,6 +3,7 @@
 
 return [
     "welcoming_start" => "Register now",
+    "start_date" => "Registration will be open starting from 1/4 and for ten days...",
     "dir" => "ltr",
     "language" => "عربي",
     "lang_code" => "ar",
@@ -14,7 +15,7 @@ return [
     "goals" => "Goals",
     "contest_name" => "Arab Coding Marathon",
     "welcoming_title" => "Arab Coding Marathon for Programming and Artificial Intelligence",
-    "welcoming_body" => "The programmatic marathon, with its new version, the Arab Cup for Programming and Artificial Intelligence seeks to raise the level of programming skills of the generation of children from the age of 8 to 15 to keep pace with technological development in all sciences. To the world in the time of the Corona pandemic.",
+    "welcoming_body" => "The programmatic marathon, with its new version, the Arab Cup for Programming and Artificial Intelligence seeks to raise the level of programming skills for the generation of children from the age of 9 to 16 to keep pace with technological development in all sciences. To the world in the time of the Corona pandemic.",
     "light_goal" => "Shedding light on the distinguished children in the field of programming and artificial intelligence by highlighting them on the media and social media.",
     "file_goal" => "Providing programming training for children in a way that is positively reflected in the development of their imaginations by posing problems and finding solutions.",
     "code_goal" => "Providing useful scientific content in the field of programming and informatics, which provides a supportive means for teaching computer science at the school stage.≈",
@@ -26,7 +27,7 @@ return [
     "stage_three_title" => "Third Stage",
     "stage_three_body" => "Various workshops for five days, then the third test, which is programming projects through visual programming that solve specific problems, and projects are submitted to the jury to choose the best 100 projects.",
     "stage_four_title" => "Fourth Stage",
-    "stage_four_body" => "Advanced courses in programming and artificial intelligence for five days and the start of the final test, which is the solution of 3 problems facing the Arab world through programming and artificial intelligence. After submitting the projects, they are evaluated and 20 winners are selected at the level of the Arab world in a field.",
+    "stage_four_body" => "Advanced courses in programming and artificial intelligence for a period of five days and the start of the final test, which is the solution of 3 problems facing the Arab world through programming and artificial intelligence. After submitting the projects, they are evaluated and 20 winners are selected at the level of the Arab world in a special ceremony.",
     "condition_age_title" => "Age group",
     "condition_age_body" => "9-13 years old \n 14-16 years old.",
     "condition_nation_title" => "Nationality",
@@ -37,7 +38,7 @@ return [
     "condition_pc_body" => "Owns a computer or tablet device at home.",
     "condition_interest_title" => "Interest",
     "condition_interest_body" => "The student should be interested and eager to participate in the competition.",
-    "robotna" => "Robotna, a community project, aims to spread future science and skills of the current century and integrate science, using robotics and artificial intelligence.",
+    "robotna" => "Our Robot is a social company that aims to enhance thinking skills, spread future science and integrate it with academic subjects through training programs using robotics and modern technology.",
     "kids" => "Providing distinguished educational programs for children aged 7-16 years
  Development of children's mental abilities such as concentration, memory, speed and accuracy
  Teaching children computers and training them on how to use information technology in practical life.",

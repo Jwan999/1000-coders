@@ -7,8 +7,13 @@
         <p class="text-xl tracking-wide text-gray-700 mt-10 w-auto text-justify">
             @lang("language.welcoming_body")
         </p>
+        <div>
+            <p class="mt-10 text-2xl text-pink-500">
+                @lang("language.start_date")
+            </p>
+        </div>
         <button disabled
-                class="opacity-60 outline-none bg-yellow-200  rounded-2xl items-center py-4 px-6 shadow mt-10 ">
+                class="opacity-60 outline-none bg-pink-200 text-pink-800 rounded-2xl items-center py-4 px-6 shadow mt-4 ">
 {{--         hover:bg-yellow-300   transition duration-200 ease-in transform hover:-translate-y-1 hover:scale-110--}}
            @lang('language.welcoming_start')
         </button>

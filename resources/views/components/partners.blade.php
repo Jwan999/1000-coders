@@ -24,14 +24,96 @@
         </div>
     </div>
 
-    <div class="flex lg:flex-row flex-col w-full bg-gray-200 p-8 justify-center items-center mt-10">
-        <svg class="w-36" viewBox="0 0 392 326" version="1.1" xmlns="http://www.w3.org/2000/svg"
-             xmlns:xlink="http://www.w3.org/1999/xlink">
-            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round"
-               stroke-linejoin="round">
-                <path d="M285.96544,4 L106.034368,4 C43.314304,4 4,40.762072 4,92.804044 L4,233.19532 C4,285.23761 43.13152,322 106.034368,322 L285.96544,322 C348.86848,322 388,285.23761 388,233.19532 L388,92.804044 C388,40.762072 348.86848,4 285.96544,4 Z"
-                      id="Path" stroke="#323232" stroke-width="7.10900474" fill="#E1E1E1"></path>
-            </g>
-        </svg>
+    <div class="grid lg:grid-cols-3 grid-cols-1 lg:gap-28 gap-20 w-full bg-gray-200 px-14 py-8 items-center mt-10">
+        <div class="flex flex-col justify-center">
+            <div class="flex flex-row w-full justify-center">
+                <img class="w-auto h-56" src="/partners/cg.png" alt="">
+            </div>
+            <p class="text-xl mt-4 text-justify text-gray-700">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet consectetur, consequuntur
+                ducimus illo iste nam natus odio porro quaerat quasi quis saepe tenetur ullam, veniam? Enim itaque
+                quod vel.
+            </p>
+            <div class="flex w-4/12 mt-4 items-center transform hover:scale-110 cursor-pointer">
+                <img class="w-10 -ms-1 me-2" src="facebook.png" alt="">
+                <h1 class="">/facebook</h1>
+            </div>
+        </div>
+
+        <div class="flex flex-col justify-center">
+            <div class="flex flex-row w-full justify-center">
+                <img class="w-auto h-56" src="/partners/creativelearning.png" alt="">
+            </div>
+            <p class="text-xl mt-4 text-justify text-gray-700">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet consectetur, consequuntur
+                ducimus illo iste nam natus odio porro quaerat quasi quis saepe tenetur ullam, veniam? Enim itaque
+                quod vel.
+            </p>
+            <div class="flex w-4/12 mt-4 items-center transform hover:scale-110 cursor-pointer">
+                <img class="w-10 -ms-1 me-2" src="facebook.png" alt="">
+                <h1 class="">/facebook</h1>
+            </div>
+        </div>
+
+        <div class="flex flex-col justify-center">
+            <div class="flex flex-row w-full justify-center">
+                <img class="w-auto h-56" src="/partners/giantrobotics.png" alt="">
+            </div>
+            <p class="text-xl mt-4 text-justify text-gray-700">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet consectetur, consequuntur
+                ducimus illo iste nam natus odio porro quaerat quasi quis saepe tenetur ullam, veniam? Enim itaque
+                quod vel.
+            </p>
+            <div class="flex w-4/12 mt-4 items-center transform hover:scale-110 cursor-pointer">
+                <img class="w-10 -ms-1 me-2" src="facebook.png" alt="">
+                <h1 class="">/facebook</h1>
+            </div>
+        </div>
+
+        <div class="flex flex-col justify-center">
+            <div class="flex flex-row w-full justify-center">
+                <img class="w-auto h-56" src="/partners/juniorrobotics.png" alt="">
+            </div>
+            <p class="text-xl mt-4 text-justify text-gray-700">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet consectetur, consequuntur
+                ducimus illo iste nam natus odio porro quaerat quasi quis saepe tenetur ullam, veniam? Enim itaque
+                quod vel.
+            </p>
+            <div class="flex w-4/12 mt-4 items-center transform hover:scale-110 cursor-pointer">
+                <img class="w-10 -ms-1 me-2" src="facebook.png" alt="">
+                <h1 class="">/facebook</h1>
+            </div>
+        </div>
+
+        <div class="flex flex-col justify-center">
+            <div class="flex flex-row w-full justify-center">
+                <img class="w-auto h-56" src="/partners/multiaid.png" alt="">
+            </div>
+            <p class="text-xl mt-4 text-justify text-gray-700">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet consectetur, consequuntur
+                ducimus illo iste nam natus odio porro quaerat quasi quis saepe tenetur ullam, veniam? Enim itaque
+                quod vel.
+            </p>
+            <div class="flex w-4/12 mt-4 items-center transform hover:scale-110 cursor-pointer">
+                <img class="w-10 -ms-1 me-2" src="facebook.png" alt="">
+                <h1 class="">/facebook</h1>
+            </div>
+        </div>
+
+        <div class="flex flex-col justify-center">
+            <div class="flex flex-row w-full justify-center">
+                <img class="w-auto h-56" src="/partners/steamacademy.png" alt="">
+            </div>
+            <p class="text-xl mt-4 text-justify text-gray-700">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet consectetur, consequuntur
+                ducimus illo iste nam natus odio porro quaerat quasi quis saepe tenetur ullam, veniam? Enim itaque
+                quod vel.
+            </p>
+            <div class="flex w-4/12 mt-4 items-center transform hover:scale-110 cursor-pointer">
+                <img class="w-10 -ms-1 me-2" src="facebook.png" alt="">
+                <h1 class="">/facebook</h1>
+            </div>
+        </div>
+
     </div>
 </div>

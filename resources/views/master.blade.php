@@ -52,7 +52,7 @@
 
     <header class="lg:px-16 px-6 bg-white flex flex-wrap items-center lg:justify-between lg:py-3 py-2">
         <div class="flex-1 lg:flex-none flex justify-between items1-center">
-            <a class="w-1/12" href="#">
+            <a class="lg:w-1/12 w-2/12" href="#">
                 <img src="robotnarecolor.png" alt="">
             </a>
             <h1 class="w-10/12 ms-10 lg:text-2xl text-xl self-center">
@@ -155,14 +155,17 @@
 
     </div>
 
-    @include('components/partners')
+    <div dir="@lang("language.dir")" id="partners">
+        @include('components/partners')
 
-    <div dir="@lang("language.dir")" class="lg:mx-24 mx-6 z-10">
+    </div>
+
+    <div id="contact" dir="@lang("language.dir")" class="lg:mx-24 mx-6 z-10">
         @include('components.contact')
     </div>
 
     {{--footer--}}
-    <div id="partners" class="bg-yellow-300 w-full items-center p-10 mt-20">
+    <div id="footer" class="bg-yellow-300 w-full items-center p-10 mt-20">
         @lang("language.footer")
     </div>
 

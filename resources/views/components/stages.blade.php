@@ -22,27 +22,27 @@
                 </svg>
             </h1>
         </div>
+
         <div class="grid lg:grid-cols-4 grid cols-1 gap-12 mt-10">
-            <div class="w-full items-center">
-                <div class="w-60 mb-8">
-                    <img src="numberone.png" alt="">
+            <div class="flex flex-col w-full items-center">
+                <div class="mb-10">
+                    <img class="w-auto h-44" src="numberone.png" alt="">
                 </div>
 
-                <div class=" mr-0">
+                <div class="">
                     <h1 class="text-3xl">
                         @lang('language.stage_one_title')
                     </h1>
                     <p class="mt-6 text-base tracking-wide text-justify">
                         @lang('language.stage_one_body')
-
                     </p>
                 </div>
             </div>
-            <div class="w-full items-center">
-                <div class="w-60 mb-9">
-                    <img src="numbertwo.png" alt="">
+            <div class="flex flex-col w-full items-center">
+                <div class="mb-10">
+                    <img class="w-auto h-44" src="numbertwo.png" alt="">
                 </div>
-                <div class=" mr-0">
+                <div class="">
                     <h1 class="text-3xl">
                         @lang('language.stage_two_title')
                     </h1>
@@ -52,12 +52,12 @@
                     </p>
                 </div>
             </div>
-            <div class="w-full items-center">
-                <div class="w-60 mb-5 -mt-7">
-                    <img src="numberthree.png" alt="">
+            <div class="flex flex-col w-full items-center">
+                <div class="mb-10">
+                    <img class="w-auto h-44" src="numberthree.png" alt="">
                 </div>
 
-                <div class=" mr-0">
+                <div class="">
                     <h1 class="text-3xl">
                         @lang('language.stage_three_title')
                     </h1>
@@ -67,18 +67,17 @@
                     </p>
                 </div>
             </div>
-            <div class="w-full items-center">
-                <div class="w-60 mb-10">
-                    <img src="numberfour.png" alt="">
+            <div class="flex flex-col w-full items-center">
+                <div class="mb-10">
+                    <img class="w-auto h-44" src="numberfour.png" alt="">
                 </div>
 
-                <div class="lmr-0">
+                <div class="">
                     <h1 class="text-3xl">
                         @lang('language.stage_four_title')
                     </h1>
                     <p class="mt-6 text-base tracking-wide text-justify">
                         @lang('language.stage_four_body')
-
                     </p>
                 </div>
             </div>
