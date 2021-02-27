@@ -5,7 +5,7 @@
         <img class="lg:hidden block lg:-mr-8 -mr-2" src="email.png" alt="">
 
         <div class="flex">
-            <h1 class="lg:text-6xl text-5xl text-gray-900 ">
+            <h1 class="lg:text-6xl text-5xl text-gray-900 mt-4 lg:mt-0">
                 @lang('language.contact_us')
                 <svg viewBox="0 0 430 11" version="1.1" xmlns="http://www.w3.org/2000/svg"
                      xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -56,7 +56,7 @@
                     instagram
                 </h1>
             </div>
-            <div class="flex items-center transform cursor-pointer hover:scale-110 mt-6">
+            <div class="flex items-center transform cursor-pointer hover:scale-110 lg:mt-6mt-0">
                 <img class="w-12 me-2" src="facebook.png" alt="">
                 <h1 class="hidden items-center lg:block text-gray-800 text-lg">
                     facebook
