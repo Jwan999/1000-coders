@@ -23,27 +23,8 @@
 </head>
 <body dir="rtl" class="bg-gray-100">
 <div class="flex justify-center items-center w-full">
-    <div class="w-full md:w-5/12 w-8/12 bg-white rounded-xl shadow-lg md:p-8 p-4 mt-40">
-        <h1 class="text-2xl">
-            سجل حسابك لتبدأ بالمسابقة
-        </h1>
-        <div class="">
-            <input type="text"
-                   class="py-3 px-4 rounded-md border border-gray-100 focus:border-yellow-300 shadow bg-gray-100 w-full outline-none mt-6"
-                   placeholder="اسم الطالب الكامل">
-            <input type="text"
-                   class="py-3 px-4 rounded-md border border-gray-100 focus:border-yellow-300 shadow bg-gray-100 w-full outline-none mt-6"
-                   placeholder="اسم الطالب">
-            <input type="text"
-                   class="py-3 px-4 rounded-md border border-gray-100 focus:border-yellow-300 shadow bg-gray-100 w-full outline-none mt-6"
-                   placeholder="اسم الطالب">
-            <div class="flex w-full justify-end">
-                <button class="py-3 px-4 outline-none bg-yellow-400 rounded-lg mt-6">
-                    ارسال
-                </button>
-            </div>
-
-        </div>
+    <div class="w-full lg:w-4/12 w-8/12 bg-white rounded-xl shadow-lg lg:p-8 p-4 mt-40">
+        @include('auth/login')
 
     </div>
 </div>

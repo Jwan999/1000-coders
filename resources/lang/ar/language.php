@@ -63,6 +63,7 @@ return [
     "form_message" => "رسالة",
     "form_button" => "ارسال",
     "footer" => "كأس العرب 2021",
-
-
+    "email" => "البريد الالكتروني",
+    "password" => "كلمة السر",
+    "login" => "تسجيل"
 ];

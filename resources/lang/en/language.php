@@ -63,6 +63,8 @@ The most important prizes since its establishment: 36 local, Arab and internatio
     "form_message" => "Message",
     "form_button" => "Submit",
     "footer" => "Arab Coding Marathon 2021",
-
+    "email" => "Email Address",
+    "password" => "Password",
+    "login" => "Login"
 
 ];

@@ -2,8 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\MailController;
-use App\Mail\ContactMail;
+use App\Http\Controllers\EmailController;
+use App\Http\Controllers\Auth\LoginController;
+
 use \Illuminate\Support\Facades\Mail;
 
 /*
@@ -30,9 +31,13 @@ Route::get('/', function () {
     return view('master');
 });
 
-Route::get('/emails', function () {
+Route::get('/emails', [EmailController::class, 'index'])->middleware('auth');
 
-  return view('emails');
-});
+Route::post('/emails', [EmailController::class, 'store']);
 
+
+Route::get('/logout', [LoginController::class,'logout']);
+
+
+Auth::routes();
 
