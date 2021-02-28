@@ -38,10 +38,26 @@ return [
     "condition_pc_body" => "Owns a computer or tablet device at home.",
     "condition_interest_title" => "Interest",
     "condition_interest_body" => "The student should be interested and eager to participate in the competition.",
-    "robotna" => "Our Robot is a social company that aims to enhance thinking skills, spread future science and integrate it with academic subjects through training programs using robotics and modern technology.",
+    "robotna" => "Robotna is a social company that aims to enhance thinking skills, spread future science and integrate it with academic subjects through training programs using robotics and modern technology.",
     "kids" => "Providing distinguished educational programs for children aged 7-16 years
  Development of children's mental abilities such as concentration, memory, speed and accuracy
  Teaching children computers and training them on how to use information technology in practical life.",
+    "steampeek" => "Smart Peek Academy teaches young people about robotics, artificial intelligence and advanced programming skills, as well as prepares them to participate strongly in local and international competitions. As a member of the Arab Robotics Association, the Academy is interested in providing distinguished educational content with international standards in the field of STEAM for native speakers of the language. Arabic.",
+    "creativelearning" => "The Creative Education Academy is one of the educational companies that seek to integrate education with modern technology that carries a fundamental message that is summarized by (creative education for a creative generation) and through interactive educational content we seek to reach the child, the family and the trainer all over the world, taking advantage of modern technologies. And the means of social media are making use of it for educational and purposeful purposes",
+    "giantroobots" => "was established in 2018 in Algeria by Professor Tariq Ahsen Gaballah, an educational robot trainer certified by the Arab Robotics Association (Jordan 2018) and an international referee approved by the Arab Robotics Association (Jordan 2018) represented by the World Robot Olympiad in Algeria and the exclusive organizer of the Algerian championship The representative of the Arab Robotics Association in Algeria and the exclusive organizer of the Algerian Championship qualifying for the Arab Robot Championship is the exclusive community partner in Algeria for the Arab Cup for Programming for Children and Adolescents, in addition to the wide spread at the level of Algeria and representatives from the regions in the East, the Middle, the West and the South. The system is also keen to organize camps and Courses and workshops all over the national territory, and it has several trainers involved under its banner.",
+    "cg" => "An educational development project that was launched in 2016 in Lattakia - Syria with the goal of
+Rehabilitation of youth, teens and children in the fields of electronics and control
+Automated programming, artificial intelligence, and contribution to preparing an innovative generation
+A creator qualified with the most important skills of the twenty-first century through a series
+Of practical training workshops and providing information in Arabic about
+Through a rich and reliable website in these areas under the supervision of a team
+A work of 30 people who are highly qualified engineers and experts
+And those who are passionate about community development.",
+    "maps" => "Maps was born in early 2013 with three volunteers, while today it has more than 300 volunteers. Maps provides basic, creative, professional, and university education, capacity building, and education specific to empowering women and families, in addition to its health, humanitarian and relief services. Maps organized the Robogy Championship, the largest robot tournament for Syrian refugees around the world, and provided training services to many Syrian refugees across the world.
+The most important prizes since its establishment: 36 local, Arab and international awards and championships in the field of robotics and artificial intelligence, the most important of which is the World Championship in Dubai, which was achieved by the Al-Amal Refugee Team. The American organization, while the international organization \"First global\" classified the team as representing about 80 million refugees around the world.",
+    "juniorrobotics" => "",
+    "juniorinnovators" => "The Young Innovators Team is a Sudanese initiative concerned and concerned with the education of children in electronics, software and electronic projects, including training courses, workshops and competitions to enhance the role of children’s education in Sudan.",
+
     "form_name" => "Full Name",
     "form_email" => "Email Address",
     "form_message" => "Message",

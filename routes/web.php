@@ -30,16 +30,9 @@ Route::get('/', function () {
     return view('master');
 });
 
-Route::get('/email', function () {
+Route::get('/emails', function () {
 
-    $details = [
-        'title' => 'Mail from ItSolutionStuff.com',
-        'body' => 'This is for testing email using smtp'
-    ];
-
-    Mail::to('jwanaalfatla1999@gmail.com')->send(new \App\Mail\ContactMail($details));
-
-    dd("Email is Sent.");
+  return view('emails');
 });
 
 
