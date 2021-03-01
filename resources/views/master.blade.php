@@ -16,7 +16,6 @@
     <style>
         body {
             font-family: 'Tajawal', sans-serif;
-
         }
 
         #menu-toggle:checked + #menu {
@@ -98,7 +97,7 @@
                 </a>
 
                 <a href="#organizers"
-                   class="collective-item lg:p-4 py-3 px-0 block border-b-4 transition duration-300 ease-in-out transform hover:scale-110 border-transparent hover:border-yellow-300">
+                   class="scrollactive-item lg:p-4 py-3 px-0 block border-b-4 transition duration-300 ease-in-out transform hover:scale-110 border-transparent hover:border-yellow-300">
                     @lang("language.organizers")
 
                 </a>
@@ -116,7 +115,7 @@
 
             </scrollactive>
 
-            <div @click="test"
+            <div
                  class="flex lg:ms-28 ms-0 justify-start lg:flex-row-reverse flex-row items-center cursor-pointer transform hover:scale-110 transition duration-300 ease-in-out pt-3">
                 <img class="lg:w-10 w-8" src="atoe.png" alt="">
                 <h1 class="lg:me-6 me-0 ms-6 lg:ms-0 text-xl text-gray-900 items-center">
