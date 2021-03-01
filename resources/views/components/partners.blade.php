@@ -24,7 +24,7 @@
         </div>
     </div>
 
-    <div class="grid lg:grid-cols-3 grid-cols-1 lg:gap-28 gap-20 items-start w-full bg-gray-200 lg:px-14 px-4 py-8 mt-10">
+    <div class="grid lg:grid-cols-3 grid-cols-1 lg:gap-14 gap-16 items-start w-full bg-gray-200 lg:px-14 px-4 py-8 mt-10">
         <div class="flex flex-col justify-center">
             <div class="flex flex-row w-full justify-center">
                 <img class="w-auto h-full" src="/partners/multiaid.png" alt="">
@@ -51,9 +51,27 @@
 
             </p>
             <div class="flex w-4/12 mt-4 items-center transform hover:scale-110 cursor-pointer">
-                <a class="flex flex-row items-center text-blue-400" href="https://www.facebook.com/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9-%D8%A7%D9%84%D8%B9%D9%85%D8%A7%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9-1858589940884127/">
+                <a class="flex flex-row items-center text-blue-400"
+                   href="https://www.facebook.com/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9-%D8%A7%D9%84%D8%B9%D9%85%D8%A7%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9-1858589940884127/">
                     <img class="w-10 -ms-1 me-2" src="facebook.png" alt="">
                     <h1 class="">مؤسسة العمالقة الدولية</h1>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="flex flex-col justify-center">
+            <div class="flex flex-row w-full justify-center">
+                <img class="w-auto h-full" src="/partners/juniorrobotics.png" alt="">
+            </div>
+            <p class="text-lg mt-4 text-justify text-gray-700">
+                @lang("language.juniorrobotics")
+
+            </p>
+            <div class="flex w-4/12 mt-4 items-center transform hover:scale-110 cursor-pointer">
+                <a class="flex flex-row items-center text-blue-400" href="https://facebook.com/JuniorRoboticsLab/">
+                    <img class="w-10 -ms-1 me-2" src="facebook.png" alt="">
+                    <h1 class="">JuniorRoboticsLab</h1>
                 </a>
             </div>
         </div>
@@ -90,22 +108,6 @@
             </div>
         </div>
 
-        <div class="flex flex-col justify-center">
-            <div class="flex flex-row w-full justify-center">
-                <img class="w-auto h-full" src="/partners/juniorteam.png" alt="">
-            </div>
-            <p class="text-lg mt-4 text-justify text-gray-700">
-                @lang("language.juniorinnovators")
-            </p>
-            <div class="flex w-4/12 mt-4 items-center transform hover:scale-110 cursor-pointer">
-                <a class="flex flex-row items-center text-blue-400" href="https://www.facebook.com/Ju.In.Team">
-                    <img class="w-10 -ms-1 me-2" src="facebook.png" alt="">
-                    <h1 class="">Ju.In.Team</h1>
-                </a>
-
-            </div>
-        </div>
-
 
         <div class="flex flex-col justify-center">
             <div class="flex flex-row w-full justify-center">
@@ -124,17 +126,17 @@
 
         <div class="flex flex-col justify-center">
             <div class="flex flex-row w-full justify-center">
-                <img class="w-auto h-full" src="/partners/juniorrobotics.png" alt="">
+                <img class="w-auto h-full" src="/partners/juniorteam.png" alt="">
             </div>
             <p class="text-lg mt-4 text-justify text-gray-700">
-                @lang("language.juniorrobotics")
-
+                @lang("language.juniorinnovators")
             </p>
             <div class="flex w-4/12 mt-4 items-center transform hover:scale-110 cursor-pointer">
-                <a class="flex flex-row items-center text-blue-400" href="https://facebook.com/SmartPeekAcademy">
+                <a class="flex flex-row items-center text-blue-400" href="https://www.facebook.com/Ju.In.Team">
                     <img class="w-10 -ms-1 me-2" src="facebook.png" alt="">
-                    <h1 class="">SmartPeekAcademy</h1>
+                    <h1 class="">Ju.In.Team</h1>
                 </a>
+
             </div>
         </div>
 

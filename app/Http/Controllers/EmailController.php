@@ -47,7 +47,6 @@ class EmailController extends Controller
             "name" => "required",
             "email" => "required",
             "message" => "required",
-
         ]);
 
         Email::create($data);
