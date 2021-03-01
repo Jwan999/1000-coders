@@ -115,7 +115,7 @@
 
             </scrollactive>
 
-            <div
+            <div @click="translate()"
                  class="flex lg:ms-28 ms-0 justify-start lg:flex-row-reverse flex-row items-center cursor-pointer transform hover:scale-110 transition duration-300 ease-in-out pt-3">
                 <img class="lg:w-10 w-8" src="atoe.png" alt="">
                 <h1 class="lg:me-6 me-0 ms-6 lg:ms-0 text-xl text-gray-900 items-center">
@@ -176,7 +176,7 @@
         el: "#app",
         data: {},
         methods: {
-            test() {
+            translate() {
                 location.href = '/?language=@lang("language.lang_code")'
             }
         }
