@@ -50,7 +50,8 @@
 <div dir="@lang("language.dir")" id="app">
 
     <header class="lg:px-16 px-6 bg-white flex flex-wrap items-center lg:justify-between lg:py-3 py-2">
-        <div class="flex-1 lg:flex-none flex justify-between items1-center">
+
+        <div class="flex-1 lg:flex-none md:flex-none flex justify-between items-center">
             <a class="lg:w-1/12 w-2/12" href="#">
                 <img src="robotnarecolor.png" alt="">
             </a>
@@ -67,12 +68,13 @@
             </svg>
 
         </label>
+
         <input class="hidden" type="checkbox" id="menu-toggle"/>
-        <div class="hidden lg:flex lg:items-center lg:justify-around lg:w-auto w-full" id="menu">
+        <div class="hidden lg:flex lg:items-center lg:justify-between lg:w-auto md:w-full sm:w-full w-full" id="menu">
 
             <scrollactive active-class="active"
                           class="lg:flex items-center justify-between text-lg text-gray-700 pt-4"
-                          :offset="200" :duration="800"
+                          :offset="100" :duration="800"
                           bezier-easing-value=".5,0,.35,1">
 
                 {{--            <a href="#vision"--}}
@@ -125,10 +127,8 @@
 
         </div>
 
-
     </header>
 
-    {{--@include('components/navbar')--}}
 
     <div class="lg:mx-24 mx-6 z-10">
 

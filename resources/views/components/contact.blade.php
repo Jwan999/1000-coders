@@ -56,16 +56,21 @@
         <img class="hidden lg:block lg:-mr-8 -mr-2" src="email.png" alt="">
         <div class="flex lg:flex-col flex-row justify-center lg:justify-start mt-10">
             <div class="flex items-center transform cursor-pointer hover:scale-110">
-                <img class="w-12 me-2" src="instagram.png" alt="">
-                <h1 class="hidden lg:block text-gray-800 text-lg">
-                    instagram
-                </h1>
+                <a class="flex flex-row items-center" href="https://www.instagram.com/iotkids/">
+                    <img class="w-12 me-2" src="instagram.png" alt="">
+                    <h1 class="hidden lg:block text-gray-800 text-lg">
+                        instagram
+                    </h1>
+                </a>
+
             </div>
             <div class="flex items-center transform cursor-pointer hover:scale-110 lg:mt-6mt-0">
-                <img class="w-12 me-2" src="facebook.png" alt="">
-                <h1 class="hidden items-center lg:block text-gray-800 text-lg">
-                    facebook
-                </h1>
+                <a class="flex flex-row items-center" href="https://www.facebook.com/IoTKIDS">
+                    <img class="w-12 me-2" src="facebook.png" alt="">
+                    <h1 class="hidden items-center lg:block text-gray-800 text-lg">
+                        facebook
+                    </h1>
+                </a>
             </div>
             {{--            <div class="flex items-center">--}}
             {{--                <svg class="w-14" viewBox="0 0 82 82" version="1.1" xmlns="http://www.w3.org/2000/svg"--}}
