@@ -47,6 +47,15 @@
     </style>
 </head>
 <body class="bg-gray-100 relative">
+
+@if(session('success'))
+    <div v-show="success" class="flex justify-center">
+        <div class="rounded-xl px-5 py-3 bg-pink-200 text-gray-900 text-lg lg:w-4/12 w-8/12 mt-16 fixed z-10 items-center text-right">
+            {{ session()->pull('success')}}
+        </div>
+    </div>
+@endif
+
 <div dir="@lang("language.dir")" id="app">
 
     <header class="lg:px-16 px-6 bg-white flex flex-wrap items-center lg:justify-between lg:py-3 py-2">
@@ -129,7 +138,6 @@
 
     </header>
 
-
     <div class="lg:mx-24 mx-6 z-10">
 
         @include('components.welcoming')
@@ -174,11 +182,16 @@
 <script>
     let vue = new Vue({
         el: "#app",
-        data: {},
+        data: {
+            success: true,
+        },
         methods: {
             translate() {
                 location.href = '/?language=@lang("language.lang_code")'
             }
+        },
+        created() {
+            setTimeout(this.success = false, 3000);
         }
     })
 </script>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Student;
 use Illuminate\Http\Request;
+use mysql_xdevapi\XSession;
 
 class StudentController extends Controller
 {
@@ -45,11 +46,11 @@ class StudentController extends Controller
         ]);
 
 
-        $validator = Student::create($data);;
+        Student::create($data);;
 //        if ($validator->fails()) {
 //            return Redirect::back()->withErrors($validator);
 //        } else {
-        return redirect('/');
+        return redirect('/',)->withSuccess('تم التسجيل بنجاح');
 
 //        }
     }

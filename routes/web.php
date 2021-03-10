@@ -38,10 +38,10 @@ Route::get('/emails', [EmailController::class, 'index'])->middleware('auth');
 Route::post('/emails', [EmailController::class, 'store']);
 
 
-Route::get('/logout', [LoginController::class,'logout']);
+Route::get('/logout', [LoginController::class, 'logout']);
 
-Route::get('/signup', [StudentController::class,'index']);
-Route::post('/signup', [StudentController::class,'store']);
+Route::get('/signup', [StudentController::class, 'index']);
+Route::post('/signup', [StudentController::class, 'store']);
 
 
 Auth::routes();

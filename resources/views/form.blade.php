@@ -67,7 +67,7 @@
                 <select name="country" v-model="selected"
                         class="mt-6 focus:outline-none bg-gray-200 border border-gray-300 focus:border-blue-400 focus:bg-gray-100 text-lg py-3 px-12 rounded-xl outline-none">
 
-                    <option>الأردن</option>
+                    <option @click="code(value)">الأردن</option>
                     <option>الكويت</option>
                     <option>العراق</option>
                     <option>الجزائر</option>
@@ -82,7 +82,6 @@
                     <option>ليبيا</option>
                     <option>فلسطين</option>
                     <option>مصر</option>
-
                     <option>عمان</option>
                     <option>موريتانيا</option>
                     <option>قطر</option>
@@ -121,8 +120,12 @@
             email: null,
             phone: null,
             age: null,
+            country_code: null,
         },
         methods: {
+            code() {
+
+            },
             submit() {
                 axios.post('/signup', {
                     name: this.name,
