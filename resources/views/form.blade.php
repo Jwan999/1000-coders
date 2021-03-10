@@ -81,6 +81,8 @@
                     <option>الأمارات العربية المتحدة</option>
                     <option>ليبيا</option>
                     <option>فلسطين</option>
+                    <option>مصر</option>
+
                     <option>عمان</option>
                     <option>موريتانيا</option>
                     <option>قطر</option>
