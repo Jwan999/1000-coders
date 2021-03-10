@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\EmailController;
+
+use App\Http\Controllers\StudentController;
 use App\Http\Controllers\Auth\LoginController;
 
 use \Illuminate\Support\Facades\Mail;
@@ -37,6 +39,9 @@ Route::post('/emails', [EmailController::class, 'store']);
 
 
 Route::get('/logout', [LoginController::class,'logout']);
+
+Route::get('/signup', [StudentController::class,'index']);
+Route::post('/signup', [StudentController::class,'store']);
 
 
 Auth::routes();

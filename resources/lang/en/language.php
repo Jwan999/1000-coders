@@ -3,7 +3,7 @@
 
 return [
     "welcoming_start" => "Register now",
-    "start_date" => "Registration will be open starting from 1/4 and for ten days...",
+    "start_date" => "You can register now and the test will start in the upcoming month.",
     "dir" => "ltr",
     "language" => "عربي",
     "lang_code" => "ar",

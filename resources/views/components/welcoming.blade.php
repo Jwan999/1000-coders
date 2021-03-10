@@ -12,11 +12,15 @@
                 @lang("language.start_date")
             </p>
         </div>
-        <button disabled
-                class="opacity-60 outline-none bg-pink-200 text-pink-800 rounded-2xl items-center py-4 px-6 shadow mt-4 ">
-{{--         hover:bg-yellow-300   transition duration-200 ease-in transform hover:-translate-y-1 hover:scale-110--}}
-           @lang('language.welcoming_start')
-        </button>
+        <a href="/signup">
+            <button
+                    class="transition duration-200 ease-in transform hover:-translate-y-1 hover:scale-110 py-4 px-6 shadow mt-4 items-center rounded-2xl bg-pink-200 text-pink-800 focus:outline-none">
+                {{--            class="opacity-60 outline-none    "--}}
+                @lang('language.welcoming_start')
+
+            </button>
+        </a>
+
     </div>
     <div class="lg:ml-8 ml-0 -mt-0 lg:-mt-10 lg:w-4/12 w-10/12">
 
