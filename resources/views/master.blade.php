@@ -49,8 +49,8 @@
 <body class="bg-gray-100 relative">
 
 @if(session('success'))
-    <div v-show="success" class="flex justify-center">
-        <div class="rounded-xl px-5 py-3 bg-pink-200 text-gray-900 text-lg lg:w-4/12 w-8/12 mt-16 fixed z-10 items-center text-right">
+    <div class="flex justify-center">
+        <div class="rounded-xl px-5 py-3 bg-pink-200 text-gray-900 text-lg lg:w-4/12 w-8/12 mt-16 fixed z-10 items-center text-center">
             {{ session()->pull('success')}}
         </div>
     </div>
@@ -183,15 +183,15 @@
     let vue = new Vue({
         el: "#app",
         data: {
-            success: true,
+            // complete: true,
         },
         methods: {
             translate() {
                 location.href = '/?language=@lang("language.lang_code")'
             }
         },
-        created() {
-            setTimeout(this.success = false, 3000);
+        mounted() {
+            // setTimeout(this.done = false, 10000);
         }
     })
 </script>
