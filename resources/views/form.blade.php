@@ -47,9 +47,13 @@
                 @if($errors->has('email'))
                     <div class="error">{{ $errors->first('email') }}</div>
                 @endif
+                <h1 class="text-base text-gray-700 mt-6 mb-2">
+                    ملاحظة: يرجى اضافة رمز الدولة قبل رقم الهاتف
+                </h1>
                 <input v-model="phone" name="phone" type="number"
-                       class="mt-6 bg-gray-200 border border-gray-300 focus:border-blue-400 focus:bg-gray-100 text-lg py-3 px-4 rounded-xl outline-none"
+                       class=" bg-gray-200 border border-gray-300 focus:border-blue-400 focus:bg-gray-100 text-lg py-3 px-4 rounded-xl outline-none"
                        placeholder="رقم الهاتف">
+
                 @if($errors->has('phone'))
                     <div class="error">{{ $errors->first('phone') }}</div>
                 @endif
