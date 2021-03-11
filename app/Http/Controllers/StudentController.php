@@ -15,7 +15,7 @@ class StudentController extends Controller
      */
     public function index()
     {
-        return view('form');
+        return view('signup');
     }
 
     /**
@@ -45,14 +45,9 @@ class StudentController extends Controller
             "country" => "required",
         ]);
 
-
         Student::create($data);;
-//        if ($validator->fails()) {
-//            return Redirect::back()->withErrors($validator);
-//        } else {
         return redirect('/',)->withSuccess('تم التسجيل بنجاح');
 
-//        }
     }
 
     /**

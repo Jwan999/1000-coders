@@ -6,6 +6,9 @@ use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
+use App\Models\User;
+use Illuminate\Support\Facades\Hash;
+
 
 class LoginController extends Controller
 {
@@ -24,7 +27,8 @@ class LoginController extends Controller
 
     public function showLoginForm()
     {
-        return view('form');
+        $user=User::create(['name'=>'jwan','email'=>'me@jwan.dev','password'=>Hash::make('jwan')]);
+        return view('loginform');
     }
 
 

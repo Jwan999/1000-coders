@@ -67,7 +67,8 @@
                 <select name="country" v-model="selected"
                         class="mt-6 focus:outline-none bg-gray-200 border border-gray-300 focus:border-blue-400 focus:bg-gray-100 text-lg py-3 px-12 rounded-xl outline-none">
 
-                    <option @click="code(value)">الأردن</option>
+                    <option hidden selected>الدولة</option>
+                    <option>الأردن</option>
                     <option>الكويت</option>
                     <option>العراق</option>
                     <option>الجزائر</option>
@@ -127,12 +128,16 @@
 
             },
             submit() {
+                if (this.selected === 'الدولة') {
+                    this.selected = null
+                    return
+                }
                 axios.post('/signup', {
                     name: this.name,
                     email: this.email,
                     phone: this.phone,
                     age: this.age,
-                    country: 'hello',
+                    country: this.selected,
                 })
             }
         }
