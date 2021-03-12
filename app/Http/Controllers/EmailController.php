@@ -16,8 +16,11 @@ class EmailController extends Controller
     public function index()
     {
         if (Auth::check()) {
+            $query = Email::orderByDesc('created_at');
 
-            return view('emails', ['emails' => Email::all()]);
+            $emails = $query->paginate(15);
+//            dd($emails);
+            return view('emails', ['emails' => $emails]);
 
         }
         return Redirect::route('login');

@@ -11,30 +11,75 @@
 </head>
 <body class="bg-gray-200">
 
-<div class="flex w-full justify-center lg:p-4 p-2">
+<div id="app" class="flex w-full justify-center lg:p-4 p-2">
 
     <div class="flex flex-col bg-white lg:w-10/12 w-full rounded-lg shadow-lg p-6 mt-10">
         {{--title--}}
         <div class="flex text-2xl">
             <h1>Emails from Coding Marathon form</h1>
         </div>
+
+        <div class="flex items-center mt-4">
+            <p class="text-gray-400 font-mono text-sm mr-2">
+                Received emails:
+            </p>
+            <p class="text-sm font-mono text-black">
+                {{$emails->total()}}
+            </p>
+        </div>
         {{--page--}}
         <div class="flex flex-wrap justify-between mt-10">
             <div class="flex items-center">
-            <span class="bg-indigo-500 text-white font-mono rounded px-3 py-2 text-sm mr-6">
+            <span class="bg-indigo-500 text-white font-mono rounded px-3 py-2 text-sm mr-6 items-center">
                 Inbox
             </span>
-                <span class="bg-indigo-200 text-indigo-500 font-mono rounded px-3 py-2 text-sm">
-                Archive
-            </span>
+                {{--                <span class="bg-indigo-200 text-indigo-500 font-mono rounded px-3 py-2 text-sm">--}}
+                {{--                Archive--}}
+                {{--            </span>--}}
             </div>
-            <div class="flex items-center lg:mt-0 mt-4">
-                <p class="text-gray-400 text-base mr-2">
-                    Received emails:
+            {{--paginate--}}
+            <div class="flex items-center lg:mt-0">
+                <a href="{{$emails->previousPageUrl()}}">
+                    <div class="bg-indigo-100 rounded px-3 py-2 cursor-pointer">
+                        <svg class="fill-current text-gray-900 w-2" viewBox="0 0 10 16" version="1.1"
+                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" stroke-width="2" fill="none" fill-rule="evenodd"
+                               stroke-linecap="round"
+                               stroke-linejoin="round">
+                                <g id="Artboard" transform="translate(-587.000000, -97.000000)" stroke="#200E32"
+                                   stroke-width="1.5">
+                                    <g id="Arrow---Left-2" transform="translate(588.000000, 98.000000)">
+                                        <polyline id="Path" points="7.5 14 0.5 7 7.5 0"></polyline>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+
+                <p class="text-base font-mono text-black mx-4 items-center">
+                    Page {{$emails->currentPage()}}
                 </p>
-                <p class="text-base font-mono text-black">
-                    {{count($emails)}}
-                </p>
+                <a href="{{$emails->nextPageUrl()}}">
+                    <div class="bg-indigo-100 rounded px-3 py-2 cursor-pointer">
+                        <svg class="fill-current text-gray-900 w-2" viewBox="0 0 10 16" version="1.1"
+                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                            <g id="Page-1" stroke="none" stroke-width="2" fill="none" fill-rule="evenodd"
+                               stroke-linecap="round"
+                               stroke-linejoin="round">
+                                <g id="Artboard" transform="translate(-587.000000, -177.000000)" stroke="#200E32"
+                                   stroke-width="1.5">
+                                    <g id="Arrow---Right-2" transform="translate(588.000000, 178.000000)">
+                                        <polyline id="Path" points="0.5 0 7.5 7 0.5 14"></polyline>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+
+                    </div>
+                </a>
+
             </div>
 
         </div>
@@ -47,6 +92,7 @@
                     <table class="min-w-max w-full table-auto">
                         <thead>
                         <tr class="bg-gray-800 text-gray-100 font-mono text-sm leading-normal">
+                            <th class="py-3 px-6 text-left">ID</th>
                             <th class="py-3 px-6 text-left">Name</th>
                             <th class="py-3 px-6 text-left">Email Address</th>
                             <th class="py-3 px-6 text-left">Subject</th>
@@ -59,6 +105,11 @@
                         @foreach ($emails as $email)
 
                             <tr class="border-b border-gray-200 hover:bg-indigo-100">
+                                <td class="py-3 px-6 text-left whitespace-nowrap">
+                                    <div class="flex items-center">
+                                        {{ $email->id }}
+                                    </div>
+                                </td>
                                 <td class="py-3 px-6 text-left whitespace-nowrap">
                                     <div class="flex items-center">
                                         {{ $email->name }}
@@ -164,5 +215,19 @@
 
 </div>
 
+
+<script src="js/app.js"></script>
+<script>
+    let vue = new Vue({
+        el: '#app',
+        data: {},
+        methods: {
+            // nextPage() {
+            //
+            // }
+        }
+
+    })
+</script>
 </body>
 </html>
