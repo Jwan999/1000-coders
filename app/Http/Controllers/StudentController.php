@@ -5,7 +5,10 @@ namespace App\Http\Controllers;
 use App\Models\Student;
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Http\Request;
-use mysql_xdevapi\XSession;
+use Illuminate\Support\Facades\Auth;
+
+use Illuminate\Support\Facades\Redirect;
+use mysql_xdevapi\Session;
 
 class StudentController extends Controller
 {
@@ -59,7 +62,15 @@ class StudentController extends Controller
      */
     public function show(Student $student)
     {
-        //
+        if (Auth::check()) {
+            $query = Student::orderByDesc('created_at');
+
+            $students = $query->paginate(15);
+//            dd($emails);
+            return view('registers', ['students' => $students]);
+
+        }
+        return Redirect::route('login');
     }
 
     /**
