@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Student;
+use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Http\Request;
 use mysql_xdevapi\XSession;
 
@@ -39,7 +40,7 @@ class StudentController extends Controller
 
         $data = $this->validate($request, [
             "name" => "required",
-            "email" => "required",
+            "email" => "required|email",
             "phone" => "required",
             "age" => "required",
             "country" => "required",

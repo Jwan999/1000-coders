@@ -15,9 +15,8 @@ class EmailController extends Controller
      */
     public function index()
     {
-//        $emails = Email::all();
-//        dd($emails);
         if (Auth::check()) {
+
             return view('emails', ['emails' => Email::all()]);
 
         }
