@@ -30,14 +30,18 @@
         {{--page--}}
         <div class="flex flex-wrap justify-between mt-10">
             <div class="flex items-center">
-            <span class="bg-indigo-500 text-white font-mono rounded px-3 py-2 text-sm mr-6 items-center">
-                Inbox
-            </span>
-                {{--                <span class="bg-indigo-200 text-indigo-500 font-mono rounded px-3 py-2 text-sm">--}}
-                {{--                Archive--}}
+                {{--            <span class="bg-indigo-500 text-white font-mono rounded px-3 py-2 text-sm mr-6 items-center">--}}
+                {{--                Inbox--}}
                 {{--            </span>--}}
+                <a href="/students/export">
+                    <span class="bg-green-300 text-gray-900 font-mono rounded px-3 py-2 text-sm">
+                        Export
+                    </span>
+                </a>
+
             </div>
             {{--paginate--}}
+
             <div class="flex items-center lg:mt-0">
                 <a href="{{$students->previousPageUrl()}}">
                     <div class="bg-indigo-100 rounded px-3 py-2 cursor-pointer">

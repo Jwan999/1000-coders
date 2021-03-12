@@ -8,10 +8,20 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 use Illuminate\Support\Facades\Redirect;
-use mysql_xdevapi\Session;
+use App\Exports\StudentsExport;
+use Maatwebsite\Excel\Facades\Excel;
 
 class StudentController extends Controller
 {
+    public function export()
+    {
+        if (Auth::check()) {
+            return Excel::download(new StudentsExport, 'students.xlsx');
+        }
+        return Redirect::route('login');
+
+    }
+
     /**
      * Display a listing of the resource.
      *
