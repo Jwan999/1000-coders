@@ -48,6 +48,7 @@ Route::get('/signup', [StudentController::class, 'index']);
 Route::post('/signup', [StudentController::class, 'store']);
 
 Route::get('students/export/', [StudentController::class, 'export']);
+Route::get('/registers', [StudentController::class, 'show']);
 
 
 Auth::routes();

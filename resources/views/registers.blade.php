@@ -30,6 +30,14 @@
         {{--page--}}
         <div class="flex flex-wrap justify-between mt-10">
             <div class="flex items-center">
+                <select v-model="selected" @change="sort()"
+                        class="text-gray-900 font-mono rounded px-3 py-2 text-sm w-32 mr-3 border border-gray-200 focus:border-indigo-400 outline-none focus:outline-none">
+                    <option selected hidden value="">Country</option>
+                    <option v-for="country in countries">@{{country.name}}</option>
+
+
+                </select>
+
                 {{--            <span class="bg-indigo-500 text-white font-mono rounded px-3 py-2 text-sm mr-6 items-center">--}}
                 {{--                Inbox--}}
                 {{--            </span>--}}
@@ -38,10 +46,8 @@
                         Export
                     </span>
                 </a>
-
             </div>
             {{--paginate--}}
-
             <div class="flex items-center lg:mt-0">
                 <a href="{{$students->previousPageUrl()}}">
                     <div class="bg-indigo-100 rounded px-3 py-2 cursor-pointer">
@@ -85,11 +91,9 @@
                 </a>
 
             </div>
-
         </div>
-
         {{--table--}}
-        <div class="overflow-x-auto">
+        <div ref="table" class="table overflow-x-auto">
 
             <div class="w-full">
                 <div class="bg-white rounded my-6">
@@ -100,7 +104,6 @@
                             <th class="py-3 px-6 text-left">Full Name</th>
                             <th class="py-3 px-6 text-left">Email Address</th>
                             <th class="py-3 px-6 text-left">Phone</th>
-
                             <th class="py-3 px-6 text-left">Country</th>
                             <th class="py-3 px-6 text-left">Age</th>
                             <th class="py-3 px-6 text-left">Date</th>
@@ -132,18 +135,18 @@
                                     </div>
                                 </td>
                                 <td class="py-3 px-6 text-left">
-                                    <div class="flex items-center justify-center w-28">
+                                    <div class="flex items-center w-28">
                                         {{ $student->country }}
                                     </div>
                                 </td>
                                 <td class="py-3 px-6 text-left">
-                                    <div class="flex items-center justify-center w-28">
+                                    <div class="flex items-center w-28">
                                         {{ $student->age }}
                                     </div>
                                 </td>
                                 <td class="py-3 px-6 text-left">
                                     <div class="flex items-center">
-                                        {{ $student->created_at }}
+                                        {{ date('Y/m/d, g:i A', strtotime($student->created_at)) }}
                                     </div>
                                 </td>
                                 <td class="py-3 px-6 text-left">
@@ -226,16 +229,91 @@
 
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
 <script src="js/app.js"></script>
 <script>
     let vue = new Vue({
         el: '#app',
-        data: {},
+        data: {
+            selected: '',
+            countries: [
+                {
+                    name: 'قطر',
+                    code: '+974'
+                }, {
+                    name: 'البحرين',
+                    code: '+973'
+                }, {
+                    name: 'مصر',
+                    code: '+20'
+                }, {
+                    name: 'فلسطين',
+                    code: '+970'
+                }, {
+                    name: 'السودان',
+                    code: '+249'
+                }, {
+                    name: 'الصومال',
+                    code: '+252'
+                }, {
+                    name: 'السعودية',
+                    code: '+966'
+                }, {
+                    name: 'عمان',
+                    code: '+968'
+                }, {
+                    name: 'سوريا',
+                    code: '+963'
+                }, {
+                    name: 'الجزائر',
+                    code: '+213'
+                }, {
+                    name: 'العراق',
+                    code: '+964'
+                }, {
+                    name: 'جزر القمر',
+                    code: '+269'
+                }, {
+                    name: 'المغرب',
+                    code: '+212'
+                }, {
+                    name: 'الكويت',
+                    code: '+965'
+                }, {
+                    name: 'تونس',
+                    code: '+216'
+                }, {
+                    name: 'موريتانيا',
+                    code: '+222'
+                }, {
+                    name: 'اليمن',
+                    code: '+967'
+                }, {
+                    name: 'الإمارات',
+                    code: '+971'
+                }, {
+                    name: 'الاردن',
+                    code: '+962'
+                }, {
+                    name: 'ليبيا',
+                    code: '+218'
+                }, {
+                    name: 'لبنان',
+                    code: '+961'
+                }, {
+                    name: 'جيبوتي',
+                    code: '+253'
+                },
+            ]
+        },
         methods: {
-            // nextPage() {
-            //
-            // }
+            sort() {
+                axios.get(`/registers?country=decodeURI(${this.selected})`).then(
+                    window.location.href = `/registers?country=${this.selected}`
+                )
+            }
+
         }
 
     })

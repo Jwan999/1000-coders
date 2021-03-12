@@ -72,23 +72,34 @@ class StudentController extends Controller
 
     }
 
+    public function sort(Request $request)
+    {
+//        dd($request);
+
+//        $students = Student::get();
+
+    }
+
     /**
      * Display the specified resource.
      *
      * @param \App\Models\Student $student
      * @return \Illuminate\Http\Response
      */
-    public function show(Student $student)
+    public function show(Student $student, Request $request)
     {
-        if (Auth::check()) {
-            $query = Student::orderByDesc('created_at');
-
-            $students = $query->paginate(15);
-//            dd($emails);
-            return view('registers', ['students' => $students]);
-
+        if (!Auth::check()) {
+            return Redirect::route('login');
         }
-        return Redirect::route('login');
+
+        $query = Student::orderByDesc('created_at');
+
+        if ($request->has('country')) {
+            $students = $query->where('country', $request->country);
+        }
+        $students = $query->paginate(15);
+        return view('/registers', ['students' => $students]);
+
     }
 
     /**
