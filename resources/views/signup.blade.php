@@ -99,9 +99,9 @@
                 @endif
 
                 <div class="flex w-full flex-row-reverse mt-6">
-                    <input dir="ltr" ref="prefix" readonly
+                    <input dir="ltr" ref="prefix" readonly name="code"
                            class="w-2/12 bg-gray-200 border border-gray-300 focus:outline-none text-lg py-3 px-1 rounded-l-xl outline-none text-center items-center">
-                    <input v-model="phone" name="phone" type="number"
+                    <input v-model="phone" type="text" name="phone"
                            class="w-10/12 bg-gray-200 border border-gray-300 focus:border-blue-400 focus:bg-gray-100 text-lg py-3 px-4 rounded-r-xl outline-none"
                            placeholder="رقم الهاتف">
                 </div>
@@ -141,6 +141,7 @@
             name: null,
             email: null,
             phone: null,
+            full_phone: null,
             age: null,
             code: '+000',
             countries: [
@@ -219,19 +220,18 @@
                     this.selected = null
                     return
                 }
-                axios.post('/signup', {
-                    name: this.name,
-                    email: this.email,
-                    phone: this.code + this.phone,
-                    age: this.age,
-                    country: this.selected,
-                })
+                this.$refs['phone'].value = this.full_phone
             }
         }, watch: {
+            phone() {
+                this.full_phone = this.code + this.phone
+
+            },
             // whenever question changes, this function will run
             selected(oldVal, NewVal) {
                 this.code = this.countries.find(country => country.name === this.selected).code
                 this.$refs['prefix'].value = this.code
+
             }
         }, mounted() {
             this.$refs['prefix'].value = this.code

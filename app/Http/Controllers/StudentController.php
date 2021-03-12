@@ -40,14 +40,22 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
+//        dd($request->code);
 
-        $data = $this->validate($request, [
+        $rules = $this->validate($request, [
             "name" => "required",
             "email" => "required|email",
             "phone" => "required",
             "age" => "required",
             "country" => "required",
         ]);
+        $data = [
+            'name' => $request->name,
+            'email' => $request->email,
+            'phone' => $request->code . $request->phone,
+            'age' => $request->age,
+            'country' => $request->country,
+        ];
 
         Student::create($data);;
         return redirect('/',)->withSuccess('تم التسجيل بنجاح');
