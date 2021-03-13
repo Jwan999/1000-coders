@@ -154,7 +154,7 @@ return [
     |--------------------------------------------------------------------------
     | Extension detector
     |--------------------------------------------------------------------------
-    |
+
     | Configure here which writer/reader type should be used when the package
     | needs to guess the correct type based on the extension alone.
     |
