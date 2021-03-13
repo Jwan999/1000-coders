@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Student;
-use App\Charts\StudentChart;
 
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Http\Request;
