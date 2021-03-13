@@ -3,9 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Models\Student;
+use App\Charts\StudentChart;
+
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use LaravelDaily\LaravelCharts\Classes\LaravelChart;
 
 use Illuminate\Support\Facades\Redirect;
 use App\Exports\StudentsExport;
@@ -72,12 +75,13 @@ class StudentController extends Controller
 
     }
 
-    public function sort(Request $request)
+    public function charts(Request $request)
     {
-//        dd($request);
-
-//        $students = Student::get();
-
+        if (!Auth::check()) {
+            return Redirect::route('login');
+        }
+        $students = Student::all()->groupBy('country')->map->count();
+        return view('statistics',['students'=>$students]);
     }
 
     /**
