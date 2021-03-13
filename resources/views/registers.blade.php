@@ -32,9 +32,12 @@
             <div class="flex items-center">
                 <select v-model="selected" @change="sort()"
                         class="text-gray-900 font-mono rounded px-3 py-2 text-sm w-32 mr-3 border border-gray-200 focus:border-indigo-400 outline-none focus:outline-none">
-                    <option selected hidden value="">Country</option>
-                    <option v-for="country in countries">@{{country.name}}</option>
 
+                    <option selected hidden value="">Country</option>
+
+                    <a href=`/registers?country=decodeURI(${this.selected})`>
+                        <option v-for="country in countries">@{{country.name}}</option>
+                    </a>
 
                 </select>
 
@@ -93,7 +96,7 @@
             </div>
         </div>
         {{--table--}}
-        <div ref="table" class="table overflow-x-auto">
+        <div class="overflow-x-auto">
 
             <div class="w-full">
                 <div class="bg-white rounded my-6">
