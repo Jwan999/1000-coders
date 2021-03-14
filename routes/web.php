@@ -42,11 +42,12 @@ Route::group(['prefix' => 'dashboard', 'middleware' => ['auth']], function () {
     Route::get('/registers', [StudentController::class, 'registersPage']);
     Route::get('/api/registers', [StudentController::class, 'show']);
 
-//    Route::get('/students/export', [StudentController::class, 'export']);
+    Route::get('/students/export', [StudentController::class, 'export']);
 
     Route::get('/charts', [StudentController::class, 'charts']);
 
 });
+
 
 
 Route::get('/signup', [StudentController::class, 'index']);
