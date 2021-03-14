@@ -49,7 +49,6 @@ Route::group(['prefix' => 'dashboard', 'middleware' => ['auth']], function () {
 });
 
 
-
 Route::get('/signup', [StudentController::class, 'index']);
 Route::post('/signup', [StudentController::class, 'store']);
 
