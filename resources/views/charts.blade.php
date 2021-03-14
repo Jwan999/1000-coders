@@ -6,17 +6,16 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/app.css">
-    <title>Chart</title>
+    <title>Charts</title>
 </head>
-<body class="bg-gray-200">
+<body class="bg-dark">
 <div id="app">
-    <apexchart type="bar" height="350" :options="options" :series="series"></apexchart>
+    <div class="bg-white rounded-lg p-4">
+        <apexchart type="bar" height="350" :options="options" :series="series"></apexchart>
+
+    </div>
 
 </div>
-
-{{--{!! $chart->renderHtml() !!}--}}
-{{--{!! $chart->renderChartJsLibrary() !!}--}}
-{{--{!! $chart->renderJs() !!}--}}
 
 
 <script src="js/app.js"></script>

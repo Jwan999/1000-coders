@@ -39,8 +39,8 @@ Route::post('/emails', [EmailController::class, 'store']);
 Route::get('/logout', [LoginController::class, 'logout']);
 Route::get('/login', [LoginController::class, 'login'])->name('login');
 
-Route::get('/registers', [StudentController::class, 'show']);
-Route::get('/registers', [StudentController::class, 'show']);
+Route::get('/registers', [StudentController::class, 'registersPage']);
+Route::get('api/registers', [StudentController::class, 'show']);
 
 Route::get('/signup', [StudentController::class, 'index']);
 Route::post('/signup', [StudentController::class, 'store']);

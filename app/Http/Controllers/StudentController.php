@@ -3,12 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Models\Student;
+use Illuminate\Support\Facades\Response;
 
+use Carbon\Carbon;
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use LaravelDaily\LaravelCharts\Classes\LaravelChart;
-
 use Illuminate\Support\Facades\Redirect;
 use App\Exports\StudentsExport;
 use Maatwebsite\Excel\Facades\Excel;
@@ -18,7 +19,7 @@ class StudentController extends Controller
     public function export()
     {
         if (Auth::check()) {
-            return Excel::download(new StudentsExport, 'students.xlsx');
+            return Excel::download(new StudentsExport, 'coding_marathon_registers.xlsx');
         }
         return Redirect::route('login');
 
@@ -80,7 +81,7 @@ class StudentController extends Controller
             return Redirect::route('login');
         }
         $students = Student::all()->groupBy('country')->map->count();
-        return view('statistics',['students'=>$students]);
+        return view('charts', ['students' => $students]);
     }
 
     /**
@@ -89,19 +90,32 @@ class StudentController extends Controller
      * @param \App\Models\Student $student
      * @return \Illuminate\Http\Response
      */
-    public function show(Student $student, Request $request)
+
+    public function registersPage()
     {
         if (!Auth::check()) {
             return Redirect::route('login');
         }
+        return view('registers');
+    }
+
+    public function show(Student $student, Request $request)
+    {
 
         $query = Student::orderByDesc('created_at');
 
         if ($request->has('country')) {
+//            dd($request);
             $students = $query->where('country', $request->country);
         }
         $students = $query->paginate(15);
-        return view('/registers', ['students' => $students]);
+        $response = [
+            "success" => true,
+            "students" => $students,
+        ];
+
+        return Response::json($response);
+//        return view('/registers', ['students' => $students]);
 
     }
 
