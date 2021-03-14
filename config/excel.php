@@ -160,10 +160,10 @@ return [
     |
     */
     'extension_detector' => [
-        'xlsx'     => Excel::XLSX,
-        'xlsm'     => Excel::XLSX,
-        'xltx'     => Excel::XLSX,
-        'xltm'     => Excel::XLSX,
+        'xlsx'     => Excel::Xlsx,
+        'xlsm'     => Excel::Xlsx,
+        'xltx'     => Excel::Xlsx,
+        'xltm'     => Excel::Xlsx,
         'xls'      => Excel::XLS,
         'xlt'      => Excel::XLS,
         'ods'      => Excel::ODS,
