@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/app.css">
     <meta name="yandex-verification" content="6e72ede6ef2d9146"/>
+{{--    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">--}}
+{{--    <link href="{{ asset('css/app.css') }}" rel="stylesheet">--}}
 
     <link rel="icon" href="robotnarecolor.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
