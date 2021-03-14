@@ -99,7 +99,7 @@
                 @endif
 
                 <div class="flex w-full flex-row-reverse mt-6">
-                    <input dir="ltr" ref="prefix" readonly name="code"
+                    <input dir="ltr" ref="prefix" readonly name="code" placeholder="+000"
                            class="w-2/12 bg-gray-200 border border-gray-300 focus:outline-none text-lg py-3 px-1 rounded-l-xl outline-none text-center items-center">
                     <input v-model="phone" type="text" name="phone"
                            class="w-10/12 bg-gray-200 border border-gray-300 focus:border-blue-400 focus:bg-gray-100 text-lg py-3 px-4 rounded-r-xl outline-none"
@@ -143,7 +143,7 @@
             phone: null,
             full_phone: null,
             age: null,
-            code: '+000',
+            code: null,
             countries: [
                 {
                     name: 'قطر',
@@ -224,7 +224,21 @@
             }
         }, watch: {
             phone() {
-                this.full_phone = this.code + this.phone
+                // convert persian digits [۰۱۲۳۴۵۶۷۸۹]
+                var e = '۰'.charCodeAt(0);
+                this.phone = this.phone.replace(/[۰-۹]/g, function (t) {
+                    return t.charCodeAt(0) - e;
+                });
+
+                // convert arabic indic digits [٠١٢٣٤٥٦٧٨٩]
+                e = '٠'.charCodeAt(0);
+                this.phone = this.phone.replace(/[٠-٩]/g, function (t) {
+                    return t.charCodeAt(0) - e;
+                });
+                if (this.code) {
+                    this.full_phone = this.code + this.phone
+                    console.log(this.full_phone)
+                }
 
             },
             // whenever question changes, this function will run
