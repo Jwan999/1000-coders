@@ -1,46 +1,48 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/app.css">
+@extends('dashboard.master')
+@section('content')
+    <div id="app" class="flex w-full justify-center lg:p-4 p-2">
 
-    <title>Emails</title>
-</head>
-<body class="bg-gray-200">
-
-<div id="app" class="flex w-full justify-center lg:p-4 p-2">
-
-    <div class="flex flex-col bg-white lg:w-10/12 w-full rounded-lg shadow-lg p-6 mt-10">
-        {{--title--}}
-        <div class="flex text-2xl">
-            <h1>Emails from Coding Marathon form</h1>
-        </div>
-
-        <div class="flex items-center mt-4">
-            <p class="text-gray-400 font-mono text-sm mr-2">
-                Received emails:
-            </p>
-            <p class="text-sm font-mono text-black">
-                {{$emails->total()}}
-            </p>
-        </div>
-        {{--page--}}
-        <div class="flex flex-wrap justify-between mt-10">
-            <div class="flex items-center">
-            <span class="bg-indigo-500 text-white font-mono rounded px-3 py-2 text-sm mr-6 items-center">
-                Inbox
-            </span>
-                {{--                <span class="bg-indigo-200 text-indigo-500 font-mono rounded px-3 py-2 text-sm">--}}
-                {{--                Archive--}}
-                {{--            </span>--}}
+        <div class="flex flex-col bg-white lg:w-10/12 w-full rounded-lg shadow-lg p-6 mt-10">
+            {{--title--}}
+            <div class="flex text-2xl">
+                <h1>Registers from the website</h1>
             </div>
-            {{--paginate--}}
-            <div class="flex items-center lg:mt-0">
-                <a href="{{$emails->previousPageUrl()}}">
-                    <div class="bg-indigo-100 rounded px-3 py-2 cursor-pointer">
+
+            <div class="flex items-center mt-4">
+                <p class="text-gray-400 font-mono text-sm mr-2">
+                    Number of registers:
+                </p>
+                <p class="text-sm font-mono text-black">
+                    @{{total}}
+                </p>
+            </div>
+            {{--page--}}
+            <div class="flex flex-wrap justify-between mt-10">
+                <div class="flex items-center">
+                    <select v-model="selected" @change="getData()"
+                            class="text-gray-900 font-mono rounded px-3 py-2 text-sm w-32 mr-3 border border-gray-200 focus:border-indigo-400 outline-none focus:outline-none">
+
+                        <option selected hidden value="">Country</option>
+
+
+                        <option v-for="country in countries">@{{country.name}}</option>
+
+
+                    </select>
+
+                    {{--            <span class="bg-indigo-500 text-white font-mono rounded px-3 py-2 text-sm mr-6 items-center">--}}
+                    {{--                Inbox--}}
+                    {{--            </span>--}}
+                    <a href="students/export">
+                    <span class="bg-green-300 text-gray-900 font-mono rounded px-3 py-2 text-sm">
+                        Export
+                    </span>
+                    </a>
+                </div>
+                {{--paginate--}}
+                <div class="flex items-center lg:mt-0">
+
+                    <div @click="paginatePrevious()" class="bg-indigo-100 rounded px-3 py-2 cursor-pointer">
                         <svg class="fill-current text-gray-900 w-2" viewBox="0 0 10 16" version="1.1"
                              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <g id="Page-1" stroke="none" stroke-width="2" fill="none" fill-rule="evenodd"
@@ -55,13 +57,13 @@
                             </g>
                         </svg>
                     </div>
-                </a>
 
-                <p class="text-base font-mono text-black mx-4 items-center">
-                    Page {{$emails->currentPage()}}
-                </p>
-                <a href="{{$emails->nextPageUrl()}}">
-                    <div class="bg-indigo-100 rounded px-3 py-2 cursor-pointer">
+
+                    <p class="text-base font-mono text-black mx-4 items-center">
+                        Page @{{current_page}}
+                    </p>
+
+                    <div @click="paginateNext()" class="bg-indigo-100 rounded px-3 py-2 cursor-pointer">
                         <svg class="fill-current text-gray-900 w-2" viewBox="0 0 10 16" version="1.1"
                              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
@@ -78,61 +80,66 @@
                         </svg>
 
                     </div>
-                </a>
 
+
+                </div>
             </div>
+            {{--table--}}
+            <div class="overflow-x-auto">
 
-        </div>
+                <div class="w-full">
+                    <div class="bg-white rounded my-6">
+                        <table class="min-w-max w-full table-auto">
+                            <thead>
+                            <tr class="bg-gray-800 text-gray-100 font-mono text-sm leading-normal">
+                                <th class="py-3 px-6 text-left">ID</th>
+                                <th class="py-3 px-6 text-left">Full Name</th>
+                                <th class="py-3 px-6 text-left">Email Address</th>
+                                <th class="py-3 px-6 text-left">Phone</th>
+                                <th class="py-3 px-6 text-left">Country</th>
+                                <th class="py-3 px-6 text-left">Age</th>
+                                <th class="py-3 px-6 text-left">Date</th>
+                                <th class="py-3 px-6 text-left">Actions</th>
+                            </tr>
+                            </thead>
+                            <tbody class="text-gray-600 text-sm font-light">
+                            {{--                        @foreach ($students as $student)--}}
 
-        {{--table--}}
-        <div class="overflow-x-auto">
-
-            <div class="w-full">
-                <div class="bg-white rounded my-6">
-                    <table class="min-w-max w-full table-auto">
-                        <thead>
-                        <tr class="bg-gray-800 text-gray-100 font-mono text-sm leading-normal">
-                            <th class="py-3 px-6 text-left">ID</th>
-                            <th class="py-3 px-6 text-left">Name</th>
-                            <th class="py-3 px-6 text-left">Email Address</th>
-                            <th class="py-3 px-6 text-left">Subject</th>
-                            <th class="py-3 px-6 text-left">Message</th>
-                            <th class="py-3 px-6 text-left">Date</th>
-                            <th class="py-3 px-6 text-left">Actions</th>
-                        </tr>
-                        </thead>
-                        <tbody class="text-gray-600 text-sm font-light">
-                        @foreach ($emails as $email)
-
-                            <tr class="border-b border-gray-200 hover:bg-indigo-100">
+                            <tr v-for="student in students" class="border-b border-gray-200 hover:bg-indigo-100">
                                 <td class="py-3 px-6 text-left whitespace-nowrap">
                                     <div class="flex items-center">
-                                        {{ $email->id }}
+                                        @{{ student.id }}
                                     </div>
                                 </td>
                                 <td class="py-3 px-6 text-left whitespace-nowrap">
                                     <div class="flex items-center">
-                                        {{ $email->name }}
+                                        @{{ student.name }}
                                     </div>
                                 </td>
                                 <td class="py-3 px-6 text-left">
                                     <div class="flex items-center">
-                                        {{ $email->email }}
+                                        @{{ student.email }}
                                     </div>
                                 </td>
                                 <td class="py-3 px-6 text-left">
                                     <div class="flex items-center">
-                                        {{ $email->subject }}
+                                        @{{ student.phone }}
                                     </div>
                                 </td>
                                 <td class="py-3 px-6 text-left">
-                                    <div class="flex items-center justify-center w-28">
-                                        {{ $email->message }}
+                                    <div class="flex items-center w-28">
+                                        @{{ student.country }}
+                                    </div>
+                                </td>
+                                <td class="py-3 px-6 text-left">
+                                    <div class="flex items-center w-28">
+                                        @{{ student.age }}
                                     </div>
                                 </td>
                                 <td class="py-3 px-6 text-left">
                                     <div class="flex items-center">
-                                        {{ $email->created_at }}
+                                        @{{ student.created_at }}
+
                                     </div>
                                 </td>
                                 <td class="py-3 px-6 text-left">
@@ -202,32 +209,138 @@
                                 </td>
                             </tr>
 
-                        @endforeach
-
-
-                        </tbody>
-                    </table>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-            </div>
 
+            </div>
         </div>
+
     </div>
 
-</div>
+@endsection
 
 
-<script src="js/app.js"></script>
-<script>
-    let vue = new Vue({
-        el: '#app',
-        data: {},
-        methods: {
-            // nextPage() {
-            //
-            // }
-        }
+@push('scripts')
+    <script>
+        let vue = new Vue({
+            el: '#app',
+            data: {
+                selected: '',
+                countries: [
+                    {
+                        name: 'قطر',
+                        code: '+974'
+                    }, {
+                        name: 'البحرين',
+                        code: '+973'
+                    }, {
+                        name: 'مصر',
+                        code: '+20'
+                    }, {
+                        name: 'فلسطين',
+                        code: '+970'
+                    }, {
+                        name: 'السودان',
+                        code: '+249'
+                    }, {
+                        name: 'الصومال',
+                        code: '+252'
+                    }, {
+                        name: 'السعودية',
+                        code: '+966'
+                    }, {
+                        name: 'عمان',
+                        code: '+968'
+                    }, {
+                        name: 'سوريا',
+                        code: '+963'
+                    }, {
+                        name: 'الجزائر',
+                        code: '+213'
+                    }, {
+                        name: 'العراق',
+                        code: '+964'
+                    }, {
+                        name: 'جزر القمر',
+                        code: '+269'
+                    }, {
+                        name: 'المغرب',
+                        code: '+212'
+                    }, {
+                        name: 'الكويت',
+                        code: '+965'
+                    }, {
+                        name: 'تونس',
+                        code: '+216'
+                    }, {
+                        name: 'موريتانيا',
+                        code: '+222'
+                    }, {
+                        name: 'اليمن',
+                        code: '+967'
+                    }, {
+                        name: 'الإمارات',
+                        code: '+971'
+                    }, {
+                        name: 'الاردن',
+                        code: '+962'
+                    }, {
+                        name: 'ليبيا',
+                        code: '+218'
+                    }, {
+                        name: 'لبنان',
+                        code: '+961'
+                    }, {
+                        name: 'جيبوتي',
+                        code: '+253'
+                    },
+                ],
+                students: [],
+                current_page: 1,
+                total: null,
+                last_page: null,
+            },
+            methods: {
+                getData() {
+                    encodeURI(this.selected)
+                    if (this.selected == '') {
+                        country = null
+                    } else {
+                        country = this.selected
+                    }
 
-    })
-</script>
-</body>
-</html>
+                    axios.get('api/registers', {
+                        params: {
+                            country: country,
+                            page: this.current_page,
+                        }
+                    }).then(response => {
+                        this.students = response.data.students.data
+                        this.current_page = response.data.students.current_page;
+                        this.total = response.data.students.total;
+                        this.last_page = response.data.students.last_page;
+                    })
+                },
+                paginateNext() {
+                    if (this.current_page == this.last_page) {
+                        this.current_page = 0
+                    }
+                    this.current_page++
+                    this.getData()
+                },
+                paginatePrevious() {
+                    this.current_page > 1 ? this.current_page-- : this.current_page = 1
+                    this.getData()
+                },
+
+
+            },
+            mounted() {
+                this.getData()
+            }
+
+        })
+    </script>
+@endpush

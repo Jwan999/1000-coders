@@ -15,15 +15,15 @@ class EmailController extends Controller
      */
     public function index()
     {
-        if (Auth::check()) {
-            $query = Email::orderByDesc('created_at');
-
-            $emails = $query->paginate(15);
-//            dd($emails);
-            return view('emails', ['emails' => $emails]);
-
+        if (!Auth::check()) {
+            return Redirect::route('dashboard/login');
         }
-        return Redirect::route('login');
+
+        $query = Email::orderByDesc('created_at');
+
+        $emails = $query->paginate(15);
+        return view('dashboard/emails', ['emails' => $emails]);
+
 
     }
 

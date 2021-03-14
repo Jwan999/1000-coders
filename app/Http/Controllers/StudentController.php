@@ -21,7 +21,7 @@ class StudentController extends Controller
         if (Auth::check()) {
             return Excel::download(new StudentsExport, 'coding_marathon_registers.xlsx');
         }
-        return Redirect::route('login');
+        return Redirect::route('dashboard/login');
 
     }
 
@@ -78,10 +78,10 @@ class StudentController extends Controller
     public function charts(Request $request)
     {
         if (!Auth::check()) {
-            return Redirect::route('login');
+            return Redirect::route('dashboard/login');
         }
         $students = Student::all()->groupBy('country')->map->count();
-        return view('charts', ['students' => $students]);
+        return view('dashboard/charts', ['students' => $students]);
     }
 
     /**
@@ -94,9 +94,9 @@ class StudentController extends Controller
     public function registersPage()
     {
         if (!Auth::check()) {
-            return Redirect::route('login');
+            return Redirect::route('dashboard/login');
         }
-        return view('registers');
+        return view('dashboard/registers');
     }
 
     public function show(Student $student, Request $request)
@@ -115,7 +115,6 @@ class StudentController extends Controller
         ];
 
         return Response::json($response);
-//        return view('/registers', ['students' => $students]);
 
     }
 

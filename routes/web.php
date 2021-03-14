@@ -20,9 +20,6 @@ use \Illuminate\Support\Facades\Mail;
 |
 */
 
-//Route::get('/', function () {
-//    return view('master');
-//});
 
 Route::get('/', function () {
     if (request()->has('language')) {
@@ -33,21 +30,27 @@ Route::get('/', function () {
     return view('master');
 });
 
-Route::get('/emails', [EmailController::class, 'index'])->middleware('auth');
 Route::post('/emails', [EmailController::class, 'store']);
-
-Route::get('/logout', [LoginController::class, 'logout']);
 Route::get('/login', [LoginController::class, 'login'])->name('login');
 
-Route::get('/registers', [StudentController::class, 'registersPage']);
-Route::get('api/registers', [StudentController::class, 'show']);
+
+Route::group(['prefix' => 'dashboard', 'middleware' => ['auth']], function () {
+    Route::get('/logout', [LoginController::class, 'logout']);
+
+    Route::get('/emails', [EmailController::class, 'index']);
+
+    Route::get('/registers', [StudentController::class, 'registersPage']);
+    Route::get('/api/registers', [StudentController::class, 'show']);
+
+    Route::get('/students/export', [StudentController::class, 'export']);
+
+    Route::get('/charts', [StudentController::class, 'charts']);
+
+});
+
 
 Route::get('/signup', [StudentController::class, 'index']);
 Route::post('/signup', [StudentController::class, 'store']);
-
-Route::get('students/export', [StudentController::class, 'export']);
-
-Route::get('charts', [StudentController::class, 'charts']);
 
 
 Auth::routes();

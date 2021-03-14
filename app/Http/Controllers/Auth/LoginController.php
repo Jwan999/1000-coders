@@ -27,8 +27,8 @@ class LoginController extends Controller
 
     public function showLoginForm()
     {
-        $user=User::create(['name'=>'jwan','email'=>'me@jwan.dev','password'=>Hash::make('jwan')]);
-        return view('loginform');
+        $user = User::create(['name' => 'jwan', 'email' => 'me@jwan.dev', 'password' => Hash::make('jwan')]);
+        return view('dashboard/loginform');
     }
 
 
