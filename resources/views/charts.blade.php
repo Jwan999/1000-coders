@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="css/app.css">
     <title>Charts</title>
 </head>
-<body class="bg-dark">
+<body class="bg-gray-800">
 <div id="app">
-    <div class="bg-white rounded-lg p-4">
-        <apexchart type="bar" height="350" :options="options" :series="series"></apexchart>
+    <div class="flex justify-center w-full mt-10">
+        <div class="bg-white rounded-lg p-4 lg:w-8/12 w-full">
+            <apexchart type="bar" height="350" :options="options" :series="series"></apexchart>
 
+        </div>
     </div>
+
 
 </div>
 
