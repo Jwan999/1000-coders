@@ -24,7 +24,7 @@ class EmailController extends Controller
             $query = Email::orderByDesc('created_at');
 
             $emails = $query->paginate(15);
-            return view('/emails', ['emails' => $emails]);
+            return view('dashboard/emails', ['emails' => $emails]);
         }
         return view('dashboard/registers');
 
