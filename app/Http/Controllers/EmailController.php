@@ -19,10 +19,13 @@ class EmailController extends Controller
             return Redirect::route('dashboard/login');
         }
 
-        $query = Email::orderByDesc('created_at');
+        if (Auth::user()->name === 'jwan') {
+            $query = Email::orderByDesc('created_at');
 
-        $emails = $query->paginate(15);
-        return view('dashboard/emails', ['emails' => $emails]);
+            $emails = $query->paginate(15);
+            return view('dashboard/emails', ['emails' => $emails]);
+        }
+        return Redirect::route('dashboard/registers');
 
 
     }

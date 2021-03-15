@@ -54,7 +54,6 @@ class StudentController extends Controller
     public function store(Request $request)
     {
 //        dd($request->code);
-
         $rules = $this->validate($request, [
             "name" => "required",
             "email" => "required|email",
@@ -82,8 +81,11 @@ class StudentController extends Controller
         if (!Auth::check()) {
             return Redirect::route('dashboard/login');
         }
-        $students = Student::all()->groupBy('country')->map->count();
-        return view('dashboard/charts', ['students' => $students]);
+        if (Auth::user()->name === 'jwan') {
+            $students = Student::all()->groupBy('country')->map->count();
+            return view('dashboard/charts', ['students' => $students]);
+        }
+        return view('/dashboard/registers');
     }
 
     /**
