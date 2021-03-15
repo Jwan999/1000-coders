@@ -97,6 +97,7 @@
                                 <th class="py-3 px-6 text-left">Email Address</th>
                                 <th class="py-3 px-6 text-left">Phone</th>
                                 <th class="py-3 px-6 text-left">Country</th>
+                                <th class="py-3 px-6 text-left">To Partner</th>
                                 <th class="py-3 px-6 text-left">Age</th>
                                 <th class="py-3 px-6 text-left">Date</th>
                                 <th class="py-3 px-6 text-left">Actions</th>
@@ -129,6 +130,11 @@
                                 <td class="py-3 px-6 text-left">
                                     <div class="flex items-center w-28">
                                         @{{ student.country }}
+                                    </div>
+                                </td>
+                                <td class="py-3 px-6 text-left">
+                                    <div class="flex items-center w-28">
+                                        @{{ student.partner }}
                                     </div>
                                 </td>
                                 <td class="py-3 px-6 text-left">
