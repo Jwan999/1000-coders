@@ -123,6 +123,7 @@
 
                     <option hidden value>تسجيل عن طريق احد الشركاء</option>
                     <option>IoT Kids</option>
+                    <option>Robotna</option>
                     <option>Junior Robotics Lab</option>
                     <option>مؤسسة العمالقة الدولية</option>
                     <option>Multi Aid Programs - MAPS</option>

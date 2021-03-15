@@ -144,7 +144,8 @@
                                 </td>
                                 <td class="py-3 px-6 text-left">
                                     <div class="flex items-center">
-                                        @{{ student.created_at }}
+                                        @{{ Date(student.created_at) }}
+
 
                                     </div>
                                 </td>
@@ -341,10 +342,10 @@
                     this.getData()
                 },
 
-
             },
             mounted() {
                 this.getData()
+
             }
 
         })
