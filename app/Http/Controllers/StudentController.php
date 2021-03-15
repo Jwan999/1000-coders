@@ -61,6 +61,7 @@ class StudentController extends Controller
             "phone" => "required",
             "age" => "required",
             "country" => "required",
+            "partner" => "required",
         ]);
         $data = [
             'name' => $request->name,
@@ -68,6 +69,7 @@ class StudentController extends Controller
             'phone' => $request->code . $request->phone,
             'age' => $request->age,
             'country' => $request->country,
+            'partner' => $request->partner,
         ];
 
         Student::create($data);;

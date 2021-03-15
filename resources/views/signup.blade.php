@@ -92,7 +92,6 @@
                     <option hidden selected>الدولة</option>
                     <option v-for="country in countries">@{{ country.name }}</option>
 
-
                 </select>
                 @if($errors->has('country'))
                     <div class="error text-red-500 text-base opacity-95">{{ $errors->first('country') }}</div>
@@ -118,6 +117,26 @@
                     <div class="text-red-500 text-base opacity-95">{{ $errors->first('email') }}</div>
                 @endif
 
+
+                <select name="partner" ref="partner"
+                        class="mt-6 focus:outline-none bg-gray-200 border border-gray-300 focus:border-blue-400 focus:bg-gray-100 text-lg py-3 px-12 rounded-xl outline-none">
+
+                    <option hidden value>تسجيل عن طريق احد الشركاء</option>
+                    <option>IoT Kids</option>
+                    <option>Junior Robotics Lab</option>
+                    <option>مؤسسة العمالقة الدولية</option>
+                    <option>Multi Aid Programs - MAPS</option>
+                    <option>SmartPeek Academy</option>
+                    <option>أكاديمية التعليم المبدع</option>
+                    <option>Electronics Go</option>
+                    <option>فريق المبتكرين الصغار</option>
+
+
+                </select>
+
+                @if($errors->has('partner'))
+                    <div class="text-red-500 text-base opacity-95">{{ $errors->first('partner') }}</div>
+                @endif
                 <div class="4/12">
                     <button type="submit" @click="submit()"
                             class="my-6 outline-none bg-yellow-200 hover:bg-yellow-300 rounded-2xl items-center py-4 px-6 shadow mt-10 transition duration-200 ease-in transform hover:-translate-y-1 hover:scale-110">
@@ -127,6 +146,7 @@
                 </div>
             </div>
         </form>
+        d
     </div>
 </div>
 
@@ -221,6 +241,12 @@
                     return
                 }
                 this.$refs['phone'].value = this.full_phone
+
+
+            },
+            selectingPartner() {
+                this.$refs['phone'].value = this.full_phone
+
             }
         }, watch: {
             phone() {
