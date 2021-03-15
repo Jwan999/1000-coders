@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Email;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Redirect;
 
 class EmailController extends Controller
 {
@@ -23,9 +24,9 @@ class EmailController extends Controller
             $query = Email::orderByDesc('created_at');
 
             $emails = $query->paginate(15);
-            return view('dashboard/emails', ['emails' => $emails]);
+            return view('/emails', ['emails' => $emails]);
         }
-        return Redirect::route('dashboard/registers');
+        return view('dashboard/registers');
 
 
     }
