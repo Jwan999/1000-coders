@@ -39,7 +39,12 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/dashboard/registers';
+//    protected $redirectTo = '/dashboard/registers';
+
+    public function redirectPath()
+    {
+        return view('/dashboard/registers');
+    }
 
     /**
      * Create a new controller instance.
