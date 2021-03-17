@@ -11,7 +11,7 @@
 </head>
 <body class="bg-gray-100">
 <div class="lg:w-auto w-full flex">
-    <div class="lg:w-2/12 w-auto">
+    <div class="lg:w-2/12 w-auto z-10">
         <div @click.away="open = false"
              class="flex flex-col w-full md:w-64 text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800 flex-shrink-0 fixed lg:h-screen h-auto"
              x-data="{ open: false }">
@@ -50,7 +50,7 @@
     </div>
 
 
-    <div class="justify-center lg:w-10/12 lg:mt-0 mt-10 w-full">
+    <div class="lg:mt-0 mt-10 w-full">
         @yield('content')
     </div>
 </div>

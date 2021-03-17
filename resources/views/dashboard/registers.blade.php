@@ -43,7 +43,7 @@
                     @endif
                 </div>
                 {{--paginate--}}
-                <div class="flex items-center lg:mt-0">
+                <div class="flex items-center lg:mt-0 mt-3">
 
                     <div @click="paginatePrevious()" class="bg-indigo-100 rounded px-3 py-2 cursor-pointer">
                         <svg class="fill-current text-gray-900 w-2" viewBox="0 0 10 16" version="1.1"

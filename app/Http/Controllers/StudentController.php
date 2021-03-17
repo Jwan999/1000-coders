@@ -81,8 +81,10 @@ class StudentController extends Controller
         if (!Auth::check()) {
             return Redirect::route('dashboard/login');
         }
-        $students = Student::all()->groupBy('country')->map->count();
-        return view('dashboard/charts', ['students' => $students]);
+        $countries = Student::all()->groupBy('country')->map->count();
+        $partners = Student::all()->groupBy('partner')->map->count();
+//        dd($countries,$partners);
+        return view('dashboard/charts', ['countries' => $countries, 'partners' => $partners]);
         return view('/dashboard/registers');
     }
 
