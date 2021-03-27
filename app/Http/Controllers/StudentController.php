@@ -56,7 +56,7 @@ class StudentController extends Controller
 //        dd($request->code);
         $rules = $this->validate($request, [
             "name" => "required",
-            "email" => "required|email",
+            "email" => "unique:students,email",
             "phone" => "required",
             "age" => "required",
             "country" => "required",
