@@ -52,13 +52,7 @@
     </style>
 </head>
 <body class="bg-gray-100 relative">
-<details>
-    <summary>
-        <div class="button">
-            Show me the modal
-        </div>
-        <div class="details-modal-overlay"></div>
-    </summary>
+
     <div class="details-modal">
         <div class="details-modal-close">
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
