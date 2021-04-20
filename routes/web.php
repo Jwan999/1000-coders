@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CodeController;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\EmailController;
@@ -29,6 +30,8 @@ Route::get('/', function () {
     app()->setLocale($locale);
     return view('master');
 });
+
+Route::get('/search', [CodeController::class, 'show'])->name('search');
 
 Route::post('/emails', [EmailController::class, 'store']);
 Route::get('/login', [LoginController::class, 'login'])->name('login');

@@ -149,6 +149,10 @@
         {{--    <div id="vision">--}}
         {{--        @include('components/vision')--}}
         {{--    </div>--}}
+
+        <div class="flex justify-center" id="codes">
+            @include('components.studentsCodes')
+        </div>
         <div id="goals">
             @include('components.goals')
 
@@ -182,17 +186,38 @@
     </div>
 
 </div>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
 <script src="js/app.js"></script>
 <script>
-    let vue = new Vue({
+    var vue = new Vue({
         el: "#app",
         data: {
+            result: false,
+            name: '',
+            phone: '',
+            email: '',
+            code: ''
+
             // complete: true,
         },
         methods: {
             translate() {
                 location.href = '/?language=@lang("language.lang_code")'
+            },
+            getCodes() {
+                this.result = !this.result
+                axios.get('/search', {
+                    params: {
+                        name: this.name,
+                        phone: this.phone,
+                        email: this.email
+                    }
+                }).then(response => {
+                    this.code = response.data[0].code
+                    this.name = response.data[0].name
+
+                })
             }
         },
         mounted() {

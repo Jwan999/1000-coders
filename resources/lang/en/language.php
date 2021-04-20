@@ -2,6 +2,13 @@
 
 
 return [
+    "nameSearch" => "Search for your name",
+    "name" => "The name:",
+    "code" => "The code:",
+    "getCode" => "Get your code now",
+    "cong" => "Congratulations on applying and reaching the second stage of the competition to be able to take the second test. Please send your name, email and age to obtain your code that will allow you to take the second test.",
+    "phone" => "Phone Number",
+    "search" => "Search",
     "welcoming_start" => "Register now",
     "start_date" => "You can register now and the test will start in the upcoming month.",
     "dir" => "ltr",
