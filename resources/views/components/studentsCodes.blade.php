@@ -37,17 +37,16 @@
 
         <div v-if="result" class="w-full flex flex-col justify-center">
 
-            <div v-if="code">
-                <h1 class="text-2xl text-gray-800 my-4">@lang('language.name')</h1>
-                <h1 class="text-5xl text-blue-600 my-4 text-center">@{{ name }}</h1>
-                <h1 class="text-2xl text-gray-800 my-4">@lang('language.code')</h1>
-                <h1 class="text-5xl text-blue-600 my-4 text-center">@{{ code }}</h1>
-            </div>
+
+            <h1 class="text-2xl text-gray-800 my-4">@lang('language.name')</h1>
+            <h1 class="text-5xl text-blue-600 my-4 text-center">@{{ name }}</h1>
+            <h1 class="text-2xl text-gray-800 my-4">@lang('language.code')</h1>
+            <h1 class="text-5xl text-blue-600 my-4 text-center">@{{ code }}</h1>
 
 
-            <h1 v-if="!code" class="text-center text-3xl my-6">
-                .لا توجد لدينا هذه المعلومات، يرجى التأكد من البحث
-            </h1>
+            {{--            <h1 v-if="!code" class="text-center text-3xl my-6">--}}
+            {{--                .لا توجد لدينا هذه المعلومات، يرجى التأكد من البحث--}}
+            {{--            </h1>--}}
 
             <a href="/" class="text-pink-500 text-lg">الرجوع للبحث</a>
 
