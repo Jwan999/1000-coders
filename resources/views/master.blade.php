@@ -193,11 +193,9 @@
     var vue = new Vue({
         el: "#app",
         data: {
-            result: false,
-            name: '',
-            phone: '',
-            email: '',
-            code: 'يرجى الأنتظار قليلا اذ لم تحصل على الكود يرجى اعادة ادخال المعلومات الصحيحة'
+            search: '',
+            students: [],
+            // code: 'يرجى الأنتظار قليلا اذ لم تحصل على الكود يرجى اعادة ادخال المعلومات الصحيحة'
 
             // complete: true,
         },
@@ -206,22 +204,20 @@
                 location.href = '/?language=@lang("language.lang_code")'
             },
             getCodes() {
-                this.result = !this.result
+
                 axios.get('/search', {
                     params: {
-                        name: this.name,
-                        phone: this.phone,
-                        email: this.email
+                        search: this.search,
                     }
                 }).then(response => {
-                    this.code = response.data[0].code
-                    this.name = response.data[0].name
+                    console.log(response.data)
+                    this.students = response.data
 
                 })
             }
         },
         mounted() {
-            // setTimeout(this.done = false, 10000);
+            this.getCodes()
         }
     })
 </script>

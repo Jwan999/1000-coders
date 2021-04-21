@@ -31,7 +31,7 @@ Route::get('/', function () {
     return view('master');
 });
 
-Route::get('/search', [CodeController::class, 'show'])->name('search');
+Route::get('/search', [CodeController::class, 'show']);
 
 Route::post('/emails', [EmailController::class, 'store']);
 Route::get('/login', [LoginController::class, 'login'])->name('login');

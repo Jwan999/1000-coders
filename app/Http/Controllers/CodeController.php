@@ -46,9 +46,13 @@ class CodeController extends Controller
      */
     public function show(Code $code, Request $request)
     {
-//        dd($request->name);
-        $codes = Code::where('name', $request->name)->orWhere('email', $request->email)->orWhere('phone', $request->phone)->get();
-//        dd($codes);
+        if ($request->search != '') {
+            $codes = Code::where('name', $request->search)->orWhere('email', $request->search)->orWhere('phone', $request->search)->get();
+            return json_encode($codes);
+        }
+
+        $codes = Code::select('name', 'code', 'country', 'partner')->get();
+
         return json_encode($codes);
 
     }
