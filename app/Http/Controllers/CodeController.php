@@ -47,7 +47,7 @@ class CodeController extends Controller
     public function show(Code $code, Request $request)
     {
         if ($request->search != '') {
-            $codes = Code::where('name', $request->search)->orWhere('email', $request->search)->orWhere('phone', $request->search)->get();
+            $codes = Code::where('name', 'LIKE', $request->search)->orWhere('email', 'LIKE', $request->search)->orWhere('phone', 'LIKE', $request->search)->get();
             return json_encode($codes);
         }
 

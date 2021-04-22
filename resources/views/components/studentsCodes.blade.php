@@ -31,7 +31,7 @@
                     </tr>
                     </thead>
                     <tbody class="text-gray-600 text-lg">
-                    {{--                    @foreach ($emails as $email)--}}
+                    {{--@foreach ($emails as $email)--}}
 
                     <tr v-for="student in students" class="border-b border-gray-200 hover:bg-yellow-50">
                         <td class="py-3 px-6 whitespace-nowrap">
