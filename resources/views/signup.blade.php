@@ -109,7 +109,7 @@
                 @endif
 
 
-                <input v-model="testCode" name="test_code" type="text"
+                <input name="test_code" type="text"
                        class="mt-6 bg-gray-200 border border-gray-300 focus:border-blue-400 focus:bg-gray-100 text-lg py-3 px-4 rounded-xl outline-none"
                        placeholder="الرمز">
                 @if($errors->has('test_code'))

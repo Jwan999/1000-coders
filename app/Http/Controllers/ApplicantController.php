@@ -54,18 +54,20 @@ class ApplicantController extends Controller
         $path = $request->file('video')->storeAs('public/videos', $fileNameToStore);
 
         $data = [
+            'test_code' => $request->test_code,
             'name' => $request->name,
             'email' => $request->email,
             'phone' => $request->code . $request->phone,
             'age' => $request->age,
-            'test_code' => $request->test_code,
             'country' => $request->country,
             'partner' => $request->partner,
             'video' => $fileNameToStore,
         ];
 
 
-        Applicant::create($data);;
+        Applicant::create($data);
+//        dd($data);
+
 
         return redirect('/',)->withSuccess('تم التسجيل بنجاح');
 

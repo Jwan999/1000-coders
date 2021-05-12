@@ -19,7 +19,6 @@ class CreateApplicantsTable extends Migration
             $table->string('email');
             $table->string('age');
             $table->string('country');
-            $table->string('test_code');
             $table->string('phone');
             $table->string('partner');
             $table->string('video');
