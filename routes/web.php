@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ApplicantController;
 use App\Http\Controllers\CodeController;
 use Illuminate\Support\Facades\Route;
 
@@ -49,12 +50,17 @@ Route::group(['prefix' => 'dashboard', 'middleware' => ['auth']], function () {
 
     Route::get('/charts', [StudentController::class, 'charts']);
 
+    Route::get('/applicants', [ApplicantController::class, 'show']);
+
 });
 
+//
+//Route::get('/signup', [StudentController::class, 'index']);
+//Route::post('/signup', [StudentController::class, 'store']);
 
-Route::get('/signup', [StudentController::class, 'index']);
-Route::post('/signup', [StudentController::class, 'store']);
 
+Route::get('/signup', [ApplicantController::class, 'index']);
+Route::post('/signup', [ApplicantController::class, 'store']);
 
 Auth::routes();
 

@@ -61,13 +61,12 @@
             </svg>
         </div>
         <h1 class="text-3xl text-pink-400 mt-10">
-            للتسجيل في المسابقة يرجي ملئ الحقول التالية
-        </h1>
+            للتسجيل في المرحلة الثالثة يرجى ملئ الحقول التالية </h1>
         <p class="lg:text-lg text-base mt-3">
-            ملاحظة: يرجى استعمال رقم هاتف يحتوي على حساب في تطبيق الواتساب لكي نتواصل معكم مستقبلا.
+            ملاحظة: يرجى التاكد من الفديو قبل ارفاقه.
         </p>
 
-        <form method="POST" action="/signup">
+        <form method="POST" action="/signup" enctype="multipart/form-data">
             @csrf
             <div class="flex flex-col lg:mt-10 mt-6">
 
@@ -132,12 +131,19 @@
                     <option>Electronics Go</option>
                     <option>فريق المبتكرين الصغار</option>
 
-
                 </select>
 
                 @if($errors->has('partner'))
                     <div class="text-red-500 text-base opacity-95">{{ $errors->first('partner') }}</div>
                 @endif
+
+                <input type="file" name="video" placeholder="الفديو"
+                       class="mt-6 bg-gray-200 border border-gray-300 focus:border-blue-400 focus:bg-gray-100 text-lg py-3 px-4 rounded-xl outline-none">
+
+                @if($errors->has('video'))
+                    <div class="text-red-500 text-base opacity-95">{{ $errors->first('video') }}</div>
+                @endif
+
                 <div class="4/12">
                     <button type="submit" @click="submit()"
                             class="my-6 outline-none bg-yellow-200 hover:bg-yellow-300 rounded-2xl items-center py-4 px-6 shadow mt-10 transition duration-200 ease-in transform hover:-translate-y-1 hover:scale-110">

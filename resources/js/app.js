@@ -16,6 +16,11 @@ Vue.use(VueApexCharts)
 Vue.component('apexchart', VueApexCharts)
 
 Vue.use(VueScrollactive);
+import ref from 'vue'
+import {Dialog, DialogOverlay, DialogTitle, TransitionChild, TransitionRoot} from '@headlessui/vue'
+
+vue.use(ref)
+vue.component(Dialog, DialogOverlay, DialogTitle, TransitionChild, TransitionRoot)
 
 window.Vue = Vue;
 
