@@ -10,7 +10,7 @@
 
             <div class="flex items-center mt-4">
                 <p class="text-gray-400 font-mono text-sm mr-2">
-                    Received emails:
+                    Received applications:
                 </p>
                 <p class="text-sm font-mono text-black">
                     {{$applicants->total()}}
@@ -154,20 +154,20 @@
                                              aria-hidden="true"></div>
 
                                         <!-- This element is to trick the browser into centering the modal contents. -->
-                                    {{--                                        <span class="hidden sm:inline-block sm:align-middle sm:h-screen"--}}
-                                    {{--                                              aria-hidden="true">&#8203;</span>--}}
+                                        <span class="hidden sm:inline-block sm:align-middle sm:h-screen"
+                                              aria-hidden="true">&#8203;</span>
 
-                                    <!--
-                                          Modal panel, show/hide based on modal state.
+                                        <!--
+                                              Modal panel, show/hide based on modal state.
 
-                                          Entering: "ease-out duration-300"
-                                            From: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-                                            To: "opacity-100 translate-y-0 sm:scale-100"
-                                          Leaving: "ease-in duration-200"
-                                            From: "opacity-100 translate-y-0 sm:scale-100"
-                                            To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-                                        -->
-                                        <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle w-7/12">
+                                              Entering: "ease-out duration-300"
+                                                From: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                                                To: "opacity-100 translate-y-0 sm:scale-100"
+                                              Leaving: "ease-in duration-200"
+                                                From: "opacity-100 translate-y-0 sm:scale-100"
+                                                To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                                            -->
+                                        <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle w-8/12">
                                             <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                                                 <div class="sm:flex sm:items-start">
                                                     <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
@@ -176,7 +176,7 @@
                                                             Student Name: @{{ studentName }}
                                                         </h3>
                                                         <div class="mt-6 flex justify-center">
-                                                            <video class="w-8/12" controls>
+                                                            <video class="w-10/12" controls>
                                                                 <source :src="'/storage/videos/' + videoSrc">
                                                             </video>
                                                         </div>
