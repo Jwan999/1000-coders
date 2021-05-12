@@ -64,9 +64,9 @@ class ApplicantController extends Controller
             'video' => $fileNameToStore,
         ];
 
+//        dd($data);
 
         Applicant::create($data);
-//        dd($data);
 
 
         return redirect('/',)->withSuccess('تم التسجيل بنجاح');
