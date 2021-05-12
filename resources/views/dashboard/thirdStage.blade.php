@@ -78,6 +78,7 @@
                             <tr class="bg-gray-800 text-gray-100 font-mono text-sm leading-normal">
                                 <th class="py-3 px-6 text-left">ID</th>
                                 <th class="py-3 px-6 text-left">Name</th>
+                                <th class="py-3 px-6 text-left">Code</th>
                                 <th class="py-3 px-6 text-left">Email Address</th>
                                 <th class="py-3 px-6 text-left">Video</th>
                                 <th class="py-3 px-6 text-left">Phone</th>
@@ -98,6 +99,11 @@
                                     <td class="py-3 px-6 text-left whitespace-nowrap">
                                         <div class="flex items-center">
                                             {{ $applicant->name }}
+                                        </div>
+                                    </td>
+                                    <td class="py-3 px-6 text-left">
+                                        <div class="flex items-center">
+                                            {{ $applicant->test_code }}
                                         </div>
                                     </td>
                                     <td class="py-3 px-6 text-left">

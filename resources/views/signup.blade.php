@@ -109,6 +109,13 @@
                 @endif
 
 
+                <input v-model="testCode" name="test_code" type="text"
+                       class="mt-6 bg-gray-200 border border-gray-300 focus:border-blue-400 focus:bg-gray-100 text-lg py-3 px-4 rounded-xl outline-none"
+                       placeholder="الرمز">
+                @if($errors->has('test_code'))
+                    <div class="text-red-500 text-base opacity-95">{{ $errors->first('test_code') }}</div>
+                @endif
+
                 <input v-model="email" name="email" type="email"
                        class="mt-6 bg-gray-200 border border-gray-300 focus:border-blue-400 focus:bg-gray-100 text-lg py-3 px-4 rounded-xl outline-none"
                        placeholder="العنوان البريدي">
@@ -146,7 +153,7 @@
 
                 <div class="4/12">
                     <button type="submit" @click="submit()"
-                            class="my-6 outline-none bg-yellow-200 hover:bg-yellow-300 rounded-2xl items-center py-4 px-6 shadow mt-10 transition duration-200 ease-in transform hover:-translate-y-1 hover:scale-110">
+                            class="focus:outline-none my-6 outline-none bg-yellow-200 hover:bg-yellow-300 rounded-2xl items-center py-4 px-6 shadow mt-10 transition duration-200 ease-in transform hover:-translate-y-1 hover:scale-110">
                         @lang("language.form_button")
 
                     </button>
@@ -167,6 +174,7 @@
             selected: 'الدولة',
             name: null,
             email: null,
+            testCode: null,
             phone: null,
             full_phone: null,
             age: null,

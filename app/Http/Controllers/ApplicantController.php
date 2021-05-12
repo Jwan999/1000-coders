@@ -43,6 +43,7 @@ class ApplicantController extends Controller
             "age" => "required",
             "country" => "required",
             "partner" => "required",
+            "test_code" => "required",
             "video" => "mimetypes:video/avi,video/mpeg,video/quicktime",
         ]);
 
@@ -57,6 +58,7 @@ class ApplicantController extends Controller
             'email' => $request->email,
             'phone' => $request->code . $request->phone,
             'age' => $request->age,
+            'test_code' => $request->test_code,
             'country' => $request->country,
             'partner' => $request->partner,
             'video' => $fileNameToStore,
