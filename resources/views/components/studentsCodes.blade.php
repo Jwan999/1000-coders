@@ -24,7 +24,7 @@
 
             <button type="submit" @click="stages('Stage 2')"
                     :class="{'bg-blue-500 text-white ' : stage == 'Stage 2', 'text-blue-600' : stage !== 'Stage 2'}"
-                    class="outline-none mx-3 focus:outline-none bg-blue-100 hover:bg-blue-500 hover:text-white rounded-2xl items-center py-3 px-6 shadow">
+                    class="outline-none mx-3 lg:mt-0 mt-2 focus:outline-none bg-blue-100 hover:bg-blue-500 hover:text-white rounded-2xl items-center py-3 px-6 shadow">
                 نتائج المرحلة الثانية
             </button>
         </div>
