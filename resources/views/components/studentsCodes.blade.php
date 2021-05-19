@@ -41,7 +41,6 @@
                     <tr class="text-gray-100 text-base leading-normal">
                         <th class="py-3 px-6 sticky top-0 bg-gray-800 mt-4 text-right">الاسم</th>
                         <th class="py-3 px-6 sticky top-0 bg-gray-800 mt-4 text-right">عن طريق احد الشركاء</th>
-                        <th class="py-3 px-6 sticky top-0 bg-gray-800 mt-4 text-right">الدولة</th>
                         <th class="py-3 px-6 sticky top-0 bg-gray-800 mt-4 text-right">الكود</th>
                     </tr>
                     </thead>
@@ -57,11 +56,6 @@
                         <td class="py-3 px-6 text-left whitespace-nowrap">
                             <div class="flex">
                                 @{{ student.partner }}
-                            </div>
-                        </td>
-                        <td class="py-3 px-6 text-left">
-                            <div class="flex">
-                                @{{ student.country }}
                             </div>
                         </td>
                         <td class="py-3 px-6 text-left">
