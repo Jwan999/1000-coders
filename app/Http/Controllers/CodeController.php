@@ -54,6 +54,7 @@ class CodeController extends Controller
 //            $codes = Code::select('name', 'code', 'partner')->where('stage', $request->stage)->get();
 //            return json_encode($codes);
 //        }
+//        dd($request->stage);
         $codes = Code::select('name', 'code', 'partner')->where('stage', $request->stage)->get();
 
         return json_encode($codes);

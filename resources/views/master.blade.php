@@ -204,28 +204,27 @@
             translate() {
                 location.href = '/?language=@lang("language.lang_code")'
             },
-            getCodes(stage) {
-                if (stage !== '') {
-                    this.stage = stage
-                    console.log(stage)
-
-                }
-
-                axios.get('/search', {
+            stages(stage) {
+                this.stage = stage
+                this.getCodes()
+            },
+            getCodes() {
+                console.log(this.stage)
+                axios.get('/codes', {
                     params: {
                         search: this.search,
                         stage: this.stage,
-
                     }
                 }).then(response => {
                     console.log(response.data)
                     this.students = response.data
-
                 })
-            }
+
+            },
+
         },
         mounted() {
-            this.getCodes()
+            this.getCodes('Stage 2')
         }
     })
 </script>
