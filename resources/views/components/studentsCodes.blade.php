@@ -15,7 +15,7 @@
                 ابحث
             </button>
         </div>
-        <div class="flex lg:justify-end lg:w-6/12 w-full mt-4 lg:mt-0">
+        <div class="flex flex-wrap lg:justify-end lg:w-6/12 w-full mt-4 lg:mt-0">
             <button type="submit" @click="getCodes('Stage 1')"
                     :class="{'bg-blue-500 text-white ' : stage == 'Stage 1', 'text-blue-600' : stage !== 'Stage 1'}"
                     class="outline-none mx-3 focus:outline-none bg-blue-100 hover:bg-blue-500 hover:text-white rounded-2xl items-center py-3 px-6 shadow">

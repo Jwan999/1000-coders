@@ -207,11 +207,15 @@
             getCodes(stage) {
                 if (stage !== '') {
                     this.stage = stage
+                    console.log(stage)
+
                 }
+
                 axios.get('/search', {
                     params: {
                         search: this.search,
                         stage: this.stage,
+
                     }
                 }).then(response => {
                     console.log(response.data)
