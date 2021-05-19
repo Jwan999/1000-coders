@@ -205,7 +205,7 @@
                 location.href = '/?language=@lang("language.lang_code")'
             },
             getCodes(stage) {
-                if (stage) {
+                if (stage != '') {
                     this.stage = stage
                 }
                 axios.get('/search', {
