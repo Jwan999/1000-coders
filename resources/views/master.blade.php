@@ -203,11 +203,11 @@
             translate() {
                 location.href = '/?language=@lang("language.lang_code")'
             },
-            getCodes() {
-
+            getCodes(stage) {
                 axios.get('/search', {
                     params: {
                         search: this.search,
+                        stage: stage,
                     }
                 }).then(response => {
                     console.log(response.data)

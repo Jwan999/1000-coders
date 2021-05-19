@@ -46,10 +46,15 @@ class CodeController extends Controller
      */
     public function show(Code $code, Request $request)
     {
-        if ($request->search != '') {
+        if ($request->search != '' && $request->stage == 'stage1') {
             $codes = Code::where('name', 'LIKE', "%{$request->search}%")->orWhere('email', 'LIKE', "%{$request->search}%")->orWhere('phone', 'LIKE', "%{$request->search}%")->get();
             return json_encode($codes);
         }
+        if ($request->search != '' && $request->stage == 'stage2') {
+            $codes = Code::where('name', 'LIKE', "%{$request->search}%")->orWhere('email', 'LIKE', "%{$request->search}%")->orWhere('phone', 'LIKE', "%{$request->search}%")->get();
+            return json_encode($codes);
+        }
+
 
         $codes = Code::select('name', 'code', 'country', 'partner')->get();
 

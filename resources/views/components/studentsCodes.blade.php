@@ -9,9 +9,18 @@
         <input v-model="search" name="search" type="text"
                class="bg-gray-200 lg:w-6/12 w-full border border-gray-300 focus:border-blue-400 focus:bg-gray-100 text-base py-3 px-4 rounded-xl outline-none"
                placeholder="@lang("language.form_name")">
-        <button type="submit" @click="getCodes()"
+        <button type="submit" @click="getCodes('stage1')"
                 class="outline-none mx-3 focus:outline-none bg-yellow-200 hover:bg-yellow-300 rounded-2xl items-center py-3 px-6 shadow">
             ابحث
+        </button>
+        <button type="submit" @click="getCodes('Stage 1')"
+                class="outline-none mx-3 focus:outline-none bg-blue-200 hover:bg-blue-300 rounded-2xl items-center py-3 px-6 shadow">
+            المرحلة الاولى
+        </button>
+
+        <button type="submit" @click="getCodes('Stage 2')"
+                class="outline-none mx-3 focus:outline-none bg-blue-200 hover:bg-blue-300 rounded-2xl items-center py-3 px-6 shadow">
+            المرحلة الثانية
         </button>
 
     </div>
