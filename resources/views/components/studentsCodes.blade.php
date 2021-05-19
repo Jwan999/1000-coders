@@ -5,23 +5,29 @@
     <p class="text-base mb-6">يمكنك البحث اما عن طريق الاسم ،الرقم، والايميل.</p>
 
     {{--page--}}
-    <div class="flex w-full items-center mb-4">
-        <input v-model="search" name="search" type="text"
-               class="bg-gray-200 lg:w-6/12 w-full border border-gray-300 focus:border-blue-400 focus:bg-gray-100 text-base py-3 px-4 rounded-xl outline-none"
-               placeholder="@lang("language.form_name")">
-        <button type="submit" @click="getCodes('stage1')"
-                class="outline-none mx-3 focus:outline-none bg-yellow-200 hover:bg-yellow-300 rounded-2xl items-center py-3 px-6 shadow">
-            ابحث
-        </button>
-        <button type="submit" @click="getCodes('Stage 1')"
-                class="outline-none mx-3 focus:outline-none bg-blue-200 hover:bg-blue-300 rounded-2xl items-center py-3 px-6 shadow">
-            المرحلة الاولى
-        </button>
+    <div class="flex flex-wrap w-full items-center mb-4">
+        <div class="flex lg:w-6/12 w-full">
+            <input v-model="search" name="search" type="text"
+                   class="bg-gray-200 lg:w-6/12 w-full border border-gray-300 focus:border-blue-400 focus:bg-gray-100 text-base py-3 px-4 rounded-xl outline-none"
+                   placeholder="@lang("language.form_name")">
+            <button type="submit" @click="getCodes()"
+                    class="outline-none mx-3 focus:outline-none bg-yellow-200 hover:bg-yellow-300 rounded-2xl items-center py-3 px-6 shadow">
+                ابحث
+            </button>
+        </div>
+        <div class="flex lg:justify-end lg:w-6/12 w-full mt-4 lg:mt-0">
+            <button type="submit" @click="getCodes('Stage 1')"
+                    :class="{'bg-blue-500 text-white ' : stage == 'Stage 1', 'text-blue-600' : stage !== 'Stage 1'}"
+                    class="outline-none mx-3 focus:outline-none bg-blue-100 hover:bg-blue-500 hover:text-white rounded-2xl items-center py-3 px-6 shadow">
+                نتائج المرحلة الاولي
+            </button>
 
-        <button type="submit" @click="getCodes('Stage 2')"
-                class="outline-none mx-3 focus:outline-none bg-blue-200 hover:bg-blue-300 rounded-2xl items-center py-3 px-6 shadow">
-            المرحلة الثانية
-        </button>
+            <button type="submit" @click="getCodes('Stage 2')"
+                    :class="{'bg-blue-500 text-white ' : stage == 'Stage 2', 'text-blue-600' : stage !== 'Stage 2'}"
+                    class="outline-none mx-3 focus:outline-none bg-blue-100 hover:bg-blue-500 hover:text-white rounded-2xl items-center py-3 px-6 shadow">
+                نتائج المرحلة الثانية
+            </button>
+        </div>
 
     </div>
 

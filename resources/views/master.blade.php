@@ -195,6 +195,7 @@
         data: {
             search: '',
             students: [],
+            stage: 'Stage 2',
             // code: 'يرجى الأنتظار قليلا اذ لم تحصل على الكود يرجى اعادة ادخال المعلومات الصحيحة'
 
             // complete: true,
@@ -204,10 +205,13 @@
                 location.href = '/?language=@lang("language.lang_code")'
             },
             getCodes(stage) {
+                if (stage) {
+                    this.stage = stage
+                }
                 axios.get('/search', {
                     params: {
                         search: this.search,
-                        stage: stage,
+                        stage: this.stage,
                     }
                 }).then(response => {
                     console.log(response.data)
