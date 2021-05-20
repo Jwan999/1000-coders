@@ -15,19 +15,19 @@
                 ابحث
             </button>
         </div>
-        <div class="flex flex-wrap lg:justify-end lg:w-6/12 w-full mt-4 lg:mt-0">
-            <button type="submit" @click="stages('Stage 1')"
-                    :class="{'bg-blue-500 text-white ' : stage == 'Stage 1', 'text-blue-600' : stage !== 'Stage 1'}"
-                    class="outline-none mx-3 focus:outline-none bg-blue-100 hover:bg-blue-500 hover:text-white rounded-2xl items-center py-3 px-6 shadow">
-                نتائج المرحلة الاولي
-            </button>
+{{--        <div class="flex flex-wrap lg:justify-end lg:w-6/12 w-full mt-4 lg:mt-0">--}}
+            {{--            <button type="submit" @click="stages('Stage 1')"--}}
+            {{--                    :class="{'bg-blue-500 text-white ' : stage == 'Stage 1', 'text-blue-600' : stage !== 'Stage 1'}"--}}
+            {{--                    class="outline-none mx-3 focus:outline-none bg-blue-100 hover:bg-blue-500 hover:text-white rounded-2xl items-center py-3 px-6 shadow">--}}
+            {{--                نتائج المرحلة الاولي--}}
+            {{--            </button>--}}
 
-            <button type="submit" @click="stages('Stage 2')"
-                    :class="{'bg-blue-500 text-white ' : stage == 'Stage 2', 'text-blue-600' : stage !== 'Stage 2'}"
-                    class="outline-none mx-3 lg:mt-0 mt-2 focus:outline-none bg-blue-100 hover:bg-blue-500 hover:text-white rounded-2xl items-center py-3 px-6 shadow">
-                نتائج المرحلة الثانية
-            </button>
-        </div>
+{{--            <button type="submit" @click="stages('Stage 2')"--}}
+{{--                    :class="{'bg-blue-500 text-white ' : stage == 'Stage 2', 'text-blue-600' : stage !== 'Stage 2'}"--}}
+{{--                    class="outline-none mx-3 lg:mt-0 mt-2 focus:outline-none bg-blue-100 hover:bg-blue-500 hover:text-white rounded-2xl items-center py-3 px-6 shadow">--}}
+{{--                نتائج المرحلة الثانية--}}
+{{--            </button>--}}
+{{--        </div>--}}
 
     </div>
 
