@@ -46,7 +46,7 @@ class CodeController extends Controller
      */
     public function show(Code $code, Request $request)
     {
-        $query = Code::select('name', 'code', 'partner')->where('stage', 'Stage 2');
+        $query = Code::select('name', 'code', 'partner')->where('stage', '=', 'Stage 2');
 
         if ($request->search != '') {
             $codes = $query->where('name', 'LIKE', "%{$request->search}%")->orWhere('email', 'LIKE', "%{$request->search}%")->orWhere('phone', 'LIKE', "%{$request->search}%")->get();
