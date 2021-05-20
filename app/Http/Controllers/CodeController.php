@@ -48,7 +48,7 @@ class CodeController extends Controller
     {
 
         if ($request->search != '') {
-            $codes = Code::where('name', 'LIKE', "%{$request->search}%")->orWhere('email', 'LIKE', "%{$request->search}%")->orWhere('phone', 'LIKE', "%{$request->search}%")->where('stage', $request->stage)->get();
+            $codes = Code::where('stage', $request->stage)->where('name', 'LIKE', "%{$request->search}%")->orWhere('email', 'LIKE', "%{$request->search}%")->orWhere('phone', 'LIKE', "%{$request->search}%")->get();
             return json_encode($codes);
         }
 //        if ($request->stage) {
