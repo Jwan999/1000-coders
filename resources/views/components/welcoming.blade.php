@@ -8,57 +8,60 @@
         </p>
 
 
-                <div>
-                    <div class="flex lg:w-8/12 w-full mt-10 ">
-        <div class="lg:w-10/12 lg:text-3xl text-2xl text-blue-500"> يمكنكم الان البدء بالمرحلة الثانية
-        </div>
-                        <div class="lg:w-2/12 lg:-mr-28 -mr-14 mt-5">
-                            <svg class="fill-current lg:w-28 lg:h-28 w-24 h-24" viewBox="0 0 412 379" version="1.1"
-                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <defs>
-                                    <path d="M3.11466667,37.4526111 C-1.71244444,34.4809444 -0.734055556,27.1498333 4.70388889,25.5715 L91.6788889,0.2635 C96.625,-1.16788889 101.197778,3.46922222 99.7166667,8.43827778 L73.9111111,95.3233333 C72.2944444,100.760556 65.0455556,101.702222 62.1161111,96.8472222 L39.9533333,60.1261111 L3.11466667,37.4526111 Z"
-                                          id="path-1"></path>
-                                    <filter x="-19.2%" y="-19.2%" width="144.3%" height="144.3%" filterUnits="objectBoundingBox"
-                                            id="filter-2">
-                                        <feMorphology radius="4.16666667" operator="dilate" in="SourceAlpha"
-                                                      result="shadowSpreadOuter1"></feMorphology>
-                                        <feOffset dx="3" dy="3" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
-                                        <feGaussianBlur stdDeviation="5.5" in="shadowOffsetOuter1"
-                                                        result="shadowBlurOuter1"></feGaussianBlur>
-                                        <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out"
-                                                     result="shadowBlurOuter1"></feComposite>
-                                        <feColorMatrix
-                                                values="0 0 0 0 0.992156863   0 0 0 0 0.870588235   0 0 0 0 0.250980392  0 0 0 1 0"
-                                                type="matrix" in="shadowBlurOuter1"></feColorMatrix>
-                                    </filter>
-                                </defs>
-                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
-                                   stroke-linecap="round">
-                                    <g id="Send"
-                                       transform="translate(322.108444, 283.989283) rotate(56.000000) translate(-322.108444, -283.989283) translate(272.108444, 233.989283)"
-                                       stroke-linejoin="round">
-                                        <g id="Path">
-                                            <use fill="black" fill-opacity="1" filter="url(#filter-2)"
-                                                 xlink:href="#path-1"></use>
-                                            <use stroke="#323232" stroke-width="8.33333333" fill="#FDDE40" fill-rule="evenodd"
-                                                 xlink:href="#path-1"></use>
-                                        </g>
+        <div>
+            <div class="flex lg:w-8/12 w-full mt-10 ">
+                <div class="lg:w-10/12 lg:text-3xl text-2xl text-blue-500">نتائج المرحلة الثانية</div>
+                <div class="lg:w-3/12 lg:-mr-96 -mr-32 mt-20">
+                    <svg viewBox="0 0 556 870" version="1.1"
+                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                        <defs>
+                            <path d="M3.97171962,47.7583274 C-2.18365236,43.9689567 -0.936043296,34.6205669 5.99824309,32.6079286 L116.905878,0.33600646 C123.212995,-1.48925317 129.04405,4.42383711 127.155386,10.7602119 L94.2489973,121.553153 C92.1874776,128.486518 82.9439349,129.6873 79.2084046,123.496365 L50.9471654,76.6708226 L3.97171962,47.7583274 Z"
+                                  id="path-1"></path>
+                            <filter x="-19.1%" y="-19.1%" width="144.4%" height="144.4%" filterUnits="objectBoundingBox"
+                                    id="filter-2">
+                                <feMorphology radius="5.31319513" operator="dilate" in="SourceAlpha"
+                                              result="shadowSpreadOuter1"></feMorphology>
+                                <feOffset dx="4" dy="4" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+                                <feGaussianBlur stdDeviation="7" in="shadowOffsetOuter1"
+                                                result="shadowBlurOuter1"></feGaussianBlur>
+                                <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out"
+                                             result="shadowBlurOuter1"></feComposite>
+                                <feColorMatrix
+                                        values="0 0 0 0 0.992156863   0 0 0 0 0.870588235   0 0 0 0 0.250980392  0 0 0 1 0"
+                                        type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+                            </filter>
+                        </defs>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                           stroke-linecap="round">
+                            <g id="Group-11" transform="translate(23.000000, 5.500000)">
+                                <g id="Send"
+                                   transform="translate(84.000000, 750.500000) scale(-1, 1) rotate(68.000000) translate(-84.000000, -750.500000) translate(20.000000, 686.500000)"
+                                   stroke-linejoin="round">
+                                    <g id="Path">
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-2)"
+                                             xlink:href="#path-1"></use>
+                                        <use stroke="#323232" stroke-width="10.6263903" fill="#FDDE40"
+                                             fill-rule="evenodd" xlink:href="#path-1"></use>
                                     </g>
-                                    <path d="M99.631651,3.90629493 C60.3798122,28.666361 33.7418512,51.2754474 19.717768,71.733554 C-16.1600385,124.07152 11.3830849,173.532014 80.8659876,218.61054 C127.187923,248.662891 203.065927,270.292711 308.5,283.5"
-                                          id="Line-7" stroke="#323232" stroke-width="7"></path>
                                 </g>
-                            </svg>
-                        </div>
-
-                    </div>
-
+                                <path d="M96.4632907,0 C80.087923,183.746226 80.087923,297.984656 96.4632907,342.715289 C121.026342,409.811239 131.01955,448.847465 253.730377,559.031224 C335.537594,632.487063 426.800192,696.229509 527.518169,750.258563"
+                                      id="Line-7" stroke="#323232" stroke-width="10"
+                                      transform="translate(305.849967, 375.129281) scale(-1, 1) translate(-305.849967, -375.129281) "></path>
+                            </g>
+                        </g>
+                    </svg>
                 </div>
-        <a href="https://survey.iotkidsiq.com/survey/1D8chCAL8n3wboprfFCMHhttWZba8sCda2/552708a5-9816-4b1c-afa1-92944eb07552">
-            <button
-                    class="transition duration-200 ease-in transform hover:-translate-y-1 hover:scale-110 py-4 px-6 shadow items-center rounded-2xl text-xl font-semibold yellow bg-blue-500 focus:outline-none">
-                البدء بالاختبار الثاني
-            </button>
-        </a>
+
+            </div>
+
+        </div>
+        {{--        <a href="https://survey.iotkidsiq.com/survey/1D8chCAL8n3wboprfFCMHhttWZba8sCda2/552708a5-9816-4b1c-afa1-92944eb07552">--}}
+        {{--            <button--}}
+        {{--                    class="transition duration-200 ease-in transform hover:-translate-y-1 hover:scale-110 py-4 px-6 shadow items-center rounded-2xl text-xl font-semibold yellow bg-blue-500 focus:outline-none">--}}
+        {{--                البدء بالاختبار الثاني--}}
+        {{--            </button>--}}
+        {{--        </a>--}}
 
     </div>
     <div class="lg:flex hidden lg:ml-8 ml-0 -mt-0 lg:-mt-10 lg:w-4/12 w-10/12">
