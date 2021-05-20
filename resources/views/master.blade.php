@@ -210,7 +210,6 @@
                         stage: 'Stage 2',
                     }
                 }).then(response => {
-
                     this.students = response.data
                 })
 
