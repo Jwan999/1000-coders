@@ -1,12 +1,10 @@
-
-
 <div id="stages" class="flex flex-wrap-reverse justify-center items-center w-full lg:mt-52 lg:mt-10 mt-20 ">
     <div class="w-full lg:mt-0 mt-14">
         <div class="flex">
             <h1 class="lg:text-6xl text-5xl text-gray-900 ">
                 المتأهلين
-                <svg  viewBox="0 0 430 11" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink">
+                <svg viewBox="0 0 430 11" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
                        stroke-linecap="round">
                         <g id="Group-12" transform="translate(5.332587, 4.454647)" stroke-width="9.48488242">

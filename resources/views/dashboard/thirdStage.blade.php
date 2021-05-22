@@ -88,130 +88,141 @@
                         <table class="min-w-max w-full table-auto">
                             <thead>
                             <tr class="bg-gray-800 text-gray-100 font-mono text-sm leading-normal">
-                                <th class="py-3 px-6 text-left">ID</th>
-                                <th class="py-3 px-6 text-left">Name</th>
+                                @if(Auth::user()->name === 'jwan')
+                                    <th class="py-3 px-6 text-left">ID</th>
+                                    <th class="py-3 px-6 text-left">Name</th>
+                                    <th class="py-3 px-6 text-left">Email Address</th>
+                                    <th class="py-3 px-6 text-left">Phone</th>
+                                    <th class="py-3 px-6 text-left">Age</th>
+                                    <th class="py-3 px-6 text-left">Partner</th>
+                                    <th class="py-3 px-6 text-left">Country</th>
+                                @endif
                                 <th class="py-3 px-6 text-left">Code</th>
-                                <th class="py-3 px-6 text-left">Email Address</th>
+
                                 <th class="py-3 px-6 text-left">Video</th>
-                                <th class="py-3 px-6 text-left">Phone</th>
-                                <th class="py-3 px-6 text-left">Age</th>
-                                <th class="py-3 px-6 text-left">Partner</th>
-                                <th class="py-3 px-6 text-left">Country</th>
+
+
                             </tr>
                             </thead>
                             <tbody class="text-gray-600 text-sm font-light">
                             @foreach ($applicants as $applicant)
+                                @if(Auth::user()->name === 'jwan')
+                                    <tr class="border-b border-gray-200 hover:bg-indigo-100">
+                                        <td class="py-3 px-6 text-left whitespace-nowrap">
+                                            <div class="flex items-center">
+                                                {{ $applicant->id }}
+                                            </div>
+                                        </td>
+                                        <td class="py-3 px-6 text-left whitespace-nowrap">
+                                            <div class="flex items-center">
+                                                {{ $applicant->name }}
+                                            </div>
+                                        </td>
 
-                                <tr class="border-b border-gray-200 hover:bg-indigo-100">
-                                    <td class="py-3 px-6 text-left whitespace-nowrap">
-                                        <div class="flex items-center">
-                                            {{ $applicant->id }}
-                                        </div>
-                                    </td>
-                                    <td class="py-3 px-6 text-left whitespace-nowrap">
-                                        <div class="flex items-center">
-                                            {{ $applicant->name }}
-                                        </div>
-                                    </td>
-                                    <td class="py-3 px-6 text-left">
-                                        <div class="flex items-center">
-                                            {{ $applicant->test_code }}
-                                        </div>
-                                    </td>
-                                    <td class="py-3 px-6 text-left">
-                                        <div class="flex items-center">
-                                            {{ $applicant->email }}
-                                        </div>
-                                    </td>
-                                    <td class="py-3 px-6 text-left">
-                                        <div class="flex items-center">
-                                            <a @click="toggleModal('{{$applicant->video}}','{{$applicant->name}}')"
-                                               class=" text-blue-500 cursor-pointer">{{ $applicant->video }}</a>
-                                        </div>
-                                    </td>
-                                    <td class="py-3 px-6 text-left">
-                                        <div class="flex items-center justify-center w-28">
-                                            {{ $applicant->phone }}
-                                        </div>
-                                    </td>
-                                    <td class="py-3 px-6 text-left">
-                                        <div class="flex items-center">
-                                            {{ $applicant->age }}
-                                        </div>
-                                    </td>
-                                    <td class="py-3 px-6 text-left">
-                                        <div class="flex items-center">
-                                            {{ $applicant->partner }}
-                                        </div>
-                                    </td>
-                                    <td class="py-3 px-6 text-left">
-                                        <div class="flex items-center">
-                                            {{ $applicant->country }}
-                                        </div>
-                                    </td>
+                                        <td class="py-3 px-6 text-left">
+                                            <div class="flex items-center">
+                                                {{ $applicant->email }}
+                                            </div>
+                                        </td>
 
-                                </tr>
+                                        <td class="py-3 px-6 text-left">
+                                            <div class="flex items-center justify-center w-28">
+                                                {{ $applicant->phone }}
+                                            </div>
+                                        </td>
+                                        <td class="py-3 px-6 text-left">
+                                            <div class="flex items-center">
+                                                {{ $applicant->age }}
+                                            </div>
+                                        </td>
+                                        <td class="py-3 px-6 text-left">
+                                            <div class="flex items-center">
+                                                {{ $applicant->partner }}
+                                            </div>
+                                        </td>
+                                        <td class="py-3 px-6 text-left">
+                                            <div class="flex items-center">
+                                                {{ $applicant->country }}
+                                            </div>
+                                        </td>
+                                        @endif
 
-                                <!-- This example requires Tailwind CSS v2.0+ -->
-                                <div v-if="open" class="fixed z-10 inset-0 overflow-y-auto"
-                                     aria-labelledby="modal-title"
-                                     role="dialog" aria-modal="true">
-                                    <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
-                                        <!--
-                                          Background overlay, show/hide based on modal state.
+                                        <td class="py-3 px-6 text-left">
+                                            <div class="flex items-center">
+                                                {{ $applicant->test_code }}
+                                            </div>
+                                        </td>
 
-                                          Entering: "ease-out duration-300"
-                                            From: "opacity-0"
-                                            To: "opacity-100"
-                                          Leaving: "ease-in duration-200"
-                                            From: "opacity-100"
-                                            To: "opacity-0"
-                                        -->
-                                        <div @click="toggleModal()"
-                                             class="fixed inset-0 bg-gray-500 bg-opacity-20 transition-opacity"
-                                             aria-hidden="true"></div>
+                                        <td class="py-3 px-6 text-left">
+                                            <div class="flex items-center">
+                                                <a @click="toggleModal('{{$applicant->video}}','{{$applicant->name}}')"
+                                                   class=" text-blue-500 cursor-pointer">{{ $applicant->video }}</a>
+                                            </div>
+                                        </td>
 
-                                        <!-- This element is to trick the browser into centering the modal contents. -->
-                                        <span class="hidden sm:inline-block sm:align-middle sm:h-screen"
-                                              aria-hidden="true">&#8203;</span>
 
-                                        <!--
-                                              Modal panel, show/hide based on modal state.
+                                    </tr>
+
+                                    <!-- This example requires Tailwind CSS v2.0+ -->
+                                    <div v-if="open" class="fixed z-10 inset-0 overflow-y-auto"
+                                         aria-labelledby="modal-title"
+                                         role="dialog" aria-modal="true">
+                                        <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+                                            <!--
+                                              Background overlay, show/hide based on modal state.
 
                                               Entering: "ease-out duration-300"
-                                                From: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-                                                To: "opacity-100 translate-y-0 sm:scale-100"
+                                                From: "opacity-0"
+                                                To: "opacity-100"
                                               Leaving: "ease-in duration-200"
-                                                From: "opacity-100 translate-y-0 sm:scale-100"
-                                                To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                                                From: "opacity-100"
+                                                To: "opacity-0"
                                             -->
-                                        <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle w-8/12">
-                                            <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
-                                                <div class="sm:flex sm:items-start">
-                                                    <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
-                                                        <h3 class="text-lg leading-6 font-medium text-gray-900"
-                                                            id="modal-title">
-                                                            Student Name: @{{ studentName }}
-                                                        </h3>
-                                                        <div class="mt-6 flex justify-center">
-                                                            <video class="w-10/12" controls>
-                                                                <source :src="'/storage/videos/' + videoSrc">
-                                                            </video>
+                                            <div @click="toggleModal()"
+                                                 class="fixed inset-0 bg-gray-500 bg-opacity-20 transition-opacity"
+                                                 aria-hidden="true"></div>
+
+                                            <!-- This element is to trick the browser into centering the modal contents. -->
+                                            <span class="hidden sm:inline-block sm:align-middle sm:h-screen"
+                                                  aria-hidden="true">&#8203;</span>
+
+                                            <!--
+                                                  Modal panel, show/hide based on modal state.
+
+                                                  Entering: "ease-out duration-300"
+                                                    From: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                                                    To: "opacity-100 translate-y-0 sm:scale-100"
+                                                  Leaving: "ease-in duration-200"
+                                                    From: "opacity-100 translate-y-0 sm:scale-100"
+                                                    To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                                                -->
+                                            <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle w-8/12">
+                                                <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                                                    <div class="sm:flex sm:items-start">
+                                                        <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                                                            <h3 class="text-lg leading-6 font-medium text-gray-900"
+                                                                id="modal-title">
+                                                                Student Name: @{{ studentName }}
+                                                            </h3>
+                                                            <div class="mt-6 flex justify-center">
+                                                                <video class="w-10/12" controls>
+                                                                    <source :src="'/storage/videos/' + videoSrc">
+                                                                </video>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
-                                                <button @click="toggleModal()" type="button"
-                                                        class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
-                                                    Back to dashboard
-                                                </button>
+                                                <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                                                    <button @click="toggleModal()" type="button"
+                                                            class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
+                                                        Back to dashboard
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
 
-                            @endforeach
+                                    @endforeach
 
 
                             </tbody>
