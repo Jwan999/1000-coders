@@ -49,6 +49,22 @@
             color: #FDDE40;
         }
 
+        .bgQualify {
+            background-image: url("bgQualify.png");
+            background-repeat: no-repeat;
+        }
+
+        @media (max-width: 600px) {
+            .bgQualify {
+                background-image: none !important;
+            }
+        }
+
+        .teal {
+            color: #49C6F3
+        }
+
+
     </style>
 </head>
 <body class="bg-gray-100 relative">
@@ -146,6 +162,8 @@
     <div class="lg:mx-24 mx-6 z-10">
 
         @include('components.welcoming')
+        @include('components.stageThreeSection')
+
         {{--    <div id="vision">--}}
         {{--        @include('components/vision')--}}
         {{--    </div>--}}

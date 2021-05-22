@@ -23,6 +23,7 @@
                 </div>
                 {{--paginate--}}
                 <div class="flex items-center lg:mt-0">
+
                     <a href="{{$applicants->previousPageUrl()}}">
                         <div class="bg-indigo-100 rounded px-3 py-2 cursor-pointer">
                             <svg class="fill-current text-gray-900 w-2" viewBox="0 0 10 16" version="1.1"
@@ -63,6 +64,17 @@
 
                         </div>
                     </a>
+
+
+                    @if(Auth::user()->name === 'jwan')
+
+                        <a href="applicants/export">
+                    <span class="bg-green-300 text-gray-900 font-mono rounded px-3 py-2 text-sm">
+                        Export
+                    </span>
+                        </a>
+                    @endif
+
 
                 </div>
 

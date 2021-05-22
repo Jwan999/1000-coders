@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Exports\ApplicantsExport;
 use App\Models\Student;
 use Illuminate\Support\Facades\Response;
 
@@ -20,6 +21,15 @@ class StudentController extends Controller
     {
         if (Auth::check()) {
             return Excel::download(new StudentsExport, 'coding_marathon_registers.xlsx');
+        }
+        return Redirect::route('dashboard/login');
+
+    }
+
+    public function exportApplicants()
+    {
+        if (Auth::check()) {
+            return Excel::download(new ApplicantsExport(), 'coding_marathon_stage_three_applicants.xlsx');
         }
         return Redirect::route('dashboard/login');
 

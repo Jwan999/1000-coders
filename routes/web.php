@@ -47,6 +47,8 @@ Route::group(['prefix' => 'dashboard', 'middleware' => ['auth']], function () {
     Route::get('/api/registers', [StudentController::class, 'show']);
 
     Route::get('/students/export', [StudentController::class, 'export']);
+    Route::get('/applicants/export', [StudentController::class, 'exportApplicants']);
+
 
     Route::get('/charts', [StudentController::class, 'charts']);
 
