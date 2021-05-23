@@ -239,7 +239,7 @@
 @endsection
 @push('scripts')
     <script>
-        let vue = new Vue({
+        var vue = new Vue({
             el: '#app',
             data: {
                 open: false,

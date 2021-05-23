@@ -204,9 +204,11 @@
     </div>
 
 </div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-<script src="js/app.js"></script>
+<script src="/js/app.js"></script>
 <script>
     var vue = new Vue({
         el: "#app",
