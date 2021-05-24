@@ -119,6 +119,7 @@
                 <input v-model="email" name="email" type="email"
                        class="mt-6 bg-gray-200 border border-gray-300 focus:border-blue-400 focus:bg-gray-100 text-lg py-3 px-4 rounded-xl outline-none"
                        placeholder="العنوان البريدي">
+
                 @if($errors->has('email'))
                     <div class="text-red-500 text-base opacity-95">{{ $errors->first('email') }}</div>
                 @endif
@@ -143,6 +144,23 @@
                 @if($errors->has('partner'))
                     <div class="text-red-500 text-base opacity-95">{{ $errors->first('partner') }}</div>
                 @endif
+
+                <input name="title" type="text"
+                       class="mt-6 bg-gray-200 border border-gray-300 focus:border-blue-400 focus:bg-gray-100 text-lg py-3 px-4 rounded-xl outline-none"
+                       placeholder="عنوان الفديو">
+
+                @if($errors->has('title'))
+                    <div class="text-red-500 text-base opacity-95">{{ $errors->first('title') }}</div>
+                @endif
+
+                <input name="description" type="text"
+                       class="mt-6 bg-gray-200 border border-gray-300 focus:border-blue-400 focus:bg-gray-100 text-lg py-3 px-4 rounded-xl outline-none"
+                       placeholder="شرح عن الفديو">
+
+                @if($errors->has('description'))
+                    <div class="text-red-500 text-base opacity-95">{{ $errors->first('description') }}</div>
+                @endif
+
                 <h1 class="text-xl text-gray-900 mt-6">فديو المسابقة</h1>
                 <input type="file" name="video" placeholder="الفديو"
                        class="mt-4 bg-gray-200 border border-gray-300 focus:border-blue-400 focus:bg-gray-100 text-lg py-3 px-4 rounded-xl outline-none">
@@ -150,6 +168,7 @@
                 @if($errors->has('video'))
                     <div class="text-red-500 text-base opacity-95">{{ $errors->first('video') }}</div>
                 @endif
+
 
                 <div class="4/12">
                     <button type="submit" @click="submit()"
@@ -165,10 +184,11 @@
 </div>
 
 <script src="js/app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
 <script>
-    let vue = new Vue({
+    var vue = new Vue({
         el: '#app',
         data: {
             selected: 'الدولة',

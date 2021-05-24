@@ -98,6 +98,8 @@
                                     <th class="py-3 px-6 text-left">Country</th>
                                 @endif
                                 <th class="py-3 px-6 text-left">Code</th>
+                                <th class="py-3 px-6 text-left">Video Title</th>
+                                <th class="py-3 px-6 text-left">Video Description</th>
 
                                 <th class="py-3 px-6 text-left">Video</th>
 
@@ -146,6 +148,18 @@
                                             </div>
                                         </td>
                                         @endif
+
+                                        <td class="py-3 px-6 text-left">
+                                            <div class="flex items-center">
+                                                {{ $applicant->title }}
+                                            </div>
+                                        </td>
+
+                                        <td class="py-3 px-6 text-left">
+                                            <div class="flex items-center">
+                                                {{ $applicant->description }}
+                                            </div>
+                                        </td>
 
                                         <td class="py-3 px-6 text-left">
                                             <div class="flex items-center">

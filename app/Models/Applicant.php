@@ -9,5 +9,5 @@ class Applicant extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name', 'phone', 'country', 'age', 'partner', 'email', 'video', 'test_code'];
+    protected $fillable = ['name', 'phone', 'country', 'age', 'partner', 'email', 'video', 'test_code', 'title', 'description'];
 }

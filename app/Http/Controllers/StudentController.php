@@ -62,6 +62,8 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
+//        dd($request);
+
 //        dd($request->code);
         $rules = $this->validate($request, [
             "name" => "required",
@@ -76,6 +78,8 @@ class StudentController extends Controller
             'email' => $request->email,
             'phone' => $request->code . $request->phone,
             'age' => $request->age,
+//            'title' => $request->age,
+//            'description' => $request->age,
             'country' => $request->country,
             'partner' => $request->partner,
         ];

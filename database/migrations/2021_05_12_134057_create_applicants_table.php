@@ -21,6 +21,10 @@ class CreateApplicantsTable extends Migration
             $table->string('country');
             $table->string('phone');
             $table->string('partner');
+            $table->string('test_code');
+
+            $table->string('title');
+            $table->string('description');
             $table->string('video');
 
             $table->timestamps();
