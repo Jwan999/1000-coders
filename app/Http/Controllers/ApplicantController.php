@@ -46,7 +46,7 @@ class ApplicantController extends Controller
             "title" => "required",
             "description" => "required",
             "test_code" => "required",
-            "video" => "mimes:mp4,avi,mpeg,quicktime",
+            "video" => "mimetypes:video/x-ms-asf,video/x-flv,video/mp4,application/x-mpegURL,video/MP2T,video/3gpp,video/quicktime,video/x-msvideo,video/x-ms-wmv,video/avi",
         ]);
 
         $fileNameWithExt = $request->file('video')->getClientMimeType();
