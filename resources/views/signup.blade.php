@@ -276,8 +276,6 @@
                     return
                 }
                 this.$refs['phone'].value = this.full_phone
-                alert(xmlhttp.readyState);
-
 
             },
             selectingPartner() {
