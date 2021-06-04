@@ -1,7 +1,7 @@
 @extends('dashboard.master')
 @section('content')
     <div id="app" class="flex w-full justify-center lg:p-4 p-2">
-
+        <div class="w-1/12"></div>
         <div class="flex flex-col bg-white lg:w-10/12 w-full rounded-lg shadow-lg p-6 mt-10">
             {{--title--}}
             <div class="flex text-2xl">
