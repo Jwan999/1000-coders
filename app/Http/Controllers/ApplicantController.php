@@ -86,7 +86,7 @@ class ApplicantController extends Controller
     public function show(Applicant $applicant)
     {
 
-        $query = Applicant::orderByDesc('created_at');
+        $query = Applicant::orderByAsc('created_at');
 
         $applicants = $query->paginate(15);
         return view('dashboard/thirdStage', ['applicants' => $applicants]);
