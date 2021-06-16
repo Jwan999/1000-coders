@@ -61,8 +61,8 @@ Route::group(['prefix' => 'dashboard', 'middleware' => ['auth']], function () {
 //Route::post('/signup', [StudentController::class, 'store']);
 
 
-Route::get('/signup', [ApplicantController::class, 'index']);
-Route::post('/signup', [ApplicantController::class, 'store']);
+//Route::get('/signup', [ApplicantController::class, 'index']);
+//Route::post('/signup', [ApplicantController::class, 'store']);
 
 Auth::routes();
 
