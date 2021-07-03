@@ -1,4 +1,4 @@
-<div id="stages" class="flex flex-wrap-reverse justify-center items-center w-full lg:mt-52 lg:mt-10 mt-20 ">
+<div id="qualified" class="flex flex-wrap-reverse justify-center items-center w-full lg:mt-52 lg:mt-10 mt-20 ">
     <div class="w-full lg:mt-0 mt-14">
         <div class="flex">
             <h1 class="lg:text-6xl text-5xl text-gray-900 ">
