@@ -5,7 +5,7 @@
         <div class="flex flex-col bg-white lg:w-10/12 md:w-9/12 w-full rounded-lg shadow-lg p-6 mt-10">
             {{--title--}}
             <div class="flex text-2xl">
-                <h1>Third stage applicants</h1>
+                <h1>Fourth stage applicants</h1>
             </div>
 
             <div class="flex items-center mt-4">
@@ -89,8 +89,9 @@
                             <thead>
                             <tr class="bg-gray-800 text-gray-100 font-mono text-sm leading-normal">
 
-                                <th class="py-3 px-6 text-left">ID</th>
+                                {{--                                <th class="py-3 px-6 text-left">ID</th>--}}
                                 <th class="py-3 px-6 text-left">Name</th>
+                                <th class="py-3 px-6 text-left">Time</th>
                                 <th class="py-3 px-6 text-left">Video</th>
                                 <th class="py-3 px-6 text-left">Email Address</th>
                                 <th class="py-3 px-6 text-left">Phone</th>
@@ -98,9 +99,10 @@
                                 <th class="py-3 px-6 text-left">Partner</th>
                                 <th class="py-3 px-6 text-left">Country</th>
 
-                                <th class="py-3 px-6 text-left">Code</th>
                                 <th class="py-3 px-6 text-left">Video Title</th>
                                 <th class="py-3 px-6 text-left">Video Description</th>
+
+                                <th class="py-3 px-6 text-left">Code</th>
 
 
                             </tr>
@@ -109,16 +111,24 @@
                             @foreach ($applicants as $applicant)
 
                                 <tr class="border-b border-gray-200 hover:bg-indigo-100">
-                                    <td class="py-3 px-6 text-left whitespace-nowrap">
-                                        <div class="flex items-center">
-                                            {{ $applicant->id }}
-                                        </div>
-                                    </td>
+                                    {{--                                    <td class="py-3 px-6 text-left whitespace-nowrap">--}}
+                                    {{--                                        <div class="flex items-center">--}}
+                                    {{--                                            {{ $applicant->id }}--}}
+                                    {{--                                        </div>--}}
+                                    {{--                                    </td>--}}
                                     <td class="py-3 px-6 text-left whitespace-nowrap">
                                         <div class="flex items-center">
                                             {{ $applicant->name }}
                                         </div>
                                     </td>
+
+                                    <td class="py-3 px-6 text-left whitespace-nowrap">
+                                        <div class="flex items-center">
+                                            {{ \Carbon\Carbon::parse($applicant->created_at)->timezone('Asia/Baghdad')->format('d / m,  h A')}}
+
+                                        </div>
+                                    </td>
+
 
                                     <td class="py-3 px-6 text-left">
                                         <div class="flex items-center">
