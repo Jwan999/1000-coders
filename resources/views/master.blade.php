@@ -115,7 +115,6 @@
                 <a href="#goals"
                    class="scrollactive-item lg:p-4 py-3 px-0 block border-b-4 transition duration-300 ease-in-out transform hover:scale-110 border-transparent hover:border-yellow-300">
                     @lang("language.goals")
-
                 </a>
 
                 <a href="#stages"
