@@ -34,12 +34,17 @@ class LoginController extends Controller
     }
 
 
+//    public function redirectPath()
+//    {
+//        protected $redirectTo = '/dashboard/applicants';
+//    }
+
     /**
      * Where to redirect users after login.
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
+    protected $redirectTo = '/dashboard/applicants';
 
     /**
      * Create a new controller instance.
