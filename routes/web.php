@@ -52,7 +52,7 @@ Route::group(['prefix' => 'dashboard', 'middleware' => ['auth']], function () {
 
     Route::get('/charts', [StudentController::class, 'charts']);
 
-    Route::get('/applicants', [ApplicantController::class, 'show']);
+    Route::get('/applicants', [ApplicantController::class, 'show'])->name('home');
 
 });
 
