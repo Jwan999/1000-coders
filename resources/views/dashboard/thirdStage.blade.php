@@ -91,13 +91,16 @@
 
                                 {{--                                <th class="py-3 px-6 text-left">ID</th>--}}
                                 <th class="py-3 px-6 text-left">Name</th>
-                                <th class="py-3 px-6 text-left">Time</th>
+                                {{--                                <th class="py-3 px-6 text-left">Time</th>--}}
                                 <th class="py-3 px-6 text-left">Video</th>
+
+                                <th class="py-3 px-6 text-left">Country</th>
+                                <th class="py-3 px-6 text-left">Partner</th>
+
+
                                 <th class="py-3 px-6 text-left">Email Address</th>
                                 <th class="py-3 px-6 text-left">Phone</th>
                                 <th class="py-3 px-6 text-left">Age</th>
-                                <th class="py-3 px-6 text-left">Partner</th>
-                                <th class="py-3 px-6 text-left">Country</th>
 
                                 <th class="py-3 px-6 text-left">Video Title</th>
                                 <th class="py-3 px-6 text-left">Video Description</th>
@@ -121,21 +124,29 @@
                                             {{ $applicant->name }}
                                         </div>
                                     </td>
-
-                                    <td class="py-3 px-6 text-left whitespace-nowrap">
-                                        <div class="flex items-center">
-                                            {{ \Carbon\Carbon::parse($applicant->created_at)->timezone('Asia/Baghdad')->format('d / m,  h A')}}
-
-                                        </div>
-                                    </td>
-
-
                                     <td class="py-3 px-6 text-left">
                                         <div class="flex items-center">
                                             <a @click="toggleModal('{{$applicant->video}}','{{$applicant->name}}')"
                                                class=" text-blue-500 cursor-pointer">{{ $applicant->video }}</a>
                                         </div>
                                     </td>
+                                    <td class="py-3 px-6 text-left">
+                                        <div class="flex items-center">
+                                            {{ $applicant->country }}
+                                        </div>
+                                    </td>
+                                    <td class="py-3 px-6 text-left">
+                                        <div class="flex items-center">
+                                            {{ $applicant->partner }}
+                                        </div>
+                                    </td>
+                                    {{--                                    <td class="py-3 px-6 text-left whitespace-nowrap">--}}
+                                    {{--                                        <div class="flex items-center">--}}
+                                    {{--                                            {{ \Carbon\Carbon::parse($applicant->created_at)->timezone('Asia/Baghdad')->format('d / m,  h A')}}--}}
+
+                                    {{--                                        </div>--}}
+                                    {{--                                    </td>--}}
+
 
                                     <td class="py-3 px-6 text-left">
                                         <div class="flex items-center">
@@ -153,16 +164,7 @@
                                             {{ $applicant->age }}
                                         </div>
                                     </td>
-                                    <td class="py-3 px-6 text-left">
-                                        <div class="flex items-center">
-                                            {{ $applicant->partner }}
-                                        </div>
-                                    </td>
-                                    <td class="py-3 px-6 text-left">
-                                        <div class="flex items-center">
-                                            {{ $applicant->country }}
-                                        </div>
-                                    </td>
+
 
                                     <td class="py-3 px-6 text-left">
                                         <div class="flex items-center">
