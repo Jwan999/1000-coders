@@ -50,6 +50,27 @@
             }
         }
 
+        .wiggle {
+            animation-name: wiggle;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            /*margin-left: 30px;*/
+            margin-top: 5px;
+        }
+
+        @keyframes wiggle {
+            0% {
+                transform: translate(0, 0px) rotate(0deg);;
+            }
+            50% {
+                transform: translate(0, -30px) rotate(30deg);;
+            }
+            100% {
+                transform: translate(0, -0px) rotate(0deg);;
+            }
+        }
+
         .yellow {
             color: #FDDE40;
         }

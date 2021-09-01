@@ -33,27 +33,27 @@
             <div class="flex items-center justify-center">
                 <img class="w-14 h-14 mx-3" src="trophies/confetti.png" alt="">
                 <h1 class="text-center text-gray-600 lg:text-3xl text-2xl my-10 px-3 py-2 font-bold">
-                    جائزة العرض التقديمي للكبار
+                    جائزة العرض التقديمي للكبارd
                 </h1>
                 <img class="w-14 h-14 mx-3" src="trophies/confetti.png" alt="">
             </div>
             <div class="grid lg:grid-cols-7 grid-cols-1 w-full gap-6 mt-3 border-b-2 border-gray-200">
                 <div class="lg:col-start-3 lg:col-span-3">
                     <div class="aspect-w-16 aspect-h-9">
-                                                <iframe class="rounded-xl border-2 border-yellow-400 shadow-md mt-0"
-                                                        src="https://www.youtube.com/embed/t3vPc0G0zDE" frameborder="0"
-                                                        allowfullscreen></iframe>
+                        <iframe class="rounded-xl border-2 border-yellow-400 shadow-md mt-0"
+                                src="https://www.youtube.com/embed/t3vPc0G0zDE" frameborder="0"
+                                allowfullscreen></iframe>
 
-                        <img class="-mr-6 w-24 h-24 transform rotate-12" src="/trophies/1.png" alt="">
+                        <img class="wiggle  w-24 h-24 transform rotate-12 " src="/trophies/1.png" alt="">
                     </div>
                     <h1 class="text-center text-blue-500 text-5xl my-10">Malack Mohammed Ahmed Hassan</h1>
                 </div>
                 <div class="lg:col-start-1 lg:col-end-4">
                     <div class="aspect-w-16 aspect-h-9">
-                                                <iframe class="rounded-xl border-2 border-yellow-400 shadow-md mt-0"
-                                                        src="https://www.youtube.com/embed/z4FJkcEGbII" frameborder="0"
-                                                        allowfullscreen></iframe>
-                        <img class="-mr-6 w-24 h-24 transform rotate-12" src="/trophies/2.png" alt="">
+                        <iframe class="rounded-xl border-2 border-yellow-400 shadow-md mt-0"
+                                src="https://www.youtube.com/embed/z4FJkcEGbII" frameborder="0"
+                                allowfullscreen></iframe>
+                        <img class="wiggle -mr-6 w-24 h-24 transform rotate-12" src="/trophies/2.png" alt="">
                     </div>
 
                     <h1 class="text-center text-pink-500 text-5xl my-10">عبدالرحمن سائد قرة</h1>
@@ -61,10 +61,10 @@
                 </div>
                 <div class="lg:col-end-8 lg:col-span-3">
                     <div class="aspect-w-16 aspect-h-9">
-                                                <iframe class="rounded-xl border-2 border-yellow-400 shadow-md mt-0"
-                                                        src="https://www.youtube.com/embed/z3wJ_0IiSFA" frameborder="0"
-                                                        allowfullscreen></iframe>
-                        <img class="-mr-6 w-24 h-24 transform rotate-12" src="/trophies/3.png" alt="">
+                        <iframe class="rounded-xl border-2 border-yellow-400 shadow-md mt-0"
+                                src="https://www.youtube.com/embed/z3wJ_0IiSFA" frameborder="0"
+                                allowfullscreen></iframe>
+                        <img class="wiggle -mr-6 w-24 h-24 transform rotate-12" src="/trophies/3.png" alt="">
                     </div>
                     <h1 class="text-center text-green-500 text-5xl my-10">Hussein Nabeel Ibrahim</h1>
 
@@ -81,31 +81,31 @@
             <div class="grid lg:grid-cols-7 grid-cols-1 w-full gap-6 mt-3 border-b-2 border-gray-200">
                 <div class="lg:col-start-3 lg:col-span-3">
                     <div class="aspect-w-16 aspect-h-9">
-                                                <iframe class="rounded-xl border-2 border-yellow-400 shadow-md mt-0"
-                                                        src="https://www.youtube.com/embed/Rq_10iKeWXQ" frameborder="0"
-                                                        allowfullscreen></iframe>
-                        <img class="-mr-6 w-24 h-24 transform rotate-12" src="/trophies/1.png" alt="">
+                        <iframe class="rounded-xl border-2 border-yellow-400 shadow-md mt-0"
+                                src="https://www.youtube.com/embed/Rq_10iKeWXQ" frameborder="0"
+                                allowfullscreen></iframe>
+                        <img class="wiggle -mr-6 w-24 h-24 transform rotate-12" src="/trophies/1.png" alt="">
                     </div>
 
                     <h1 class="text-center text-blue-500 text-5xl my-10">Jad hamwi</h1>
                 </div>
                 <div class="lg:col-start-1 lg:col-end-4">
                     <div class="aspect-w-16 aspect-h-9">
-                                                <iframe class="rounded-xl border-2 border-yellow-400 shadow-md mt-0"
-                                                        src="https://www.youtube.com/embed/CaMoViMg3ws" frameborder="0"
-                                                        allowfullscreen></iframe>
+                        <iframe class="rounded-xl border-2 border-yellow-400 shadow-md mt-0"
+                                src="https://www.youtube.com/embed/CaMoViMg3ws" frameborder="0"
+                                allowfullscreen></iframe>
 
-                        <img class="-mr-6 w-24 h-24 transform rotate-12" src="/trophies/2.png" alt="">
+                        <img class="wiggle -mr-6 w-24 h-24 transform rotate-12" src="/trophies/2.png" alt="">
                     </div>
                     <h1 class="text-center text-pink-500 text-5xl my-10">عبدالله محمد يوسف الكرنز</h1>
 
                 </div>
                 <div class="lg:col-end-8 lg:col-span-3">
                     <div class="aspect-w-16 aspect-h-9">
-                                                <iframe class="rounded-xl border-2 border-yellow-400 shadow-md mt-0"
-                                                        src="https://www.youtube.com/embed/QUA6BEGjuVE" frameborder="0"
-                                                        allowfullscreen></iframe>
-                        <img class="-mr-6 w-24 h-24 transform rotate-12" src="/trophies/3.png" alt="">
+                        <iframe class="rounded-xl border-2 border-yellow-400 shadow-md mt-0"
+                                src="https://www.youtube.com/embed/QUA6BEGjuVE" frameborder="0"
+                                allowfullscreen></iframe>
+                        <img class="wiggle -mr-6 w-24 h-24 transform rotate-12" src="/trophies/3.png" alt="">
                     </div>
 
                     <h1 class="text-center text-green-500 text-5xl my-10">ايه عبدالرحمن بركات</h1>
@@ -123,20 +123,20 @@
             <div class="grid lg:grid-cols-7 grid-cols-1 w-full gap-6 mt-3 border-b-2 border-gray-200">
                 <div class="lg:col-start-3 lg:col-span-3">
                     <div class="aspect-w-16 aspect-h-9">
-                                                <iframe class="rounded-xl border-2 border-yellow-400 shadow-md mt-0"
-                                                        src="https://www.youtube.com/embed/72sVST3iy0Y" frameborder="0"
-                                                        allowfullscreen></iframe>
-                        <img class="-mr-6 w-24 h-24 transform rotate-12" src="/trophies/1.png" alt="">
+                        <iframe class="rounded-xl border-2 border-yellow-400 shadow-md mt-0"
+                                src="https://www.youtube.com/embed/72sVST3iy0Y" frameborder="0"
+                                allowfullscreen></iframe>
+                        <img class="wiggle -mr-6 w-24 h-24 transform rotate-12" src="/trophies/1.png" alt="">
                     </div>
 
                     <h1 class="text-center text-blue-500 text-5xl my-10">Zeina Nael Nofal Nofal</h1>
                 </div>
                 <div class="lg:col-start-1 lg:col-end-4">
                     <div class="aspect-w-16 aspect-h-9">
-                                                <iframe class="rounded-xl border-2 border-yellow-400 shadow-md mt-0"
-                                                        src="https://www.youtube.com/embed/pn3A9s4jXO0" frameborder="0"
-                                                        allowfullscreen></iframe>
-                        <img class="-mr-6 w-24 h-24 transform rotate-12" src="/trophies/2.png" alt="">
+                        <iframe class="rounded-xl border-2 border-yellow-400 shadow-md mt-0"
+                                src="https://www.youtube.com/embed/pn3A9s4jXO0" frameborder="0"
+                                allowfullscreen></iframe>
+                        <img class="wiggle -mr-6 w-24 h-24 transform rotate-12" src="/trophies/2.png" alt="">
                     </div>
 
                     <h1 class="text-center text-pink-500 text-5xl my-10">Rodeen Hemdan Okasha Ahmed</h1>
@@ -144,11 +144,11 @@
                 </div>
                 <div class="lg:col-end-8 lg:col-span-3">
                     <div class="aspect-w-16 aspect-h-9">
-                                                <iframe class="rounded-xl border-2 border-yellow-400 shadow-md mt-0"
-                                                        src="https://www.youtube.com/embed/nSQI2N5zBC8" frameborder="0"
-                                                        allowfullscreen></iframe>
+                        <iframe class="rounded-xl border-2 border-yellow-400 shadow-md mt-0"
+                                src="https://www.youtube.com/embed/nSQI2N5zBC8" frameborder="0"
+                                allowfullscreen></iframe>
 
-                        <img class="-mr-6 w-24 h-24 transform rotate-12" src="/trophies/3.png" alt="">
+                        <img class="wiggle -mr-6 w-24 h-24 transform rotate-12" src="/trophies/3.png" alt="">
                     </div>
                     <h1 class="text-center text-green-500 text-5xl my-10">علي الدين احمد علي</h1>
 
@@ -166,20 +166,20 @@
             <div class="grid lg:grid-cols-7 grid-cols-1 w-full gap-6 mt-3 border-b-2 border-gray-200">
                 <div class="lg:col-start-3 lg:col-span-3">
                     <div class="aspect-w-16 aspect-h-9">
-                                                <iframe class="rounded-xl border-2 border-yellow-400 shadow-md mt-0"
-                                                        src="https://www.youtube.com/embed/NnRlVrYR8kg" frameborder="0"
-                                                        allowfullscreen></iframe>
-                        <img class="-mr-6 w-24 h-24 transform rotate-12" src="/trophies/1.png" alt="">
+                        <iframe class="rounded-xl border-2 border-yellow-400 shadow-md mt-0"
+                                src="https://www.youtube.com/embed/NnRlVrYR8kg" frameborder="0"
+                                allowfullscreen></iframe>
+                        <img class="wiggle -mr-6 w-24 h-24 transform rotate-12" src="/trophies/1.png" alt="">
                     </div>
 
                     <h1 class="text-center text-blue-500 text-5xl my-10">Qais Maysam Majed Mdeh</h1>
                 </div>
                 <div class="lg:col-start-1 lg:col-end-4">
                     <div class="aspect-w-16 aspect-h-9">
-                                                <iframe class="rounded-xl border-2 border-yellow-400 shadow-md mt-0"
-                                                        src="https://www.youtube.com/embed/2_uwEHJWz_Q" frameborder="0"
-                                                        allowfullscreen></iframe>
-                        <img class="-mr-6 w-24 h-24 transform rotate-12" src="/trophies/2.png" alt="">
+                        <iframe class="rounded-xl border-2 border-yellow-400 shadow-md mt-0"
+                                src="https://www.youtube.com/embed/2_uwEHJWz_Q" frameborder="0"
+                                allowfullscreen></iframe>
+                        <img class="wiggle -mr-6 w-24 h-24 transform rotate-12" src="/trophies/2.png" alt="">
                     </div>
 
                     <h1 class="text-center text-pink-500 text-5xl my-10">حلا محمد عامر عبارة</h1>
@@ -187,10 +187,10 @@
                 </div>
                 <div class="lg:col-end-8 lg:col-span-3">
                     <div class="aspect-w-16 aspect-h-9">
-                                                <iframe class="rounded-xl border-2 border-yellow-400 shadow-md mt-0"
-                                                        src="https://www.youtube.com/embed/52yKwL6AyQo" frameborder="0"
-                                                        allowfullscreen></iframe>
-                        <img class="-mr-6 w-24 h-24 transform rotate-12" src="/trophies/3.png" alt="">
+                        <iframe class="rounded-xl border-2 border-yellow-400 shadow-md mt-0"
+                                src="https://www.youtube.com/embed/52yKwL6AyQo" frameborder="0"
+                                allowfullscreen></iframe>
+                        <img class="wiggle -mr-6 w-24 h-24 transform rotate-12" src="/trophies/3.png" alt="">
                     </div>
 
                     <h1 class="text-center text-green-500 text-5xl my-10">karam kara bilo</h1>
@@ -208,20 +208,20 @@
             <div class="grid lg:grid-cols-7 grid-cols-1 w-full gap-6 mt-3 border-b-2 border-gray-200">
                 <div class="lg:col-start-3 lg:col-span-3">
                     <div class="aspect-w-16 aspect-h-9">
-                                                <iframe class="rounded-xl border-2 border-yellow-400 shadow-md mt-0"
-                                                        src="https://www.youtube.com/embed/2jORlsYUI5E" frameborder="0"
-                                                        allowfullscreen></iframe>
-                        <img class="-mr-6 w-24 h-24 transform rotate-12" src="/trophies/1.png" alt="">
+                        <iframe class="rounded-xl border-2 border-yellow-400 shadow-md mt-0"
+                                src="https://www.youtube.com/embed/2jORlsYUI5E" frameborder="0"
+                                allowfullscreen></iframe>
+                        <img class="wiggle -mr-6 w-24 h-24 transform rotate-12" src="/trophies/1.png" alt="">
                     </div>
 
                     <h1 class="text-center text-blue-500 text-5xl my-10">عمر الخطاب عثمان أبوزيد</h1>
                 </div>
                 <div class="lg:col-start-1 lg:col-end-4">
                     <div class="aspect-w-16 aspect-h-9">
-                                                <iframe class="rounded-xl border-2 border-yellow-400 shadow-md mt-0"
-                                                        src="https://www.youtube.com/embed/LVSUHA5XccU" frameborder="0"
-                                                        allowfullscreen></iframe>
-                        <img class="-mr-6 w-24 h-24 transform rotate-12" src="/trophies/2.png" alt="">
+                        <iframe class="rounded-xl border-2 border-yellow-400 shadow-md mt-0"
+                                src="https://www.youtube.com/embed/LVSUHA5XccU" frameborder="0"
+                                allowfullscreen></iframe>
+                        <img class="wiggle -mr-6 w-24 h-24 transform rotate-12" src="/trophies/2.png" alt="">
                     </div>
 
                     <h1 class="text-center text-pink-500 text-5xl my-10">دينا عمر عبدالعزيز</h1>
@@ -229,10 +229,10 @@
                 </div>
                 <div class="lg:col-end-8 lg:col-span-3">
                     <div class="aspect-w-16 aspect-h-9">
-                                                <iframe class="rounded-xl border-2 border-yellow-400 shadow-md mt-0"
-                                                        src="https://www.youtube.com/embed/WqyKUCBXwB4" frameborder="0"
-                                                        allowfullscreen></iframe>
-                        <img class="-mr-6 w-24 h-24 transform rotate-12" src="/trophies/3.png" alt="">
+                        <iframe class="rounded-xl border-2 border-yellow-400 shadow-md mt-0"
+                                src="https://www.youtube.com/embed/WqyKUCBXwB4" frameborder="0"
+                                allowfullscreen></iframe>
+                        <img class=" wiggle -mr-6 w-24 h-24 transform rotate-12" src="/trophies/3.png" alt="">
                     </div>
 
                     <h1 class="text-center text-green-500 text-5xl my-10">Yassine khemakhem</h1>
@@ -250,20 +250,20 @@
             <div class="grid lg:grid-cols-7 grid-cols-1 w-full gap-6 mt-3 border-b-2 border-gray-200">
                 <div class="lg:col-start-3 lg:col-span-3">
                     <div class="aspect-w-16 aspect-h-9">
-                                                <iframe class="rounded-xl border-2 border-yellow-400 shadow-md mt-0"
-                                                        src="https://www.youtube.com/embed/RlzOi1VC4Ms" frameborder="0"
-                                                        allowfullscreen></iframe>
+                        <iframe class="rounded-xl border-2 border-yellow-400 shadow-md mt-0"
+                                src="https://www.youtube.com/embed/RlzOi1VC4Ms" frameborder="0"
+                                allowfullscreen></iframe>
 
-                        <img class="-mr-6 w-24 h-24 transform rotate-12" src="/trophies/1.png" alt="">
+                        <img class="wiggle -mr-6 w-24 h-24 transform rotate-12" src="/trophies/1.png" alt="">
                     </div>
                     <h1 class="text-center text-blue-500 text-5xl my-10">يمان صهيب الرمضاني</h1>
                 </div>
                 <div class="lg:col-start-1 lg:col-end-4">
                     <div class="aspect-w-16 aspect-h-9">
-                                                <iframe class="rounded-xl border-2 border-yellow-400 shadow-md mt-0"
-                                                        src="https://www.youtube.com/embed/qvCbYX1btto" frameborder="0"
-                                                        allowfullscreen></iframe>
-                        <img class="-mr-6 w-24 h-24 transform rotate-12" src="/trophies/2.png" alt="">
+                        <iframe class="rounded-xl border-2 border-yellow-400 shadow-md mt-0"
+                                src="https://www.youtube.com/embed/qvCbYX1btto" frameborder="0"
+                                allowfullscreen></iframe>
+                        <img class="wiggle -mr-6 w-24 h-24 transform rotate-12" src="/trophies/2.png" alt="">
                     </div>
 
                     <h1 class="text-center text-pink-500 text-5xl my-10">AKKAL Mohamed Nazim</h1>
@@ -271,11 +271,11 @@
                 </div>
                 <div class="lg:col-end-8 lg:col-span-3">
                     <div class="aspect-w-16 aspect-h-9">
-                                                <iframe class="rounded-xl border-2 border-yellow-400 shadow-md mt-0"
-                                                        src="https://www.youtube.com/embed/GDmvLA9pzMw" frameborder="0"
-                                                        allowfullscreen></iframe>
+                        <iframe class="rounded-xl border-2 border-yellow-400 shadow-md mt-0"
+                                src="https://www.youtube.com/embed/GDmvLA9pzMw" frameborder="0"
+                                allowfullscreen></iframe>
 
-                        <img class="-mr-6 w-24 h-24 transform rotate-12" src="/trophies/3.png" alt="">
+                        <img class="wiggle -mr-6 w-24 h-24 transform rotate-12" src="/trophies/3.png" alt="">
                     </div>
                     <h1 class="text-center text-green-500 text-5xl my-10">ساره محمد</h1>
 
@@ -293,10 +293,10 @@
 
                     </div>
                     <div class="aspect-w-16 aspect-h-9">
-                                                <iframe class="rounded-xl border-2 border-yellow-400 shadow-md mt-0"
-                                                        src="https://www.youtube.com/embed/ZEWFRcrvNRQ" frameborder="0"
-                                                        allowfullscreen></iframe>
-                        <img class="-mr-6 w-24 h-24 transform rotate-12" src="/trophies/1.png" alt="">
+                        <iframe class="rounded-xl border-2 border-yellow-400 shadow-md mt-0"
+                                src="https://www.youtube.com/embed/ZEWFRcrvNRQ" frameborder="0"
+                                allowfullscreen></iframe>
+                        <img class="wiggle -mr-6 w-24 h-24 transform rotate-12" src="/trophies/1.png" alt="">
                     </div>
 
                     <h1 class="text-center text-blue-500 text-5xl my-10">رامي فرات نضال</h1>
@@ -312,10 +312,10 @@
 
                     </div>
                     <div class="aspect-w-16 aspect-h-9">
-                                                <iframe class="rounded-xl border-2 border-yellow-400 shadow-md mt-0"
-                                                        src="https://www.youtube.com/embed/ZSHVF2R02oI" frameborder="0"
-                                                        allowfullscreen></iframe>
-                        <img class="-mr-6 w-24 h-24 transform rotate-12" src="/trophies/1.png" alt="">
+                        <iframe class="rounded-xl border-2 border-yellow-400 shadow-md mt-0"
+                                src="https://www.youtube.com/embed/ZSHVF2R02oI" frameborder="0"
+                                allowfullscreen></iframe>
+                        <img class="wiggle -mr-6 w-24 h-24 transform rotate-12" src="/trophies/1.png" alt="">
                     </div>
 
                     <h1 class="text-center text-blue-500 text-5xl my-10">Leen Nafez Alfityani</h1>
@@ -323,7 +323,7 @@
                 </div>
             </div>
         </div>
-d
+
 
     </div>
 </div>
