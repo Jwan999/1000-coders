@@ -1,7 +1,7 @@
 <div id="goals" class="flex flex-wrap-reverse justify-center items-center w-full lg:mt-52 lg:mt-10 mt-20 ">
     <div class="w-full lg:mt-0 mt-14">
         <div class="flex justify-start w-full lg:mt-0 mt-14">
-            <div class="flex">
+            <div class="flex lg:w-4/12">
                 <h1 class="lg:text-6xl text-5xl text-gray-900 ">
                     @lang('language.goals')
                     <svg viewBox="0 0 430 11" version="1.1" xmlns="http://www.w3.org/2000/svg"

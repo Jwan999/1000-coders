@@ -89,13 +89,12 @@
             </div>
 
         </div>
-        <a href="/signup">
-            <button
-                    class="transition duration-200 ease-in transform hover:-translate-y-1 hover:scale-110 py-4 px-6 shadow items-center rounded-2xl text-xl font-semibold yellow bg-blue-500 focus:outline-none">
-                البدء بالمرحلة الرابعة
-            </button>
-        </a>
-
+        <scrollactive>
+            <a href="#champions"
+               class="scrollactive-item transition duration-200 ease-in transform hover:-translate-y-1 hover:scale-110 py-4 px-6 shadow items-center rounded-2xl text-xl font-semibold yellow bg-blue-500 focus:outline-none">
+               ابطال العرب
+            </a>
+        </scrollactive>
     </div>
     <div class="lg:flex hidden lg:ml-8 ml-0 -mt-0 lg:-mt-10 lg:w-4/12 w-10/12">
 

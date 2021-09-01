@@ -16,13 +16,23 @@ Vue.use(VueApexCharts)
 Vue.component('apexchart', VueApexCharts)
 
 Vue.use(VueScrollactive);
-import ref from 'vue'
-import {Dialog, DialogOverlay, DialogTitle, TransitionChild, TransitionRoot} from '@headlessui/vue'
+import 'particles.js/particles.js';
+//
+const particlesJS = window.particlesJS;
 
-vue.use(ref)
-vue.component(Dialog, DialogOverlay, DialogTitle, TransitionChild, TransitionRoot)
+// JSON file is located in the directory of 'public/js/particlejs-config.json'
+particlesJS.load('particles-js', 'js/particlesjs-config.json', function () {
+    console.log('callback - particles.js config loaded');
+});
+
+// import ref from 'Vue'
+// import {Dialog, DialogOverlay, DialogTitle, TransitionChild, TransitionRoot} from '@headlessui/vue'
+
+// vue.use(ref)
+// vue.component(Dialog, DialogOverlay, DialogTitle, TransitionChild, TransitionRoot)
 
 window.Vue = Vue;
+
 
 /**
  * The following block of code may be used to automatically register your

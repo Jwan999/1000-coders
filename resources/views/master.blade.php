@@ -14,6 +14,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>كأس العرب</title>
+    {{--    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>--}}
+    {{--    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>--}}
+
+    {{--    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>--}}
+
 
     <style>
         body {
@@ -64,10 +69,17 @@
             color: #49C6F3
         }
 
+        #tsparticles {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
 
     </style>
 </head>
-<body class="bg-gray-100 relative">
+<body class="bg-gray-100">
 
 @if(session('success'))
     <div class="flex justify-center">
@@ -76,6 +88,7 @@
         </div>
     </div>
 @endif
+{{--<div class="particles-js-canvas-el" id="particles-js"></div>--}}
 
 <div dir="@lang("language.dir")" id="app">
 
@@ -167,9 +180,9 @@
         {{--        @include('components/vision')--}}
         {{--    </div>--}}
 
-        <div class="flex justify-center" id="codes">
-            @include('components.studentsCodes')
-        </div>
+        {{--        <div class="flex justify-center" id="codes">--}}
+        @include('components.champions')
+        {{--        </div>--}}
         <div id="goals">
             @include('components.goals')
 
@@ -203,11 +216,22 @@
     </div>
 
 </div>
-<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@1.34.0/tsparticles.min.js"></script>
+
+{{--<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>--}}
 
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-<script src="/js/app.js"></script>
+
+{{--<script src="particles.js"></script>--}}
+
+
+<script src="js/app.js"></script>
+{{--<script>--}}
+{{--    tsParticles.load("tsparticles",--}}
+{{--      );--}}
+
+{{--</script>--}}
 <script>
     var vue = new Vue({
         el: "#app",
@@ -236,7 +260,7 @@
 
         },
         mounted() {
-            this.getCodes('Stage 2')
+            // this.getCodes('Stage 2')
         }
     })
 </script>
