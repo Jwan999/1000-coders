@@ -33,7 +33,7 @@
             <div class="flex items-center justify-center">
                 <img class="w-14 h-14 mx-3" src="trophies/confetti.png" alt="">
                 <h1 class="text-center text-gray-600 lg:text-3xl text-2xl my-10 px-3 py-2 font-bold">
-                    جائزة العرض التقديمي للكبارd
+                    جائزة العرض التقديمي للكبار
                 </h1>
                 <img class="w-14 h-14 mx-3" src="trophies/confetti.png" alt="">
             </div>
