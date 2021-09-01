@@ -1,7 +1,8 @@
 {
+  "fpsLimit": 30,
   "particles": {
     "number": {
-      "value": 1000,
+      "value": 800,
       "density": {
         "enable": false,
         "value_area": 800
@@ -15,26 +16,29 @@
       ]
     },
     "shape": {
-      "type":[ "polygon","edge"],
+      "type": [
+        "polygon",
+        "edge"
+      ],
       "stroke": {
         "width": 0,
         "color": "#000000"
       },
       "polygon": {
-        "nb_sides": 6
+        "nb_sides": 5
       },
       "edge": {
-        "nb_sides": 6
+        "nb_sides": 4
       },
       "image": {
-        "src": "https://image.flaticon.com/icons/png/512/3004/3004622.png",
+        "src": "svg/github.svg",
         "width": 100,
         "height": 100
       }
     },
     "opacity": {
       "value": 0.5,
-      "random": true,
+      "random": false,
       "anim": {
         "enable": false,
         "speed": 1,
@@ -43,11 +47,11 @@
       }
     },
     "size": {
-      "value": 6,
+      "value": 5,
       "random": true,
       "anim": {
         "enable": true,
-        "speed": 20,
+        "speed": 10,
         "size_min": 0.1,
         "sync": false
       }
@@ -61,7 +65,7 @@
     },
     "move": {
       "enable": true,
-      "speed": 6,
+      "speed": 4,
       "direction": "bottom",
       "random": true,
       "straight": false,
@@ -113,5 +117,5 @@
       }
     }
   },
-  "retina_detect": true
+  "retina_detect": false
 }
