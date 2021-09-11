@@ -13,6 +13,6 @@ class ApplicantsExport implements FromCollection
      */
     public function collection()
     {
-        return Applicant::all();
+        return Applicant::where('stage', null)->get();
     }
 }
