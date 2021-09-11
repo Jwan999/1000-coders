@@ -98,6 +98,11 @@
             z-index: -1;
         }
 
+        .flip-horizontal {
+            transform: scale(-1, 1) rotate(-20deg);
+            /*transform: ;*/
+        }
+
     </style>
 </head>
 <body class="bg-gray-100">
