@@ -29,7 +29,7 @@ class StudentController extends Controller
     public function exportApplicants()
     {
         if (Auth::check()) {
-            return Excel::download(new ApplicantsExport(), 'coding_marathon_stage_three_applicants.xlsx');
+            return Excel::download(new ApplicantsExport(), 'coding_marathon_final_stage.xlsx');
         }
         return Redirect::route('dashboard/login');
 
