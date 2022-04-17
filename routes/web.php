@@ -43,16 +43,16 @@ Route::group(['prefix' => 'dashboard', 'middleware' => ['auth']], function () {
 
     Route::get('/emails', [EmailController::class, 'index']);
 
-    Route::get('/registers', [StudentController::class, 'registersPage']);
-    Route::get('/api/registers', [StudentController::class, 'show']);
+//    Route::get('/registers', [StudentController::class, 'registersPage']);
+//    Route::get('/api/registers', [StudentController::class, 'show']);
 
-    Route::get('/students/export', [StudentController::class, 'export']);
-    Route::get('/applicants/export', [StudentController::class, 'exportApplicants']);
+//    Route::get('/students/export', [StudentController::class, 'export']);
+//    Route::get('/applicants/export', [StudentController::class, 'exportApplicants']);
 
 
-    Route::get('/charts', [StudentController::class, 'charts']);
+//    Route::get('/charts', [StudentController::class, 'charts']);
 
-    Route::get('/applicants', [ApplicantController::class, 'show'])->name('home');
+//    Route::get('/applicants', [ApplicantController::class, 'show'])->name('home');
 
 });
 

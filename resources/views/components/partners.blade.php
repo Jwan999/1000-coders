@@ -1,9 +1,9 @@
-<div id="partners" class="flex flex-wrap justify-center items-center w-full lg:mt-52 lg:mt-10 mt-20 ">
+<div id="partners" class="flex flex-wrap justify-center items-center w-full lg:mt-52 mt-20 ">
     <div class="flex justify-center w-full lg:mt-0 mt-14">
         <div class="flex lg:w-4/12 ">
             <h1 class="lg:text-6xl text-center text-5xl text-gray-900 ">
                 @lang('language.partners')
-                <svg viewBox="0 0 430 11" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                <svg class="mt-10" viewBox="0 0 430 11" version="1.1" xmlns="http://www.w3.org/2000/svg"
                      xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
                        stroke-linecap="round">
@@ -35,7 +35,7 @@
             </p>
             <div class="flex w-4/12 mt-4 items-center transform hover:scale-110 cursor-pointer">
                 <a class="flex flex-row items-center text-blue-400" href="https://www.facebook.com/maps.ngo/">
-                    <img class="w-10 -ms-1 me-2" src="facebook.png" alt="">
+                    <img class="w-10 rtl:-mr-1 rtl:ml-2 ltr:-ml-1 ltr:mr-2" src="/images/facebook.png" alt="">
                     <h1 class="">maps.ngo</h1>
                 </a>
             </div>
@@ -53,7 +53,7 @@
             <div class="flex w-4/12 mt-4 items-center transform hover:scale-110 cursor-pointer">
                 <a class="flex flex-row items-center text-blue-400"
                    href="https://www.facebook.com/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9-%D8%A7%D9%84%D8%B9%D9%85%D8%A7%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9-1858589940884127/">
-                    <img class="w-10 -ms-1 me-2" src="facebook.png" alt="">
+                    <img class="w-10 rtl:-mr-1 rtl:ml-2 ltr:-ml-1 ltr:mr-2" src="/images/facebook.png" alt="">
                     <h1 class="">مؤسسة العمالقة الدولية</h1>
                 </a>
             </div>
@@ -70,7 +70,7 @@
             </p>
             <div class="flex w-4/12 mt-4 items-center transform hover:scale-110 cursor-pointer">
                 <a class="flex flex-row items-center text-blue-400" href="https://facebook.com/JuniorRoboticsLab/">
-                    <img class="w-10 -ms-1 me-2" src="facebook.png" alt="">
+                    <img class="w-10 rtl:-mr-1 rtl:ml-2 ltr:-ml-1 ltr:mr-2" src="/images/facebook.png" alt="">
                     <h1 class="">JuniorRoboticsLab</h1>
                 </a>
             </div>
@@ -86,7 +86,7 @@
             </p>
             <div class="flex w-4/12 mt-4 items-center transform hover:scale-110 cursor-pointer">
                 <a class="flex flex-row items-center text-blue-400" href="https://www.facebook.com/ElectronicsGo">
-                    <img class="w-10 -ms-1 me-2" src="facebook.png" alt="">
+                    <img class="w-10 rtl:-mr-1 rtl:ml-2 ltr:-ml-1 ltr:mr-2" src="/images/facebook.png" alt="">
                     <h1 class="">ElectronicsGo</h1>
                 </a>
             </div>
@@ -102,7 +102,7 @@
             </p>
             <div class="flex w-4/12 mt-4 items-center transform hover:scale-110 cursor-pointer">
                 <a class="flex flex-row items-center text-blue-400" href="https://www.facebook.com/cl.academey">
-                    <img class="w-10 -ms-1 me-2" src="facebook.png" alt="">
+                    <img class="w-10 rtl:-mr-1 rtl:ml-2 ltr:-ml-1 ltr:mr-2" src="/images/facebook.png" alt="">
                     <h1 class="">cl.academey</h1>
                 </a>
             </div>
@@ -118,7 +118,7 @@
             </p>
             <div class="flex w-4/12 mt-4 items-center transform hover:scale-110 cursor-pointer">
                 <a class="flex flex-row items-center text-blue-400" href="https://facebook.com/SmartPeekAcademy">
-                    <img class="w-10 -ms-1 me-2" src="facebook.png" alt="">
+                    <img class="w-10 rtl:-mr-1 rtl:ml-2 ltr:-ml-1 ltr:mr-2" src="/images/facebook.png" alt="">
                     <h1 class="">SmartPeekAcademy</h1>
                 </a>
             </div>
@@ -133,7 +133,7 @@
             </p>
             <div class="flex w-4/12 mt-4 items-center transform hover:scale-110 cursor-pointer">
                 <a class="flex flex-row items-center text-blue-400" href="https://www.facebook.com/Ju.In.Team">
-                    <img class="w-10 -ms-1 me-2" src="facebook.png" alt="">
+                    <img class="w-10 rtl:-mr-1 rtl:ml-2 ltr:-ml-1 ltr:mr-2" src="/images/facebook.png" alt="">
                     <h1 class="">Ju.In.Team</h1>
                 </a>
 

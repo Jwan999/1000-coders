@@ -49,6 +49,8 @@ class EmailController extends Controller
      */
     public function store(Request $request)
     {
+
+
         $data = $this->validate($request, [
             "name" => "required",
             "email" => "required",

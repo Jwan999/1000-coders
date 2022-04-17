@@ -1,9 +1,9 @@
-<div class="flex flex-col justify-between items-center w-full lg:mt-52 lg:mt-10 mt-20 ">
+<div class="flex flex-col justify-between items-center w-full lg:mt-52 mt-20 ">
     <div class="w-full lg:mt-0 mt-14">
         <h1 class="lg:text-6xl text-5xl text-gray-900">
             الرؤية </h1>
         <div class="mt-3 lg:w-full w-10/12">
-            <img src="titlebg.png" alt="">
+            <img src="/images/titlebg.png" alt="">
         </div>
         <p class="lg:text-xl text-lg tracking-wide leading-relaxed text-gray-700 mt-8 lg:w-10/12 w-auto">
            </p>

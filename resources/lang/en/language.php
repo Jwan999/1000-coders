@@ -20,8 +20,8 @@ return [
     "conditions" => "Participation",
     "stages" => "Stages",
     "goals" => "Goals",
-    "contest_name" => "Arab Coding Marathon",
-    "welcoming_title" => "Arab Coding Marathon for Programming and Artificial Intelligence",
+    "contest_name" => "1000 Coders",
+    "welcoming_title" => "1000 Coders Competition",
     "welcoming_body" => "The programmatic marathon, with its new version, the Arab Cup for Programming and Artificial Intelligence seeks to raise the level of programming skills for the generation of children from the age of 8 to 16 to keep pace with technological development in all sciences. To the world in the time of the Corona pandemic.",
     "light_goal" => "Shedding light on the distinguished children in the field of programming and artificial intelligence by highlighting them on the media and social media.",
     "file_goal" => "Providing programming training for children in a way that is positively reflected in the development of their imaginations by posing problems and finding solutions.",
@@ -67,7 +67,7 @@ And those who are passionate about community development.",
     "maps" => "Maps was born in early 2013 with three volunteers, while today it has more than 300 volunteers. Maps provides basic, creative, professional, and university education, capacity building, and education specific to empowering women and families, in addition to its health, humanitarian and relief services. Maps organized the Robogy Championship, the largest robot tournament for Syrian refugees around the world, and provided training services to many Syrian refugees across the world.
 The most important prizes since its establishment: 36 local, Arab and international awards and championships in the field of robotics and artificial intelligence, the most important of which is the World Championship in Dubai, which was achieved by the Al-Amal Refugee Team. The American organization, while the international organization \"First global\" classified the team as representing about 80 million refugees around the world.",
     "juniorrobotics" => "Junior Robotics Lab is Tunisian startup committed to provide a one-stop solution for STEM education to foster 21st-Century skills in kids by enabling them to tinker with electronics, robotics, coding, AI,  and related tech at an early age.
-Our company offers a complete online tool for any educational institution to help them teach robotics and manage the workflow between the various stakeholders. 
+Our company offers a complete online tool for any educational institution to help them teach robotics and manage the workflow between the various stakeholders.
 The platform provide a tailored interactive curriculum with rich and  various content going from videos, 3D animations,  real world problems to coding tasks.
 Within 3 years, we served thousands of learners, ten of institutions with  a high quality training which allowed our teams to win  national robotics competitions, compete at the World Robot Olympiads finals and recently announced winner of the biggest International AI and
 Coding Competition.",
@@ -77,7 +77,7 @@ Coding Competition.",
     "form_email" => "Email Address",
     "form_message" => "Message",
     "form_button" => "Submit",
-    "footer" => "Arab Coding Marathon 2021",
+    "footer" => "1000 Coders 2022",
     "email" => "Email Address",
     "password" => "Password",
     "login" => "Login"
