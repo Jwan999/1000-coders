@@ -4,14 +4,15 @@
             @lang("language.welcoming_title")
         </h1>
         <p class="text-xl tracking-wide text-gray-600 mt-10 w-auto text-justify">
-            {{--                        @lang("language.cong")--}}
-            تركز البطولة على اظهار قدرات االطفال عن طريق حلهم لمشاكل متعلقة بالكرة الارضية وبمواضيع علمية مختفلة
-            مثل التكنولوجيا، الهندسة والرياضيات
-            تتضمن مشاركة <a class="text-3xl font-bold text-pink-500">1000</a>
-            طفل وطفلة ومن جميع المحافظات العراقية
-            سيتنافسون على عدة مراحل وفي نهاية
-            البطولة سيكون هناك
-            <a class="text-3xl font-bold text-pink-500">3</a> فائزين بجوائز كمكافئة للحلول المقدمة.
+
+
+            @lang("language.welcoming_body")
+            <a class="text-3xl font-bold text-pink-500">1000</a>
+            @lang("language.welcoming_body_after_1000")
+            <a class="text-3xl font-bold text-pink-500">3</a>
+            @lang("language.welcoming_body_after_3")
+
+
         </p>
 
         <div>
@@ -93,8 +94,7 @@
         <button
             class="transition duration-200 mt-6 ease-in transform hover:-translate-y-1 hover:scale-110 py-4 px-6 shadow items-center rounded-2xl text-xl font-semibold text-white bg-blue focus:outline-none">
             <a href="https://forms.gle/krcStABJyQJzHwSD8">
-                سجل الان
-
+                @lang("language.signup_now")
             </a>
         </button>
     </div>

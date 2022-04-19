@@ -157,8 +157,8 @@
             <div class="w-10/12 rtl:mr-4 ltr:ml-4">
                 <h1 class="lg:text-2xl text-xl self-center">
                     <span class="text-pink-500">1000</span>
-                    <span class="text-blue">مبرمج</span>
-                    {{--                    @lang("language.contest_name")--}}
+                    <span class="text-blue">                                        @lang("language.programmer")
+</span>
                 </h1>
             </div>
         </div>

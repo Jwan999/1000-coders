@@ -21,24 +21,38 @@ return [
     "stages" => "Stages",
     "goals" => "Goals",
     "contest_name" => "1000 Coders",
+    "programmer" => "Coders",
+
     "welcoming_title" => "1000 Coders Competition",
-    "welcoming_body" => "The programmatic marathon, with its new version, the Arab Cup for Programming and Artificial Intelligence seeks to raise the level of programming skills for the generation of children from the age of 8 to 16 to keep pace with technological development in all sciences. To the world in the time of the Corona pandemic.",
-    "light_goal" => "Shedding light on the distinguished children in the field of programming and artificial intelligence by highlighting them on the media and social media.",
-    "file_goal" => "Providing programming training for children in a way that is positively reflected in the development of their imaginations by posing problems and finding solutions.",
-    "code_goal" => "Providing useful scientific content in the field of programming and informatics, which provides a supportive means for teaching computer science at the school stage.≈",
-    "award_goal" => "Raising the level of students ’knowledge and skills by holding a scientific competition at the Arab level, and taking care of the distinguished in this field.",
+
+    "welcoming_body" => "The tournament focuses on showing children’s abilities by solving problems related to the Earth and in various scientific topics such as technology, engineering and mathematics. It includes the participation of",
+    "welcoming_body_after_1000" => "boys and girls from all Iraqi governorates who will compete in several stages and at the end of the tournament there will be",
+    "welcoming_body_after_3" => "prize winners as a reward for the solutions provided.",
+
+    "signup_now"=>"Signup Now",
+
+
+    "goal_1" => "Spreading the spirit of enthusiasm and perseverance among students through the correct use of technology.",
+    "goal_2" => "Highlighting the creative aspects of school students in Iraq, through the preparation and organization of such competitions.",
+    "goal_3" => "Investing students' time by enriching their talents and interests.",
+    "goal_4" => "Supporting students' talents, encouraging them to be more creative, and promoting distinguished innovative ideas and plans.",
+
     "stage_one_title" => "First Stage",
-    "stage_one_body" => "After the announcement and registering for the competition, online forums and conferences will be held on the importance of programming and artificial intelligence, then the test that 1,000 people will qualify for after evaluation by the organizing committee and taking into account the percentage of participants from all participating countries.",
+    "stage_one_body" => "After announcing and registering for the competition, an online test will be conducted on the basics of programming, from which 1000 people will qualify after evaluation by the organizing committee.",
+
     "stage_two_title" => "Second Stage",
-    "stage_two_body" => "Within ten days, a workshop specializing in artificial intelligence and future jobs will be held, and the second test, from which 250 teams will qualify for the third phase, with a number of seats reserved for each participating country.",
+    "stage_two_body" => "Within ten days, a specialized workshop will be held in the field of innovation and future jobs, and the second test, from which 250 teams will qualify for the third stage.",
+
     "stage_three_title" => "Third Stage",
-    "stage_three_body" => "Various workshops for five days, then the third test, which is programming projects through visual programming that solve specific problems, and projects are submitted to the jury to choose the best 100 projects.",
+    "stage_three_body" => "Various remote workshops for five days, then the third test, which is programming projects through sham programming, solving specific problems. The projects are presented to the judging committees to choose the best 100 projects.",
+
     "stage_four_title" => "Fourth Stage",
-    "stage_four_body" => "Advanced courses in programming and artificial intelligence for a period of five days and the start of the final test, which is the solution of 3 problems facing the Arab world through programming and artificial intelligence. After submitting the projects, they are evaluated and 20 winners are selected at the level of the Arab world in a special ceremony.",
+    "stage_four_body" => "Starting with the final test, which is solving 3 problems facing the globe through programming and artificial intelligence. After submitting projects, they are evaluated and 3 winners are selected.",
+
     "condition_age_title" => "Age group",
     "condition_age_body" => "8-13 years old \n 14-16 years old.",
     "condition_nation_title" => "Nationality",
-    "condition_nation_body" => "Arab nationality or resident in one of the Arab countries.",
+    "condition_nation_body" => "Iraqi nationality resident in Iraq or in one of the Arab countries.",
     "condition_lang_title" => "Spoken languages",
     "condition_lang_body" => "Fluent in Arabic or English, training will be in Arabic.",
     "condition_pc_title" => "Computer",
